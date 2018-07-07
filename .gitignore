@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-=======
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
->>>>>>> 24117fcda6705045c802f5c7e793335aafee629e
 # Runtime data
 pids
 *.pid
