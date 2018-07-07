@@ -263,3 +263,53 @@
 20180707||18:1:38: 127.0.0.1 disconnected
 20180707||18:1:46: Server shutting down in 3 seconds...
 20180707||18:1:46: Disconnecting 0 client(s)...
+20180707||18:52:5: Server listening on default port: 9339
+20180707||18:52:7: Server shutting down in 3 seconds...
+20180707||18:52:7: Disconnecting 0 client(s)...
+20180707||19:2:55: Server listening on default port: 9339
+20180707||19:3:1: Server listening on default port: 9339
+20180707||19:3:22: 127.0.0.1 connected
+20180707||19:3:22: <policy-file-request/>
+20180707||19:3:22: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180707||19:3:22: Removing penguin...
+20180707||19:3:22: 127.0.0.1 disconnected
+20180707||19:3:22: 127.0.0.1 connected
+20180707||19:3:22: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||19:3:22: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||19:3:24: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||19:3:24: daan -| 127.0.0.1 is logging on
+20180707||19:3:24: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||19:3:24: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||19:3:30: Server shutting down in 3 seconds...
+20180707||19:3:30: Disconnecting 1 client(s)...
+20180707||19:5:29: Server listening on default port: 9339
+20180707||19:5:43: 127.0.0.1 connected
+20180707||19:5:43: <policy-file-request/>
+20180707||19:5:43: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180707||19:5:43: Removing penguin...
+20180707||19:5:43: 127.0.0.1 disconnected
+20180707||19:5:43: 127.0.0.1 connected
+20180707||19:5:43: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||19:5:43: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||19:6:31: Removing penguin...
+20180707||19:6:31: 127.0.0.1 disconnected
+20180707||19:48:17: Server listening on default port: 9339
+20180707||19:48:17: 32 swears loaded!
+20180707||19:49:39: Server listening on default port: 9339
+20180707||19:49:39: 32 swears loaded!
+20180707||19:50:1: Server listening on default port: 9339
+20180707||19:50:1: 32 swears loaded!
+20180707||19:50:26: Server listening on default port: 9339
+20180707||19:50:26: 32 swears loaded!
+20180707||19:50:32: Server listening on default port: 9339
+20180707||19:50:32: 32 swears loaded!
+20180707||19:52:51: Server listening on default port: 9339
+20180707||19:52:51: 32 swears loaded!
+20180707||19:53:35: Server listening on default port: 9339
+20180707||19:53:35: 32 swears loaded!
+20180707||19:53:45: Server listening on default port: 9339
+20180707||19:53:45: 32 swears loaded!
+20180707||19:53:55: Server listening on default port: 9339
+20180707||19:53:55: 32 swears loaded!
+20180707||19:54:18: Server listening on default port: 9339
+20180707||19:54:18: 32 swears loaded!

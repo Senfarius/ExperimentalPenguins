@@ -1,6 +1,6 @@
 {
     "name": "PenguinChatJS",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Penguin Chat emulator written in Node.js",
     "main": "Run.js",
     "keywords": ["Penguin chat", "PC3", "PC2", "PC1", "Club Penguin", "Private Server", "Penguin Chat Private Server"],
@@ -11,7 +11,6 @@
     	"chalk": "^2.4.1",
     	"xmldoc": "^1.1.0",
     	"knex": "^0.15.0",
-        "figlet": "^1.2.0",
         "blake2": "^2.0.1"
     }
 }

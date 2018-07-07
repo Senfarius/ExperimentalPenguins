@@ -1,12 +1,15 @@
 "use strict"
 
-const Server = require("./server/Server")
-const Logger = require("./server/Logger").Logger
-const figlet = require("figlet") // ASCII art, because why not?
+const Server     = require("./src/server/Server")
+const Logger     = require("./src/server/Logger").Logger
 
-figlet("PenguinChatJS", (error, data) => {
-	if (error) return Logger.error(error)
-	console.log(data) // Obviously don't log this for reasons...
-})
+console.log(`Penguin Chat 3 Emulator by Zaseth
+:::::::::   ::::::::   ::::::::  ::::::::::: ::::::::  
+:+:    :+: :+:    :+: :+:    :+:     :+:    :+:    :+: 
++:+    +:+ +:+               +:+     +:+    +:+        
++#++:++#+  +#+            +#++:      +#+    +#++:++#++ 
++#+        +#+               +#+     +#+           +#+ 
+#+#        #+#    #+# #+#    #+# #+# #+#    #+#    #+# 
+###         ########   ########   #####      ########  `)
 
 new Server(process.argv[2] || 9339)

@@ -1,9 +1,10 @@
 "use strict"
 
-const Core     = require("./core/Core")
-const Database = require("./core/Database")
-const Penguin  = require("./core/Penguin")
-const Logger   = require("./Logger").Logger
+const Core       = require("./core/Core")
+const Database   = require("./core/Database")
+const Penguin    = require("./core/Penguin")
+const Logger     = require("./Logger").Logger
+const Constants  = require("./core/Constants").CHECKER
 
 class Server {
 	constructor (port) {
@@ -34,12 +35,13 @@ class Server {
 			})
 			socket.on("error", error => {
 				client.disconnect()
-				if (error.code == "ETIMEDOUT" || error.code == "ECONNRESET") return // Stupid errors we don't log
+				if (error.code == "ETIMEDOUT" || error.code == "ECONNRESET") return // Stupid errors that we don't log
 				Logger.error(error)
 			})
 		}).listen(this.port, () => {
 			if (this.port != 9339) Logger.info(`Server listening on custom port: ${this.port}`)
 			else Logger.info(`Server listening on default port: ${this.port}`)
+			this.calculateConstants()
 		})
 	}
 
@@ -54,14 +56,21 @@ class Server {
 	}
 
 	handleShutdown () {
-		Logger.info("Server shutting down in 3 seconds...")
-		Logger.info(`Disconnecting ${this.clients.length} client(s)...`)
-		setTimeout(() => {
-			for (const client of this.clients) { // Remove each client
-				client.disconnect()
-			}
-			process.exit()
-		}, 3000) // 3 Seconds
+		if (this.clients.length > 0) { // First check if there's even clients connected, smart move...
+			Logger.info(`Server shutting down in 3 seconds...`)
+			Logger.info(`Disconnecting ${this.clients.length} client(s)...`)
+			setTimeout(() => {
+				for (const client of this.clients) client.disconnect()
+				process.exit(0)
+			}, 3000)
+		} else { // Don't loop through an empty array and just exit the process immediately
+			Logger.info(`Server shutting down in 1 second as there were no clients detected...`)
+			process.exit(0)
+		}
+	}
+
+	calculateConstants () {
+		Logger.info(`${Constants.SWEARS.length} swears loaded!`)
 	}
 }
 
