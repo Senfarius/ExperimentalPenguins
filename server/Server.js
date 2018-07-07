@@ -8,7 +8,7 @@ const Logger   = require("./Logger").Logger
 class Server {
 	constructor (port) {
 		this.clients     = []
-		this.port        = port || 9339
+		this.port        = port
 		this.maxPenguins = 50
 		this.database    = new Database()
 		this.core        = new Core(this)
@@ -35,9 +35,12 @@ class Server {
 			socket.on("error", error => {
 				client.disconnect()
 				if (error.code == "ETIMEDOUT" || error.code == "ECONNRESET") return // Stupid errors we don't log
-				Logger.error(error) // Appends the error log
+				Logger.error(error)
 			})
-		}).listen(this.port, () => {Logger.info(`Server listening on ${this.port}`)})
+		}).listen(this.port, () => {
+			if (this.port != 9339) Logger.info(`Server listening on custom port: ${this.port}`)
+			else Logger.info(`Server listening on default port: ${this.port}`)
+		})
 	}
 
 	removePenguin (client) {
@@ -52,16 +55,14 @@ class Server {
 
 	handleShutdown () {
 		Logger.info("Server shutting down in 3 seconds...")
-		Logger.info(`Disconnecting all ${this.clients.length} client(s)...`)
+		Logger.info(`Disconnecting ${this.clients.length} client(s)...`)
 		setTimeout(() => {
 			for (const client of this.clients) { // Remove each client
 				client.disconnect()
 			}
 			process.exit()
-		}, 3000)
+		}, 3000) // 3 Seconds
 	}
 }
 
 module.exports = Server
-
-new Server(9339)

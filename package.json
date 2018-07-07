@@ -10,6 +10,7 @@
     "dependencies": {
     	"chalk": "^2.4.1",
     	"xmldoc": "^1.1.0",
-    	"knex": "^0.15.0"
+    	"knex": "^0.15.0",
+        "figlet": "^1.2.0"
     }
 }

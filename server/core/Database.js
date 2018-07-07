@@ -15,6 +15,22 @@ class Database {
 			}
 		})
 	}
+
+	updateColumn (id, column, value) {
+		return this.knex("penguins").update(column, value).where("id", id).then(() => {
+			Logger.info(`"${column}" updated with "${value}" by "${id}"`)
+		}).catch((error) => {
+			Logger.error(error)
+		})
+	}
+
+	getPenguinByName (username) {
+		return this.knex("penguins").first("*").where("username", username)
+	}
+
+	penguinExistsByName (username) {
+		return this.knex("penguins").where("username", username).select("username")
+	}
 }
 
 module.exports = Database
