@@ -1,0 +1,265 @@
+20180707||12:3:4: Server listening on 9339
+20180707||12:3:15: Client disconnected
+20180707||12:3:16: Client disconnected
+20180707||12:6:52: Server listening on 9339
+20180707||12:6:55: Client connected
+20180707||12:6:55: <policy-file-request/>
+20180707||12:6:55: <cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:6:55: Client disconnected
+20180707||12:6:55: Client connected
+20180707||12:6:55: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:6:55: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:7:2: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:7:4: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:7:15: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
+20180707||12:7:21: <msg t='sys'><body action='setUvars' r='null'><vars><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:7:27: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
+20180707||12:7:32: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
+20180707||12:7:36: Client disconnected
+20180707||12:14:42: Server listening on 9339
+20180707||12:15:8: Server listening on 9339
+20180707||12:15:14: Client connected
+20180707||12:15:14: <policy-file-request/>
+20180707||12:15:14: <cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:15:14: Client disconnected
+20180707||12:15:14: Client connected
+20180707||12:15:14: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:15:14: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:15:19: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hhfvhfdgdhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:15:21: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:15:23: Client disconnected
+20180707||12:22:26: Server listening on 9339
+20180707||12:22:39: Client connected
+20180707||12:22:39: <policy-file-request/>
+20180707||12:22:39: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:22:39: Client disconnected
+20180707||12:22:39: Client connected
+20180707||12:22:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:22:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:22:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[xfhdffhhf]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:22:46: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:22:50: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
+20180707||12:22:56: Client disconnected
+20180707||12:38:46: Server listening on 9339
+20180707||12:39:15: Server listening on 9339
+20180707||12:39:21: 127.0.0.1 connected
+20180707||12:39:21: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:39:21: <policy-file-request/>
+20180707||12:39:21: Removing penguin...
+20180707||12:39:21: 127.0.0.1 disconnected
+20180707||12:39:21: 127.0.0.1 connected
+20180707||12:39:21: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:39:21: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:39:30: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hfdhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:39:32: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:39:35: Removing penguin...
+20180707||12:39:35: 127.0.0.1 disconnected
+20180707||12:39:44: Server shutting down in 3 seconds...
+20180707||12:40:24: Server listening on 9339
+20180707||12:40:26: 127.0.0.1 connected
+20180707||12:40:26: <policy-file-request/>
+20180707||12:40:26: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:40:26: Removing penguin...
+20180707||12:40:26: 127.0.0.1 disconnected
+20180707||12:40:26: 127.0.0.1 connected
+20180707||12:40:26: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:40:26: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:40:27: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hhdhj]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:40:29: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:40:32: Server shutting down in 3 seconds...
+20180707||12:40:32: Disconnecting all 1 clients...
+20180707||12:44:27: Server listening on 9339
+20180707||12:44:34: 127.0.0.1 connected
+20180707||12:44:34: <policy-file-request/>
+20180707||12:44:34: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:44:34: Removing penguin...
+20180707||12:44:34: 127.0.0.1 disconnected
+20180707||12:44:34: 127.0.0.1 connected
+20180707||12:44:34: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:44:34: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:44:42: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Zaseth]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:44:42: Zaseth - 127.0.0.1 is logging on
+20180707||12:44:44: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:45:38: Removing penguin...
+20180707||12:45:38: 127.0.0.1 disconnected
+20180707||12:45:47: Server shutting down in 3 seconds...
+20180707||12:45:47: Disconnecting all 0 client(s)...
+20180707||12:45:48: Server shutting down in 3 seconds...
+20180707||12:45:48: Disconnecting all 0 client(s)...
+20180707||12:56:47: Server listening on 9339
+20180707||12:57:7: 127.0.0.1 connected
+20180707||12:57:7: <policy-file-request/>
+20180707||12:57:7: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+20180707||12:57:7: Removing penguin...
+20180707||12:57:7: 127.0.0.1 disconnected
+20180707||12:57:7: 127.0.0.1 connected
+20180707||12:57:7: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:57:7: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:57:9: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:57:9: Removing penguin...
+20180707||12:57:9: 127.0.0.1 disconnected
+20180707||12:57:9: 127.0.0.1 connected
+20180707||12:57:9: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||12:57:9: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||12:57:18: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[ffhddhf]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||12:57:18: ffhddhf - 127.0.0.1 is logging on
+20180707||12:57:20: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
+20180707||12:57:26: Removing penguin...
+20180707||12:57:26: 127.0.0.1 disconnected
+20180707||12:59:33: Server shutting down in 3 seconds...
+20180707||12:59:33: Disconnecting all 0 client(s)...
+20180707||16:5:3: Server listening on 9339
+20180707||16:5:45: Server shutting down in 3 seconds...
+20180707||16:5:45: Disconnecting all 0 client(s)...
+20180707||16:8:47: Server listening on 9339
+20180707||16:16:6: Server shutting down in 3 seconds...
+20180707||16:16:6: Disconnecting all 0 client(s)...
+20180707||16:17:34: Server listening on 9339
+20180707||16:52:43: 127.0.0.1 connected
+20180707||16:52:43: <policy-file-request/>
+20180707||16:52:43: <?xml version="1.0" encoding="UTF-8"?>
+                    <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+                    <cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/>
+                    </cross-domain-policy>
+20180707||16:52:43: Removing penguin...
+20180707||16:52:43: 127.0.0.1 disconnected
+20180707||16:52:43: 127.0.0.1 connected
+20180707||16:52:43: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||16:52:43: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||16:52:49: Removing penguin...
+20180707||16:52:49: 127.0.0.1 disconnected
+20180707||16:53:27: Server shutting down in 3 seconds...
+20180707||16:53:27: Disconnecting all 0 client(s)...
+20180707||16:53:35: Server listening on 9339
+20180707||16:53:39: 127.0.0.1 connected
+20180707||16:53:39: <policy-file-request/>
+20180707||16:53:39: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180707||16:53:39: Removing penguin...
+20180707||16:53:39: 127.0.0.1 disconnected
+20180707||16:53:39: 127.0.0.1 connected
+20180707||16:53:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||16:53:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||16:53:47: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:53:47: test - 127.0.0.1 is logging on
+20180707||16:53:50: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:53:50: test - 127.0.0.1 is logging on
+20180707||16:53:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:53:51: test - 127.0.0.1 is logging on
+20180707||16:53:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:53:51: test - 127.0.0.1 is logging on
+20180707||16:54:49: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:54:49: Removing penguin...
+20180707||16:54:49: 127.0.0.1 disconnected
+20180707||16:54:54: 127.0.0.1 connected
+20180707||16:54:54: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||16:54:54: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||16:54:54: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:54:54: Removing penguin...
+20180707||16:54:54: 127.0.0.1 disconnected
+20180707||16:54:55: 127.0.0.1 connected
+20180707||16:54:55: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||16:54:55: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||16:54:56: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhfdhdhfdhfhfdh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:54:56: Removing penguin...
+20180707||16:54:56: 127.0.0.1 disconnected
+20180707||16:55:1: 127.0.0.1 connected
+20180707||16:55:1: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||16:55:1: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||16:55:2: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:55:2: fhdfhfh - 127.0.0.1 is logging on
+20180707||16:55:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:55:11: fhdfhfh - 127.0.0.1 is logging on
+20180707||16:55:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:55:11: fhdfhfh - 127.0.0.1 is logging on
+20180707||16:55:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:55:11: fhdfhfh - 127.0.0.1 is logging on
+20180707||16:55:12: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||16:55:12: fhdfhfh - 127.0.0.1 is logging on
+20180707||17:4:57: Server shutting down in 3 seconds...
+20180707||17:4:57: Disconnecting all 1 client(s)...
+20180707||17:5:3: Server listening on 9339
+20180707||17:5:5: 127.0.0.1 connected
+20180707||17:5:5: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:5:5: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||17:5:6: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[trst]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||17:5:6: trst - 127.0.0.1 is logging on
+20180707||17:5:6: <msg t="sys"><body action="logOK" r="0"></body></msg>
+20180707||17:5:6: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||17:17:26: Server shutting down in 3 seconds...
+20180707||17:17:26: Disconnecting all 1 client(s)...
+20180707||17:17:31: Server listening on 9339
+20180707||17:17:35: 127.0.0.1 connected
+20180707||17:17:35: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:17:35: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||17:17:36: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[zaseth]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||17:17:36: zaseth - 127.0.0.1 is logging on
+20180707||17:17:36: <msg t="sys"><body action="logOK" r="0"><login id="1" n="zaseth" mod="1"></login></body></msg>
+20180707||17:17:36: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||17:41:18: Server shutting down in 3 seconds...
+20180707||17:41:18: Disconnecting all 1 client(s)...
+20180707||17:41:26: Server listening on 9339
+20180707||17:41:28: 127.0.0.1 connected
+20180707||17:41:28: <policy-file-request/>
+20180707||17:41:28: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180707||17:41:28: Removing penguin...
+20180707||17:41:28: 127.0.0.1 disconnected
+20180707||17:41:28: 127.0.0.1 connected
+20180707||17:41:28: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:41:28: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||17:41:39: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||17:41:39: daan -| 127.0.0.1 is logging on
+20180707||17:41:39: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||17:41:39: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||17:51:49: Server shutting down in 3 seconds...
+20180707||17:51:49: Disconnecting all 1 client(s)...
+20180707||17:57:55: Server listening on custom port: 9111
+20180707||17:58:1: Server shutting down in 3 seconds...
+20180707||17:58:1: Disconnecting 0 client(s)...
+20180707||17:58:15: Server listening on custom port: 9111
+20180707||17:58:16: Server shutting down in 3 seconds...
+20180707||17:58:16: Disconnecting 0 client(s)...
+20180707||17:58:22: Server listening on default port: 9339
+20180707||17:58:27: 127.0.0.1 connected
+20180707||17:58:27: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:58:27: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||17:58:31: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Zaseth]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||17:58:31: Removing penguin...
+20180707||17:58:31: 127.0.0.1 disconnected
+20180707||17:58:34: 127.0.0.1 connected
+20180707||17:58:34: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:58:34: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||17:59:35: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||17:59:35: Removing penguin...
+20180707||17:59:35: 127.0.0.1 disconnected
+20180707||17:59:45: 127.0.0.1 connected
+20180707||17:59:45: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:59:45: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||17:59:47: Server shutting down in 3 seconds...
+20180707||17:59:47: Disconnecting 1 client(s)...
+20180707||17:59:53: Server listening on default port: 9339
+20180707||17:59:59: 127.0.0.1 connected
+20180707||17:59:59: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||17:59:59: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||18:0:0: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||18:0:0: Removing penguin...
+20180707||18:0:0: 127.0.0.1 disconnected
+20180707||18:0:13: Server shutting down in 3 seconds...
+20180707||18:0:13: Disconnecting 0 client(s)...
+20180707||18:0:18: Server listening on default port: 9339
+20180707||18:0:33: Server shutting down in 3 seconds...
+20180707||18:0:33: Disconnecting 0 client(s)...
+20180707||18:0:40: Server listening on default port: 9339
+20180707||18:0:45: Server shutting down in 3 seconds...
+20180707||18:0:45: Disconnecting 0 client(s)...
+20180707||18:1:3: Server listening on default port: 9339
+20180707||18:1:25: 127.0.0.1 connected
+20180707||18:1:25: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||18:1:25: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||18:1:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||18:1:26: daan -| 127.0.0.1 is logging on
+20180707||18:1:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||18:1:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||18:1:38: Removing penguin...
+20180707||18:1:38: 127.0.0.1 disconnected
+20180707||18:1:46: Server shutting down in 3 seconds...
+20180707||18:1:46: Disconnecting 0 client(s)...
