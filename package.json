@@ -2,7 +2,7 @@
     "name": "PenguinChatJS",
     "version": "1.0.1",
     "description": "Penguin Chat emulator written in Node.js",
-    "main": "/server/Server.js",
+    "main": "Run.js",
     "keywords": ["Penguin chat", "PC3", "PC2", "PC1", "Club Penguin", "Private Server", "Penguin Chat Private Server"],
     "engines": {"node": "10.6.0"},
     "author": "Zaseth",
