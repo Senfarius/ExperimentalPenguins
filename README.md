@@ -1,6 +1,8 @@
 # In-development Penguin Chat emulator written in Node.js
 
-Penguin Chat runs on SmartFoxServer which is OK, but there's an admin tool.
+Currently I need to find some correct game files.
+
+Penguin Chat runs on SmartFoxServer or PHP long polling which is OK, but there's an admin tool.
 
 We must check in 'Core.js' if the incoming packets are game or from the admin tool.
 

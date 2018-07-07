@@ -3,6 +3,10 @@
 const xmldoc = require("xmldoc")
 const Logger = require("../Logger").Logger
 
+const policyFile = `<?xml version="1.0" encoding="UTF-8"?>
+                    <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+                    <cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/>
+                    </cross-domain-policy>`
 class Core {
 	constructor (server) {
 		this.server   = server
@@ -13,7 +17,7 @@ class Core {
 		if (data.charAt(0) == "<" && data.charAt(data.length - 1) == ">") { // XML always starts with `<` and ends with `>`
 			Logger.incoming(data) // Logger here to save resources if packet is invalid
 			if (data == "<policy-file-request/>") {
-				client.send(`<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>`)
+				client.send(policyFile)
 			} else {
 				const xmlPacket = new xmldoc.XmlDocument(data)
 				const type = xmlPacket.children[0].attr.action
