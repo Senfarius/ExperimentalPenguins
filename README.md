@@ -1,0 +1,1 @@
+# Penguin Chat emulator written in Node.js

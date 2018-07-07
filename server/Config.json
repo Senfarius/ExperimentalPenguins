@@ -1,0 +1,8 @@
+{
+	"Database": {
+		"host": "localhost",
+		"database": "PenguinChatJS",
+		"username": "root",
+		"password": ""
+	}
+}
