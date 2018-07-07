@@ -1,5 +1,10 @@
 # In-development Penguin Chat emulator written in Node.js
 
-Penguin Chat runs on SmartFoxServer which is OK, but there's an admin tool.
+# TODO LOGS
 
-We must check in 'Core.js' if the incoming packets are game or from the admin tool.
+* Check if the incoming packets are game or from the admin tool.
+* Implement BLAKE2S into SmartFoxServer.
+* Add password field.
+* Check password in login packet.
+* rndK packet.
+* ExternalInterface for a web-based error system.
