@@ -313,3 +313,275 @@
 20180707||19:53:55: 32 swears loaded!
 20180707||19:54:18: Server listening on default port: 9339
 20180707||19:54:18: 32 swears loaded!
+20180707||19:58:27: Server listening on default port: 9339
+20180707||19:58:27: 32 swears loaded!
+20180707||20:28:19: Server listening on default port: 9339
+20180707||20:28:19: 32 swears loaded!
+20180707||20:28:33: 127.0.0.1 connected
+20180707||20:28:33: <policy-file-request/>
+20180707||20:28:33: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180707||20:28:33: Removing penguin...
+20180707||20:28:33: 127.0.0.1 disconnected
+20180707||20:28:33: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||20:28:33: 127.0.0.1 connected
+20180707||20:28:33: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||20:28:36: 127.0.0.1 connected
+20180707||20:28:36: <policy-file-request/>
+20180707||20:28:36: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180707||20:28:36: Removing penguin...
+20180707||20:28:36: 127.0.0.1 disconnected
+20180707||20:28:36: 127.0.0.1 connected
+20180707||20:28:36: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180707||20:28:36: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180707||20:28:40: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||20:28:40: daan -| 127.0.0.1 is logging on
+20180707||20:28:40: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||20:28:40: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||20:28:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||20:28:44: daan -| 127.0.0.1 is logging on
+20180707||20:28:44: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||20:28:44: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||20:28:56: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||20:28:56: daan -| 127.0.0.1 is logging on
+20180707||20:28:56: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||20:28:56: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||20:28:59: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||20:28:59: daan -| 127.0.0.1 is logging on
+20180707||20:28:59: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||20:28:59: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||20:29:7: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||20:29:7: daan -| 127.0.0.1 is logging on
+20180707||20:29:7: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
+20180707||20:29:7: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180707||20:29:12: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan1]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180707||20:29:12: Removing penguin...
+20180707||20:29:12: 127.0.0.1 disconnected
+20180707||20:29:15: Removing penguin...
+20180707||20:29:15: 127.0.0.1 disconnected
+20180708||10:40:15: Server listening on default port: 9339
+20180708||10:40:15: 32 swears loaded!
+20180708||10:40:27: 127.0.0.1 connected
+20180708||10:40:27: <policy-file-request/>
+20180708||10:40:27: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||10:40:27: Removing penguin...
+20180708||10:40:27: 127.0.0.1 disconnected
+20180708||10:40:27: 127.0.0.1 connected
+20180708||10:40:27: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||10:40:27: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||10:40:30: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180708||10:40:30: Daan -| 127.0.0.1 is logging on
+20180708||10:40:30: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:40:30: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:40:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180708||10:40:44: Daan -| 127.0.0.1 is logging on
+20180708||10:40:44: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:40:44: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:40:46: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180708||10:40:46: Daan -| 127.0.0.1 is logging on
+20180708||10:40:46: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:40:46: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:40:50: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
+20180708||10:40:50: Daan -| 127.0.0.1 is logging on
+20180708||10:40:50: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:40:50: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:41:10: Removing penguin...
+20180708||10:41:10: 127.0.0.1 disconnected
+20180708||10:53:24: Server listening on default port: 9339
+20180708||10:53:24: 32 swears loaded!
+20180708||10:53:39: 127.0.0.1 connected
+20180708||10:53:39: <policy-file-request/>
+20180708||10:53:39: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||10:53:39: Removing penguin...
+20180708||10:53:39: 127.0.0.1 disconnected
+20180708||10:53:39: 127.0.0.1 connected
+20180708||10:53:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||10:53:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||10:54:13: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||10:54:13: Daan -| 127.0.0.1 is logging on
+20180708||10:54:13: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:13: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:22: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:22: Daan -| 127.0.0.1 is logging on
+20180708||10:54:22: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:22: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:25: Daan -| 127.0.0.1 is logging on
+20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:25: Daan -| 127.0.0.1 is logging on
+20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:25: Daan -| 127.0.0.1 is logging on
+20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:25: Daan -| 127.0.0.1 is logging on
+20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:26: Daan -| 127.0.0.1 is logging on
+20180708||10:54:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:54:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
+20180708||10:54:26: Daan -| 127.0.0.1 is logging on
+20180708||10:54:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||10:54:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||10:55:41: Server shutting down in 3 seconds...
+20180708||10:55:41: Disconnecting 1 client(s)...
+20180708||11:0:3: Server listening on default port: 9339
+20180708||11:0:3: 32 swears loaded!
+20180708||11:0:5: 127.0.0.1 connected
+20180708||11:0:5: <policy-file-request/>
+20180708||11:0:5: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||11:0:5: Removing penguin...
+20180708||11:0:5: 127.0.0.1 disconnected
+20180708||11:0:5: 127.0.0.1 connected
+20180708||11:0:5: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:0:5: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:0:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:0:11: Daan -| 127.0.0.1 is logging on
+20180708||11:0:11: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||11:0:11: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||11:0:39: Server shutting down in 3 seconds...
+20180708||11:0:39: Disconnecting 1 client(s)...
+20180708||11:0:44: Server listening on default port: 9339
+20180708||11:0:44: 32 swears loaded!
+20180708||11:0:45: 127.0.0.1 connected
+20180708||11:0:45: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:0:45: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:0:48: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:0:48: Daan -| 127.0.0.1 is logging on
+20180708||11:0:48: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||11:0:48: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||11:1:13: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:1:13: Daan -| 127.0.0.1 is logging on
+20180708||11:1:13: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||11:1:13: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||11:1:37: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fgf]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:1:37: Removing penguin...
+20180708||11:1:37: 127.0.0.1 disconnected
+20180708||11:1:40: 127.0.0.1 connected
+20180708||11:1:40: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:1:40: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:3:54: Removing penguin...
+20180708||11:3:54: 127.0.0.1 disconnected
+20180708||11:15:10: Server listening on default port: 9339
+20180708||11:15:10: 32 swears loaded!
+20180708||11:15:23: 127.0.0.1 connected
+20180708||11:15:23: <policy-file-request/>
+20180708||11:15:23: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||11:15:23: Removing penguin...
+20180708||11:15:23: 127.0.0.1 disconnected
+20180708||11:15:23: 127.0.0.1 connected
+20180708||11:15:23: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:15:23: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:15:24: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fgfg]]></nick><pword><![CDATA[gsdsgdsdg]]></pword></login></body></msg>
+20180708||11:15:25: <msg t="sys"><body action="makeErr" r="0"><error message="Wtf bro"></error></body></msg>
+20180708||11:15:35: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[gsdsgdsdg]]></pword></login></body></msg>
+20180708||11:15:35: Removing penguin...
+20180708||11:15:35: 127.0.0.1 disconnected
+20180708||11:15:36: 127.0.0.1 connected
+20180708||11:15:36: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:15:36: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:16:19: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fgfggf]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||11:16:19: Removing penguin...
+20180708||11:16:19: 127.0.0.1 disconnected
+20180708||11:16:20: 127.0.0.1 connected
+20180708||11:16:20: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:16:20: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:16:21: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hfdhfd]]></nick><pword><![CDATA[hfhfdhfdd]]></pword></login></body></msg>
+20180708||11:16:21: <msg t="sys"><body action="makeErr" r="0"><error message="Wtf bro"></error></body></msg>
+20180708||11:17:41: Removing penguin...
+20180708||11:17:41: 127.0.0.1 disconnected
+20180708||11:17:46: 127.0.0.1 connected
+20180708||11:17:46: <policy-file-request/>
+20180708||11:17:46: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||11:17:46: Removing penguin...
+20180708||11:17:46: 127.0.0.1 disconnected
+20180708||11:17:46: 127.0.0.1 connected
+20180708||11:17:46: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:17:46: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:17:47: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hfdhfdhf]]></nick><pword><![CDATA[dfdhfhfddhf]]></pword></login></body></msg>
+20180708||11:17:47: <msg t="sys"><body action="makeErr" r="0"><error message="Wtf bro"></error></body></msg>
+20180708||11:18:59: Server shutting down in 3 seconds...
+20180708||11:18:59: Disconnecting 1 client(s)...
+20180708||11:19:5: Server listening on default port: 9339
+20180708||11:19:5: 32 swears loaded!
+20180708||11:19:6: 127.0.0.1 connected
+20180708||11:19:6: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:19:6: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:19:9: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:19:9: Daan -| 127.0.0.1 is logging on
+20180708||11:19:9: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||11:19:9: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||11:19:12: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgdsdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:19:12: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:19:45: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgdsdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:19:45: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:24:45: Server shutting down in 3 seconds...
+20180708||11:24:45: Disconnecting 1 client(s)...
+20180708||11:24:51: Server listening on default port: 9339
+20180708||11:24:51: 32 swears loaded!
+20180708||11:24:52: 127.0.0.1 connected
+20180708||11:24:52: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:24:52: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:24:55: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:24:55: Daan -| 127.0.0.1 is logging on
+20180708||11:24:55: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||11:24:55: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||11:24:58: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgsdgdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:24:58: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:25:2: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgsdgdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:25:2: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:25:4: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||11:25:4: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:25:7: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||11:25:7: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:25:10: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
+20180708||11:25:10: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:25:46: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[nigger]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
+20180708||11:25:46: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:26:3: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
+20180708||11:26:3: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password"></error></body></msg>
+20180708||11:26:31: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
+20180708||11:26:31: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password"></error></body></msg>
+20180708||11:26:33: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
+20180708||11:26:33: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password"></error></body></msg>
+20180708||11:26:43: Server shutting down in 3 seconds...
+20180708||11:26:43: Disconnecting 1 client(s)...
+20180708||11:46:44: Server listening on default port: 9339
+20180708||11:46:44: 32 swears loaded!
+20180708||11:46:52: 127.0.0.1 connected
+20180708||11:46:52: <policy-file-request/>
+20180708||11:46:52: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||11:46:52: Removing penguin...
+20180708||11:46:52: 127.0.0.1 disconnected
+20180708||11:46:52: 127.0.0.1 connected
+20180708||11:46:52: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:46:52: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:46:58: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||11:46:58: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:47:2: Removing penguin...
+20180708||11:47:2: 127.0.0.1 disconnected
+20180708||11:47:6: 127.0.0.1 connected
+20180708||11:47:6: <policy-file-request/>
+20180708||11:47:6: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||11:47:6: Removing penguin...
+20180708||11:47:6: 127.0.0.1 disconnected
+20180708||11:47:6: 127.0.0.1 connected
+20180708||11:47:6: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||11:47:6: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||11:47:7: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||11:47:7: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:47:10: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||11:47:10: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:47:37: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||11:47:37: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||11:53:1: Server shutting down in 3 seconds...
+20180708||11:53:1: Disconnecting 1 client(s)...
+20180708||11:56:4: Server listening on default port: 9339
+20180708||11:56:4: 32 swears loaded!
+20180708||11:56:41: Server listening on default port: 9339
+20180708||11:56:41: 32 swears loaded!

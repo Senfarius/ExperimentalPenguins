@@ -17,6 +17,10 @@ class Penguin {
 		}
 	}
 
+	sendError (message) {
+		this.send(`<msg t="sys"><body action="makeErr" r="0"><error message="${message}"></error></body></msg>`)
+	}
+
 	disconnect () {
 		this.server.removePenguin(this)
 	}

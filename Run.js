@@ -1,9 +1,10 @@
 "use strict"
 
-const Server     = require("./src/server/Server")
-const Logger     = require("./src/server/Logger").Logger
+const Server  = require("./src/server/Server")
+const Logger  = require("./src/server/Logger").Logger
+const version = require("./package").version
 
-console.log(`Penguin Chat 3 Emulator by Zaseth
+console.log(`Penguin Chat 3 Emulator by Zaseth V${version}
 :::::::::   ::::::::   ::::::::  ::::::::::: ::::::::  
 :+:    :+: :+:    :+: :+:    :+:     :+:    :+:    :+: 
 +:+    +:+ +:+               +:+     +:+    +:+        

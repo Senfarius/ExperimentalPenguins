@@ -28,28 +28,30 @@ class Core {
 						client.disconnect()
 					}
 				} else if (type == "login") {
-					const username = xmlPacket.children[0].firstChild.firstChild.val.toLowerCase()
-					const password = "123123"
-					//const password = xmlPacket.children[0].lastChild.lastChild.val
-					this.database.penguinExistsByName(username).then(result => {if (result.length != 1) client.disconnect()})
-					if (username.length > 12 || username.length <= 0 || password.length > 20 || password.length <= 0) {
-						Logger.warning(`Junk client: ${username} -| ${client.ipAddr}`)
-						client.disconnect()
-					} else if (Constants.SWEARS.includes(username)) {
-						Logger.warning(`Inappropriate name: ${username} -| ${client.ipAddr}`)
-						client.disconnect()
-					} else {
-						this.database.getPenguinByName(username).then(penguin => {
-							const hash = Crypto.encryptPassword(password).toUpperCase()
-							if (hash == penguin.password.toUpperCase()) {
-								Logger.info(`${username} -| ${client.ipAddr} is logging on`)
-								client.send(`<msg t="sys"><body action="logOK" r="0"><login id="${penguin.id}" n="${username}" mod="${penguin.moderator}"></login></body></msg>`)
-							} else {
-								Logger.warning(`Invalid login: ${username} -| ${client.ipAddr}`)
-								client.disconnect()
-							}
-						})
-					}
+					const username = xmlPacket.children[0].firstChild.firstChild.val
+					const password = xmlPacket.children[0].lastChild.lastChild.val
+					this.database.penguinExistsByName(username).then(result => {
+						if (result.length != 1) {
+							return client.sendError("Username does not exist.")
+						} else if (username.length > 12 || password.length > 20) {
+							Logger.warning(`Junk client: ${username} -| ${client.ipAddr}`)
+							client.sendError("Username/password is too long.")
+						} else if (Constants.SWEARS.includes(username)) {
+							Logger.warning(`Inappropriate name: ${username} -| ${client.ipAddr}`)
+							client.sendError("Username contains a swear word.")
+						} else {
+							this.database.getPenguinByName(username).then(penguin => {
+								const hash = Crypto.encryptPassword(password).toUpperCase()
+								if (hash == penguin.password.toUpperCase()) {
+									Logger.info(`${username} -| ${client.ipAddr} is logging on`)
+									client.send(`<msg t="sys"><body action="logOK" r="0"><login id="${penguin.id}" n="${username}" mod="${penguin.moderator}"></login></body></msg>`)
+								} else {
+									Logger.warning(`Invalid login: ${username} -| ${client.ipAddr}`)
+									client.sendError("Invalid username/password.")
+								}
+							})
+						}
+					})
 				}
 			}
 		} else {

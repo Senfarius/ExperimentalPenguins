@@ -8,7 +8,11 @@
     <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="pragma" content="no-cache"/>
 	<title>Penguin Chat 3</title>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style type="text/css">
         #game {
             display: block;
@@ -16,11 +20,23 @@
             width: 1440px;
             height: 960px;
         }
-
         body {
+            font-family: 'Roboto', sans-serif;
             background-color: #006FA2;
         }
     </style>
+    <script type="text/javascript">
+        function alertMsg (msg) {
+            alertify.minimalDialog || alertify.dialog('minimalDialog',function(){
+                return {
+                    main:function(content){
+                        this.setContent(content); 
+                    }
+                };
+            });
+            alertify.minimalDialog("<center><br><br>" + msg + "</center>");
+        }
+    </script>
 </head>
 <body>
     <script type="text/javascript">
