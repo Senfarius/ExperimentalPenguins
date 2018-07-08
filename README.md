@@ -2,7 +2,7 @@
 
 # TODO LOGS
 
-* Check if the incoming packets are game or from the admin tool.
+* Admin tool uses PHP files to ban and drop penguins => create 2 new packets for this and skip out 'drop' for security reasons...
 * Implement BLAKE2S into SmartFoxServer.
 * Add password field.
 * Check password in login packet.
