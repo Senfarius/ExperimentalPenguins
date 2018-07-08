@@ -27,12 +27,15 @@ class Core {
 						Logger.warning(`Invalid verChk packet: ${data} -| ${client.ipAddr}`)
 						client.disconnect()
 					}
+				} else if (type == "rndK") {
+					client.randomKey = Crypto.generateKey()
+					client.send(`<msg t="sys"><body action="rndK" r="-1"><k>${client.randomKey}</k></body></msg>`)
 				} else if (type == "login") {
 					const username = xmlPacket.children[0].firstChild.firstChild.val
 					const password = xmlPacket.children[0].lastChild.lastChild.val
 					this.database.penguinExistsByName(username).then(result => {
 						if (result.length != 1) {
-							return client.sendError("Username does not exist.")
+							return client.sendError("Username is invalid.")
 						} else if (username.length > 12 || password.length > 20) {
 							Logger.warning(`Junk client: ${username} -| ${client.ipAddr}`)
 							client.sendError("Username/password is too long.")
@@ -41,12 +44,12 @@ class Core {
 							client.sendError("Username contains a swear word.")
 						} else {
 							this.database.getPenguinByName(username).then(penguin => {
-								const hash = Crypto.encryptPassword(password).toUpperCase()
-								if (hash == penguin.password.toUpperCase()) {
-									Logger.info(`${username} -| ${client.ipAddr} is logging on`)
-									client.send(`<msg t="sys"><body action="logOK" r="0"><login id="${penguin.id}" n="${username}" mod="${penguin.moderator}"></login></body></msg>`)
+								const hash = Crypto.blake2s(password)
+								if (hash == penguin.password) {
+									Logger.info(`${penguin.username} -| ${client.ipAddr} is logging on`)
+									client.send(`<msg t="sys"><body action="logOK" r="0"><login id="${penguin.id}" n="${penguin.username}" mod="${penguin.moderator}"></login></body></msg>`)
 								} else {
-									Logger.warning(`Invalid login: ${username} -| ${client.ipAddr}`)
+									Logger.warning(`Invalid login: ${penguin.username} -| ${client.ipAddr}`)
 									client.sendError("Invalid username/password.")
 								}
 							})

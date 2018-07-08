@@ -585,3 +585,93 @@
 20180708||11:56:4: 32 swears loaded!
 20180708||11:56:41: Server listening on default port: 9339
 20180708||11:56:41: 32 swears loaded!
+20180708||15:28:1: Server listening on default port: 9339
+20180708||15:28:1: 32 swears loaded!
+20180708||15:28:13: 127.0.0.1 connected
+20180708||15:28:13: <policy-file-request/>
+20180708||15:28:13: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||15:28:13: Removing penguin...
+20180708||15:28:13: 127.0.0.1 disconnected
+20180708||15:28:13: 127.0.0.1 connected
+20180708||15:28:13: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||15:28:13: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||15:28:22: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||15:28:22: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
+20180708||15:29:6: Server shutting down in 3 seconds...
+20180708||15:29:6: Disconnecting 1 client(s)...
+20180708||15:29:14: Server listening on default port: 9339
+20180708||15:29:14: 32 swears loaded!
+20180708||15:29:20: 127.0.0.1 connected
+20180708||15:29:20: <policy-file-request/>
+20180708||15:29:20: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||15:29:20: Removing penguin...
+20180708||15:29:20: 127.0.0.1 disconnected
+20180708||15:29:20: 127.0.0.1 connected
+20180708||15:29:20: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||15:29:20: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||15:29:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||15:29:26: Daan -| 127.0.0.1 is logging on
+20180708||15:29:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||15:29:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||15:29:58: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||15:29:58: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||15:30:3: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||15:30:3: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||15:30:12: Removing penguin...
+20180708||15:30:12: 127.0.0.1 disconnected
+20180708||15:30:22: 127.0.0.1 connected
+20180708||15:30:22: <policy-file-request/>
+20180708||15:30:22: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||15:30:22: Removing penguin...
+20180708||15:30:22: 127.0.0.1 disconnected
+20180708||15:30:22: 127.0.0.1 connected
+20180708||15:30:22: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||15:30:22: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||15:30:26: Removing penguin...
+20180708||15:30:26: 127.0.0.1 disconnected
+20180708||15:30:31: 127.0.0.1 connected
+20180708||15:30:31: <policy-file-request/>
+20180708||15:30:31: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||15:30:31: Removing penguin...
+20180708||15:30:31: 127.0.0.1 disconnected
+20180708||15:30:31: 127.0.0.1 connected
+20180708||15:30:31: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||15:30:31: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||15:30:33: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||15:30:33: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||15:30:35: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||15:30:35: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||15:30:42: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||15:30:42: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||15:30:46: Removing penguin...
+20180708||15:30:46: 127.0.0.1 disconnected
+20180708||18:34:2: Server listening on default port: 9339
+20180708||18:34:2: 32 swears loaded!
+20180708||18:34:42: 127.0.0.1 connected
+20180708||18:34:42: <policy-file-request/>
+20180708||18:34:42: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
+20180708||18:34:42: Removing penguin...
+20180708||18:34:42: 127.0.0.1 disconnected
+20180708||18:34:42: 127.0.0.1 connected
+20180708||18:34:42: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180708||18:34:42: <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180708||18:34:42: <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180708||18:34:42: <msg t="sys"><body action="rndK" r="-1"><k>acc80c02f61ac3a6ae7b08ff</k></body></msg>
+20180708||18:34:42: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||18:34:42: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||18:34:49: <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180708||18:34:49: <msg t="sys"><body action="rndK" r="-1"><k>acc9e8eb9744b206cd6538ad</k></body></msg>
+20180708||18:34:49: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||18:34:49: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||18:34:56: <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180708||18:34:56: <msg t="sys"><body action="rndK" r="-1"><k>0cff883627319fbaccba2dd0</k></body></msg>
+20180708||18:34:56: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
+20180708||18:34:56: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180708||18:35:17: <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180708||18:35:17: <msg t="sys"><body action="rndK" r="-1"><k>bfc49745e1232d1e55e5be62</k></body></msg>
+20180708||18:35:17: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
+20180708||18:35:17: Daan -| 127.0.0.1 is logging on
+20180708||18:35:17: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
+20180708||18:35:17: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180708||19:0:31: Server shutting down in 3 seconds...
+20180708||19:0:31: Disconnecting 1 client(s)...

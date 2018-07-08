@@ -8,10 +8,9 @@
     <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="pragma" content="no-cache"/>
 	<title>Penguin Chat 3</title>
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@7.25.0/dist/sweetalert2.all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style type="text/css">
         #game {
@@ -27,14 +26,16 @@
     </style>
     <script type="text/javascript">
         function alertMsg (msg) {
-            alertify.minimalDialog || alertify.dialog('minimalDialog',function(){
-                return {
-                    main:function(content){
-                        this.setContent(content); 
-                    }
-                };
+            swal({
+                type: "error",
+                title: msg,
+                showConfirmButton: true,
+                allowEnterKey: true,
+                timer: 1500
             });
-            alertify.minimalDialog("<center><br><br>" + msg + "</center>");
+        }
+        function consoleMsg (msg) {
+            console.log(msg);
         }
     </script>
 </head>
