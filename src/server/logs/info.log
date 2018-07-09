@@ -1,1223 +1,278 @@
-20180707||12:3:4: Server listening on 9339
-20180707||12:3:15: Client disconnected
-20180707||12:3:16: Client disconnected
-20180707||12:6:52: Server listening on 9339
-20180707||12:6:55: Client connected
-20180707||12:6:55: <policy-file-request/>
-20180707||12:6:55: <cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:6:55: Client disconnected
-20180707||12:6:55: Client connected
-20180707||12:6:55: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:6:55: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:7:2: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:7:4: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:7:15: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
-20180707||12:7:21: <msg t='sys'><body action='setUvars' r='null'><vars><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:7:27: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
-20180707||12:7:32: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
-20180707||12:7:36: Client disconnected
-20180707||12:14:42: Server listening on 9339
-20180707||12:15:8: Server listening on 9339
-20180707||12:15:14: Client connected
-20180707||12:15:14: <policy-file-request/>
-20180707||12:15:14: <cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:15:14: Client disconnected
-20180707||12:15:14: Client connected
-20180707||12:15:14: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:15:14: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:15:19: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hhfvhfdgdhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:15:21: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:15:23: Client disconnected
-20180707||12:22:26: Server listening on 9339
-20180707||12:22:39: Client connected
-20180707||12:22:39: <policy-file-request/>
-20180707||12:22:39: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:22:39: Client disconnected
-20180707||12:22:39: Client connected
-20180707||12:22:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:22:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:22:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[xfhdffhhf]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:22:46: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:22:50: <msg t='sys'><body action='pubMsg' r='null'><txt><![CDATA[Emote]]></txt></body></msg>
-20180707||12:22:56: Client disconnected
-20180707||12:38:46: Server listening on 9339
-20180707||12:39:15: Server listening on 9339
-20180707||12:39:21: 127.0.0.1 connected
-20180707||12:39:21: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:39:21: <policy-file-request/>
-20180707||12:39:21: Removing penguin...
-20180707||12:39:21: 127.0.0.1 disconnected
-20180707||12:39:21: 127.0.0.1 connected
-20180707||12:39:21: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:39:21: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:39:30: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hfdhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:39:32: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:39:35: Removing penguin...
-20180707||12:39:35: 127.0.0.1 disconnected
-20180707||12:39:44: Server shutting down in 3 seconds...
-20180707||12:40:24: Server listening on 9339
-20180707||12:40:26: 127.0.0.1 connected
-20180707||12:40:26: <policy-file-request/>
-20180707||12:40:26: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:40:26: Removing penguin...
-20180707||12:40:26: 127.0.0.1 disconnected
-20180707||12:40:26: 127.0.0.1 connected
-20180707||12:40:26: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:40:26: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:40:27: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hhdhj]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:40:29: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:40:32: Server shutting down in 3 seconds...
-20180707||12:40:32: Disconnecting all 1 clients...
-20180707||12:44:27: Server listening on 9339
-20180707||12:44:34: 127.0.0.1 connected
-20180707||12:44:34: <policy-file-request/>
-20180707||12:44:34: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:44:34: Removing penguin...
-20180707||12:44:34: 127.0.0.1 disconnected
-20180707||12:44:34: 127.0.0.1 connected
-20180707||12:44:34: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:44:34: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:44:42: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Zaseth]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:44:42: Zaseth - 127.0.0.1 is logging on
-20180707||12:44:44: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:45:38: Removing penguin...
-20180707||12:45:38: 127.0.0.1 disconnected
-20180707||12:45:47: Server shutting down in 3 seconds...
-20180707||12:45:47: Disconnecting all 0 client(s)...
-20180707||12:45:48: Server shutting down in 3 seconds...
-20180707||12:45:48: Disconnecting all 0 client(s)...
-20180707||12:56:47: Server listening on 9339
-20180707||12:57:7: 127.0.0.1 connected
-20180707||12:57:7: <policy-file-request/>
-20180707||12:57:7: <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
-20180707||12:57:7: Removing penguin...
-20180707||12:57:7: 127.0.0.1 disconnected
-20180707||12:57:7: 127.0.0.1 connected
-20180707||12:57:7: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:57:7: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:57:9: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:57:9: Removing penguin...
-20180707||12:57:9: 127.0.0.1 disconnected
-20180707||12:57:9: 127.0.0.1 connected
-20180707||12:57:9: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||12:57:9: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||12:57:18: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[ffhddhf]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||12:57:18: ffhddhf - 127.0.0.1 is logging on
-20180707||12:57:20: <msg t='sys'><body action='setUvars' r='null'><vars><var n='waddle' t='s'><![CDATA[WaddleE]]></var><var n='cat' t='s'><![CDATA[WaddleW]]></var><var n='init' t='b'><![CDATA[1]]></var></vars></body></msg>
-20180707||12:57:26: Removing penguin...
-20180707||12:57:26: 127.0.0.1 disconnected
-20180707||12:59:33: Server shutting down in 3 seconds...
-20180707||12:59:33: Disconnecting all 0 client(s)...
-20180707||16:5:3: Server listening on 9339
-20180707||16:5:45: Server shutting down in 3 seconds...
-20180707||16:5:45: Disconnecting all 0 client(s)...
-20180707||16:8:47: Server listening on 9339
-20180707||16:16:6: Server shutting down in 3 seconds...
-20180707||16:16:6: Disconnecting all 0 client(s)...
-20180707||16:17:34: Server listening on 9339
-20180707||16:52:43: 127.0.0.1 connected
-20180707||16:52:43: <policy-file-request/>
-20180707||16:52:43: <?xml version="1.0" encoding="UTF-8"?>
-                    <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
-                    <cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/>
-                    </cross-domain-policy>
-20180707||16:52:43: Removing penguin...
-20180707||16:52:43: 127.0.0.1 disconnected
-20180707||16:52:43: 127.0.0.1 connected
-20180707||16:52:43: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||16:52:43: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||16:52:49: Removing penguin...
-20180707||16:52:49: 127.0.0.1 disconnected
-20180707||16:53:27: Server shutting down in 3 seconds...
-20180707||16:53:27: Disconnecting all 0 client(s)...
-20180707||16:53:35: Server listening on 9339
-20180707||16:53:39: 127.0.0.1 connected
-20180707||16:53:39: <policy-file-request/>
-20180707||16:53:39: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180707||16:53:39: Removing penguin...
-20180707||16:53:39: 127.0.0.1 disconnected
-20180707||16:53:39: 127.0.0.1 connected
-20180707||16:53:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||16:53:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||16:53:47: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:53:47: test - 127.0.0.1 is logging on
-20180707||16:53:50: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:53:50: test - 127.0.0.1 is logging on
-20180707||16:53:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:53:51: test - 127.0.0.1 is logging on
-20180707||16:53:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[test]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:53:51: test - 127.0.0.1 is logging on
-20180707||16:54:49: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:54:49: Removing penguin...
-20180707||16:54:49: 127.0.0.1 disconnected
-20180707||16:54:54: 127.0.0.1 connected
-20180707||16:54:54: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||16:54:54: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||16:54:54: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:54:54: Removing penguin...
-20180707||16:54:54: 127.0.0.1 disconnected
-20180707||16:54:55: 127.0.0.1 connected
-20180707||16:54:55: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||16:54:55: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||16:54:56: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhfdhdhfdhfhfdh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:54:56: Removing penguin...
-20180707||16:54:56: 127.0.0.1 disconnected
-20180707||16:55:1: 127.0.0.1 connected
-20180707||16:55:1: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||16:55:1: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||16:55:2: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:55:2: fhdfhfh - 127.0.0.1 is logging on
-20180707||16:55:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:55:11: fhdfhfh - 127.0.0.1 is logging on
-20180707||16:55:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:55:11: fhdfhfh - 127.0.0.1 is logging on
-20180707||16:55:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:55:11: fhdfhfh - 127.0.0.1 is logging on
-20180707||16:55:12: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhdfhfh]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||16:55:12: fhdfhfh - 127.0.0.1 is logging on
-20180707||17:4:57: Server shutting down in 3 seconds...
-20180707||17:4:57: Disconnecting all 1 client(s)...
-20180707||17:5:3: Server listening on 9339
-20180707||17:5:5: 127.0.0.1 connected
-20180707||17:5:5: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:5:5: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||17:5:6: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[trst]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||17:5:6: trst - 127.0.0.1 is logging on
-20180707||17:5:6: <msg t="sys"><body action="logOK" r="0"></body></msg>
-20180707||17:5:6: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||17:17:26: Server shutting down in 3 seconds...
-20180707||17:17:26: Disconnecting all 1 client(s)...
-20180707||17:17:31: Server listening on 9339
-20180707||17:17:35: 127.0.0.1 connected
-20180707||17:17:35: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:17:35: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||17:17:36: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[zaseth]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||17:17:36: zaseth - 127.0.0.1 is logging on
-20180707||17:17:36: <msg t="sys"><body action="logOK" r="0"><login id="1" n="zaseth" mod="1"></login></body></msg>
-20180707||17:17:36: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||17:41:18: Server shutting down in 3 seconds...
-20180707||17:41:18: Disconnecting all 1 client(s)...
-20180707||17:41:26: Server listening on 9339
-20180707||17:41:28: 127.0.0.1 connected
-20180707||17:41:28: <policy-file-request/>
-20180707||17:41:28: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180707||17:41:28: Removing penguin...
-20180707||17:41:28: 127.0.0.1 disconnected
-20180707||17:41:28: 127.0.0.1 connected
-20180707||17:41:28: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:41:28: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||17:41:39: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||17:41:39: daan -| 127.0.0.1 is logging on
-20180707||17:41:39: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||17:41:39: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||17:51:49: Server shutting down in 3 seconds...
-20180707||17:51:49: Disconnecting all 1 client(s)...
-20180707||17:57:55: Server listening on custom port: 9111
-20180707||17:58:1: Server shutting down in 3 seconds...
-20180707||17:58:1: Disconnecting 0 client(s)...
-20180707||17:58:15: Server listening on custom port: 9111
-20180707||17:58:16: Server shutting down in 3 seconds...
-20180707||17:58:16: Disconnecting 0 client(s)...
-20180707||17:58:22: Server listening on default port: 9339
-20180707||17:58:27: 127.0.0.1 connected
-20180707||17:58:27: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:58:27: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||17:58:31: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Zaseth]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||17:58:31: Removing penguin...
-20180707||17:58:31: 127.0.0.1 disconnected
-20180707||17:58:34: 127.0.0.1 connected
-20180707||17:58:34: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:58:34: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||17:59:35: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||17:59:35: Removing penguin...
-20180707||17:59:35: 127.0.0.1 disconnected
-20180707||17:59:45: 127.0.0.1 connected
-20180707||17:59:45: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:59:45: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||17:59:47: Server shutting down in 3 seconds...
-20180707||17:59:47: Disconnecting 1 client(s)...
-20180707||17:59:53: Server listening on default port: 9339
-20180707||17:59:59: 127.0.0.1 connected
-20180707||17:59:59: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||17:59:59: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||18:0:0: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||18:0:0: Removing penguin...
-20180707||18:0:0: 127.0.0.1 disconnected
-20180707||18:0:13: Server shutting down in 3 seconds...
-20180707||18:0:13: Disconnecting 0 client(s)...
-20180707||18:0:18: Server listening on default port: 9339
-20180707||18:0:33: Server shutting down in 3 seconds...
-20180707||18:0:33: Disconnecting 0 client(s)...
-20180707||18:0:40: Server listening on default port: 9339
-20180707||18:0:45: Server shutting down in 3 seconds...
-20180707||18:0:45: Disconnecting 0 client(s)...
-20180707||18:1:3: Server listening on default port: 9339
-20180707||18:1:25: 127.0.0.1 connected
-20180707||18:1:25: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||18:1:25: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||18:1:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||18:1:26: daan -| 127.0.0.1 is logging on
-20180707||18:1:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||18:1:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||18:1:38: Removing penguin...
-20180707||18:1:38: 127.0.0.1 disconnected
-20180707||18:1:46: Server shutting down in 3 seconds...
-20180707||18:1:46: Disconnecting 0 client(s)...
-20180707||18:52:5: Server listening on default port: 9339
-20180707||18:52:7: Server shutting down in 3 seconds...
-20180707||18:52:7: Disconnecting 0 client(s)...
-20180707||19:2:55: Server listening on default port: 9339
-20180707||19:3:1: Server listening on default port: 9339
-20180707||19:3:22: 127.0.0.1 connected
-20180707||19:3:22: <policy-file-request/>
-20180707||19:3:22: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180707||19:3:22: Removing penguin...
-20180707||19:3:22: 127.0.0.1 disconnected
-20180707||19:3:22: 127.0.0.1 connected
-20180707||19:3:22: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||19:3:22: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||19:3:24: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||19:3:24: daan -| 127.0.0.1 is logging on
-20180707||19:3:24: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||19:3:24: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||19:3:30: Server shutting down in 3 seconds...
-20180707||19:3:30: Disconnecting 1 client(s)...
-20180707||19:5:29: Server listening on default port: 9339
-20180707||19:5:43: 127.0.0.1 connected
-20180707||19:5:43: <policy-file-request/>
-20180707||19:5:43: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180707||19:5:43: Removing penguin...
-20180707||19:5:43: 127.0.0.1 disconnected
-20180707||19:5:43: 127.0.0.1 connected
-20180707||19:5:43: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||19:5:43: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||19:6:31: Removing penguin...
-20180707||19:6:31: 127.0.0.1 disconnected
-20180707||19:48:17: Server listening on default port: 9339
-20180707||19:48:17: 32 swears loaded!
-20180707||19:49:39: Server listening on default port: 9339
-20180707||19:49:39: 32 swears loaded!
-20180707||19:50:1: Server listening on default port: 9339
-20180707||19:50:1: 32 swears loaded!
-20180707||19:50:26: Server listening on default port: 9339
-20180707||19:50:26: 32 swears loaded!
-20180707||19:50:32: Server listening on default port: 9339
-20180707||19:50:32: 32 swears loaded!
-20180707||19:52:51: Server listening on default port: 9339
-20180707||19:52:51: 32 swears loaded!
-20180707||19:53:35: Server listening on default port: 9339
-20180707||19:53:35: 32 swears loaded!
-20180707||19:53:45: Server listening on default port: 9339
-20180707||19:53:45: 32 swears loaded!
-20180707||19:53:55: Server listening on default port: 9339
-20180707||19:53:55: 32 swears loaded!
-20180707||19:54:18: Server listening on default port: 9339
-20180707||19:54:18: 32 swears loaded!
-20180707||19:58:27: Server listening on default port: 9339
-20180707||19:58:27: 32 swears loaded!
-20180707||20:28:19: Server listening on default port: 9339
-20180707||20:28:19: 32 swears loaded!
-20180707||20:28:33: 127.0.0.1 connected
-20180707||20:28:33: <policy-file-request/>
-20180707||20:28:33: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180707||20:28:33: Removing penguin...
-20180707||20:28:33: 127.0.0.1 disconnected
-20180707||20:28:33: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||20:28:33: 127.0.0.1 connected
-20180707||20:28:33: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||20:28:36: 127.0.0.1 connected
-20180707||20:28:36: <policy-file-request/>
-20180707||20:28:36: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180707||20:28:36: Removing penguin...
-20180707||20:28:36: 127.0.0.1 disconnected
-20180707||20:28:36: 127.0.0.1 connected
-20180707||20:28:36: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180707||20:28:36: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180707||20:28:40: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||20:28:40: daan -| 127.0.0.1 is logging on
-20180707||20:28:40: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||20:28:40: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||20:28:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||20:28:44: daan -| 127.0.0.1 is logging on
-20180707||20:28:44: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||20:28:44: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||20:28:56: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||20:28:56: daan -| 127.0.0.1 is logging on
-20180707||20:28:56: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||20:28:56: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||20:28:59: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||20:28:59: daan -| 127.0.0.1 is logging on
-20180707||20:28:59: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||20:28:59: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||20:29:7: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||20:29:7: daan -| 127.0.0.1 is logging on
-20180707||20:29:7: <msg t="sys"><body action="logOK" r="0"><login id="100" n="daan" mod="1"></login></body></msg>
-20180707||20:29:7: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180707||20:29:12: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan1]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180707||20:29:12: Removing penguin...
-20180707||20:29:12: 127.0.0.1 disconnected
-20180707||20:29:15: Removing penguin...
-20180707||20:29:15: 127.0.0.1 disconnected
-20180708||10:40:15: Server listening on default port: 9339
-20180708||10:40:15: 32 swears loaded!
-20180708||10:40:27: 127.0.0.1 connected
-20180708||10:40:27: <policy-file-request/>
-20180708||10:40:27: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||10:40:27: Removing penguin...
-20180708||10:40:27: 127.0.0.1 disconnected
-20180708||10:40:27: 127.0.0.1 connected
-20180708||10:40:27: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||10:40:27: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||10:40:30: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180708||10:40:30: Daan -| 127.0.0.1 is logging on
-20180708||10:40:30: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:40:30: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:40:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180708||10:40:44: Daan -| 127.0.0.1 is logging on
-20180708||10:40:44: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:40:44: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:40:46: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180708||10:40:46: Daan -| 127.0.0.1 is logging on
-20180708||10:40:46: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:40:46: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:40:50: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[undefined]]></pword></login></body></msg>
-20180708||10:40:50: Daan -| 127.0.0.1 is logging on
-20180708||10:40:50: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:40:50: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:41:10: Removing penguin...
-20180708||10:41:10: 127.0.0.1 disconnected
-20180708||10:53:24: Server listening on default port: 9339
-20180708||10:53:24: 32 swears loaded!
-20180708||10:53:39: 127.0.0.1 connected
-20180708||10:53:39: <policy-file-request/>
-20180708||10:53:39: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||10:53:39: Removing penguin...
-20180708||10:53:39: 127.0.0.1 disconnected
-20180708||10:53:39: 127.0.0.1 connected
-20180708||10:53:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||10:53:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||10:54:13: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||10:54:13: Daan -| 127.0.0.1 is logging on
-20180708||10:54:13: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:13: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:22: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:22: Daan -| 127.0.0.1 is logging on
-20180708||10:54:22: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:22: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:25: Daan -| 127.0.0.1 is logging on
-20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:25: Daan -| 127.0.0.1 is logging on
-20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:25: Daan -| 127.0.0.1 is logging on
-20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:25: Daan -| 127.0.0.1 is logging on
-20180708||10:54:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:26: Daan -| 127.0.0.1 is logging on
-20180708||10:54:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:54:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhgfh]]></pword></login></body></msg>
-20180708||10:54:26: Daan -| 127.0.0.1 is logging on
-20180708||10:54:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||10:54:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||10:55:41: Server shutting down in 3 seconds...
-20180708||10:55:41: Disconnecting 1 client(s)...
-20180708||11:0:3: Server listening on default port: 9339
-20180708||11:0:3: 32 swears loaded!
-20180708||11:0:5: 127.0.0.1 connected
-20180708||11:0:5: <policy-file-request/>
-20180708||11:0:5: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||11:0:5: Removing penguin...
-20180708||11:0:5: 127.0.0.1 disconnected
-20180708||11:0:5: 127.0.0.1 connected
-20180708||11:0:5: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:0:5: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:0:11: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:0:11: Daan -| 127.0.0.1 is logging on
-20180708||11:0:11: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||11:0:11: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||11:0:39: Server shutting down in 3 seconds...
-20180708||11:0:39: Disconnecting 1 client(s)...
-20180708||11:0:44: Server listening on default port: 9339
-20180708||11:0:44: 32 swears loaded!
-20180708||11:0:45: 127.0.0.1 connected
-20180708||11:0:45: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:0:45: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:0:48: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:0:48: Daan -| 127.0.0.1 is logging on
-20180708||11:0:48: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||11:0:48: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||11:1:13: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:1:13: Daan -| 127.0.0.1 is logging on
-20180708||11:1:13: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||11:1:13: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||11:1:37: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fgf]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:1:37: Removing penguin...
-20180708||11:1:37: 127.0.0.1 disconnected
-20180708||11:1:40: 127.0.0.1 connected
-20180708||11:1:40: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:1:40: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:3:54: Removing penguin...
-20180708||11:3:54: 127.0.0.1 disconnected
-20180708||11:15:10: Server listening on default port: 9339
-20180708||11:15:10: 32 swears loaded!
-20180708||11:15:23: 127.0.0.1 connected
-20180708||11:15:23: <policy-file-request/>
-20180708||11:15:23: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||11:15:23: Removing penguin...
-20180708||11:15:23: 127.0.0.1 disconnected
-20180708||11:15:23: 127.0.0.1 connected
-20180708||11:15:23: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:15:23: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:15:24: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fgfg]]></nick><pword><![CDATA[gsdsgdsdg]]></pword></login></body></msg>
-20180708||11:15:25: <msg t="sys"><body action="makeErr" r="0"><error message="Wtf bro"></error></body></msg>
-20180708||11:15:35: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[gsdsgdsdg]]></pword></login></body></msg>
-20180708||11:15:35: Removing penguin...
-20180708||11:15:35: 127.0.0.1 disconnected
-20180708||11:15:36: 127.0.0.1 connected
-20180708||11:15:36: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:15:36: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:16:19: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fgfggf]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||11:16:19: Removing penguin...
-20180708||11:16:19: 127.0.0.1 disconnected
-20180708||11:16:20: 127.0.0.1 connected
-20180708||11:16:20: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:16:20: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:16:21: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hfdhfd]]></nick><pword><![CDATA[hfhfdhfdd]]></pword></login></body></msg>
-20180708||11:16:21: <msg t="sys"><body action="makeErr" r="0"><error message="Wtf bro"></error></body></msg>
-20180708||11:17:41: Removing penguin...
-20180708||11:17:41: 127.0.0.1 disconnected
-20180708||11:17:46: 127.0.0.1 connected
-20180708||11:17:46: <policy-file-request/>
-20180708||11:17:46: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||11:17:46: Removing penguin...
-20180708||11:17:46: 127.0.0.1 disconnected
-20180708||11:17:46: 127.0.0.1 connected
-20180708||11:17:46: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:17:46: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:17:47: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[hfdhfdhf]]></nick><pword><![CDATA[dfdhfhfddhf]]></pword></login></body></msg>
-20180708||11:17:47: <msg t="sys"><body action="makeErr" r="0"><error message="Wtf bro"></error></body></msg>
-20180708||11:18:59: Server shutting down in 3 seconds...
-20180708||11:18:59: Disconnecting 1 client(s)...
-20180708||11:19:5: Server listening on default port: 9339
-20180708||11:19:5: 32 swears loaded!
-20180708||11:19:6: 127.0.0.1 connected
-20180708||11:19:6: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:19:6: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:19:9: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:19:9: Daan -| 127.0.0.1 is logging on
-20180708||11:19:9: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||11:19:9: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||11:19:12: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgdsdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:19:12: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:19:45: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgdsdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:19:45: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:24:45: Server shutting down in 3 seconds...
-20180708||11:24:45: Disconnecting 1 client(s)...
-20180708||11:24:51: Server listening on default port: 9339
-20180708||11:24:51: 32 swears loaded!
-20180708||11:24:52: 127.0.0.1 connected
-20180708||11:24:52: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:24:52: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:24:55: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:24:55: Daan -| 127.0.0.1 is logging on
-20180708||11:24:55: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||11:24:55: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||11:24:58: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgsdgdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:24:58: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:25:2: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[dgsdgdg]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:25:2: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:25:4: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||11:25:4: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:25:7: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||11:25:7: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:25:10: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
-20180708||11:25:10: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:25:46: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[nigger]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
-20180708||11:25:46: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:26:3: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
-20180708||11:26:3: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password"></error></body></msg>
-20180708||11:26:31: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
-20180708||11:26:31: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password"></error></body></msg>
-20180708||11:26:33: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[fhfhfdh]]></pword></login></body></msg>
-20180708||11:26:33: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password"></error></body></msg>
-20180708||11:26:43: Server shutting down in 3 seconds...
-20180708||11:26:43: Disconnecting 1 client(s)...
-20180708||11:46:44: Server listening on default port: 9339
-20180708||11:46:44: 32 swears loaded!
-20180708||11:46:52: 127.0.0.1 connected
-20180708||11:46:52: <policy-file-request/>
-20180708||11:46:52: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||11:46:52: Removing penguin...
-20180708||11:46:52: 127.0.0.1 disconnected
-20180708||11:46:52: 127.0.0.1 connected
-20180708||11:46:52: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:46:52: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:46:58: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||11:46:58: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:47:2: Removing penguin...
-20180708||11:47:2: 127.0.0.1 disconnected
-20180708||11:47:6: 127.0.0.1 connected
-20180708||11:47:6: <policy-file-request/>
-20180708||11:47:6: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||11:47:6: Removing penguin...
-20180708||11:47:6: 127.0.0.1 disconnected
-20180708||11:47:6: 127.0.0.1 connected
-20180708||11:47:6: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||11:47:6: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||11:47:7: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||11:47:7: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:47:10: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||11:47:10: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:47:37: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||11:47:37: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||11:53:1: Server shutting down in 3 seconds...
-20180708||11:53:1: Disconnecting 1 client(s)...
-20180708||11:56:4: Server listening on default port: 9339
-20180708||11:56:4: 32 swears loaded!
-20180708||11:56:41: Server listening on default port: 9339
-20180708||11:56:41: 32 swears loaded!
-20180708||15:28:1: Server listening on default port: 9339
-20180708||15:28:1: 32 swears loaded!
-20180708||15:28:13: 127.0.0.1 connected
-20180708||15:28:13: <policy-file-request/>
-20180708||15:28:13: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||15:28:13: Removing penguin...
-20180708||15:28:13: 127.0.0.1 disconnected
-20180708||15:28:13: 127.0.0.1 connected
-20180708||15:28:13: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||15:28:13: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||15:28:22: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||15:28:22: <msg t="sys"><body action="makeErr" r="0"><error message="Username does not exist."></error></body></msg>
-20180708||15:29:6: Server shutting down in 3 seconds...
-20180708||15:29:6: Disconnecting 1 client(s)...
-20180708||15:29:14: Server listening on default port: 9339
-20180708||15:29:14: 32 swears loaded!
-20180708||15:29:20: 127.0.0.1 connected
-20180708||15:29:20: <policy-file-request/>
-20180708||15:29:20: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||15:29:20: Removing penguin...
-20180708||15:29:20: 127.0.0.1 disconnected
-20180708||15:29:20: 127.0.0.1 connected
-20180708||15:29:20: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||15:29:20: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||15:29:26: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||15:29:26: Daan -| 127.0.0.1 is logging on
-20180708||15:29:26: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||15:29:26: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||15:29:58: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||15:29:58: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||15:30:3: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||15:30:3: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||15:30:12: Removing penguin...
-20180708||15:30:12: 127.0.0.1 disconnected
-20180708||15:30:22: 127.0.0.1 connected
-20180708||15:30:22: <policy-file-request/>
-20180708||15:30:22: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||15:30:22: Removing penguin...
-20180708||15:30:22: 127.0.0.1 disconnected
-20180708||15:30:22: 127.0.0.1 connected
-20180708||15:30:22: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||15:30:22: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||15:30:26: Removing penguin...
-20180708||15:30:26: 127.0.0.1 disconnected
-20180708||15:30:31: 127.0.0.1 connected
-20180708||15:30:31: <policy-file-request/>
-20180708||15:30:31: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||15:30:31: Removing penguin...
-20180708||15:30:31: 127.0.0.1 disconnected
-20180708||15:30:31: 127.0.0.1 connected
-20180708||15:30:31: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||15:30:31: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||15:30:33: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||15:30:33: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||15:30:35: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||15:30:35: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||15:30:42: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||15:30:42: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||15:30:46: Removing penguin...
-20180708||15:30:46: 127.0.0.1 disconnected
-20180708||18:34:2: Server listening on default port: 9339
-20180708||18:34:2: 32 swears loaded!
-20180708||18:34:42: 127.0.0.1 connected
-20180708||18:34:42: <policy-file-request/>
-20180708||18:34:42: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||18:34:42: Removing penguin...
-20180708||18:34:42: 127.0.0.1 disconnected
-20180708||18:34:42: 127.0.0.1 connected
-20180708||18:34:42: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||18:34:42: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||18:34:42: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180708||18:34:42: <msg t="sys"><body action="rndK" r="-1"><k>acc80c02f61ac3a6ae7b08ff</k></body></msg>
-20180708||18:34:42: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||18:34:42: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||18:34:49: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180708||18:34:49: <msg t="sys"><body action="rndK" r="-1"><k>acc9e8eb9744b206cd6538ad</k></body></msg>
-20180708||18:34:49: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||18:34:49: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||18:34:56: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180708||18:34:56: <msg t="sys"><body action="rndK" r="-1"><k>0cff883627319fbaccba2dd0</k></body></msg>
-20180708||18:34:56: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||18:34:56: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||18:35:17: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180708||18:35:17: <msg t="sys"><body action="rndK" r="-1"><k>bfc49745e1232d1e55e5be62</k></body></msg>
-20180708||18:35:17: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180708||18:35:17: Daan -| 127.0.0.1 is logging on
-20180708||18:35:17: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180708||18:35:17: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180708||19:0:31: Server shutting down in 3 seconds...
-20180708||19:0:31: Disconnecting 1 client(s)...
-20180708||21:24:11: Server listening on default port: 9339
-20180708||21:24:11: 32 swears loaded!
-20180708||21:24:21: 127.0.0.1 connected
-20180708||21:24:21: <policy-file-request/>
-20180708||21:24:21: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180708||21:24:22: Removing penguin...
-20180708||21:24:22: 127.0.0.1 disconnected
-20180708||21:24:22: 127.0.0.1 connected
-20180708||21:24:22: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||21:24:22: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||21:24:23: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180708||21:24:23: <msg t="sys"><body action="rndK" r="-1"><k>bead23d78605578b2a893be1</k></body></msg>
-20180708||21:24:23: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||21:24:23: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||21:24:31: Server shutting down in 3 seconds...
-20180708||21:24:31: Disconnecting 1 client(s)...
-20180708||21:24:39: Server listening on default port: 9339
-20180708||21:24:39: 32 swears loaded!
-20180708||21:24:39: 127.0.0.1 connected
-20180708||21:24:39: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180708||21:24:39: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180708||21:25:4: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180708||21:25:4: <msg t="sys"><body action="rndK" r="-1"><k>2bd5971b7abf077d4f11aece</k></body></msg>
-20180708||21:25:4: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[]]></nick><pword><![CDATA[]]></pword></login></body></msg>
-20180708||21:25:4: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180708||21:25:27: Server shutting down in 3 seconds...
-20180708||21:25:27: Disconnecting 1 client(s)...
-20180709||10:35:34: Server listening on default port: 9339
-20180709||10:35:34: 32 swears loaded!
-20180709||10:35:51: 127.0.0.1 connected
-20180709||10:35:51: <policy-file-request/>
-20180709||10:35:51: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:35:51: Removing penguin...
-20180709||10:35:51: 127.0.0.1 disconnected
-20180709||10:35:51: 127.0.0.1 connected
-20180709||10:35:51: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:35:51: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:35:54: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:35:54: <msg t="sys"><body action="rndK" r="-1"><k>880a5198761ed0f4b158b63b</k></body></msg>
-20180709||10:35:54: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:35:54: Daan -| 127.0.0.1 is logging on
-20180709||10:35:54: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:35:54: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:35:54: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:36:19: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:36:19: <msg t="sys"><body action="rndK" r="-1"><k>be8b96bae629406d368ee66d</k></body></msg>
-20180709||10:36:19: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:36:19: Daan -| 127.0.0.1 is logging on
-20180709||10:36:19: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:36:19: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:36:19: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:38:43: Server shutting down in 3 seconds...
-20180709||10:38:43: Disconnecting 1 client(s)...
-20180709||10:38:47: Server listening on default port: 9339
-20180709||10:38:47: 32 swears loaded!
-20180709||10:38:49: 127.0.0.1 connected
-20180709||10:38:49: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:38:49: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:38:51: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:38:51: <msg t="sys"><body action="rndK" r="-1"><k>fc472ef9b5a077b683255da7</k></body></msg>
-20180709||10:38:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:38:51: Daan -| 127.0.0.1 is logging on
-20180709||10:38:51: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:38:51: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:38:51: <msg t='sys'><body action='rmList' r='0'><rmList><rm id='1' priv='0' temp='0' game='0' ucnt='0' lmb='1' maxu='40' maxs='0'><n><![CDATA[NonGame]]></n></rm></rmList></body></msg>
-20180709||10:42:42: Server shutting down in 3 seconds...
-20180709||10:42:42: Disconnecting 1 client(s)...
-20180709||10:42:47: Server listening on default port: 9339
-20180709||10:42:47: 32 swears loaded!
-20180709||10:42:49: 127.0.0.1 connected
-20180709||10:42:49: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:42:49: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:42:51: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:42:51: <msg t="sys"><body action="rndK" r="-1"><k>2705510d1d001b65964ad83b</k></body></msg>
-20180709||10:42:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:42:51: Daan -| 127.0.0.1 is logging on
-20180709||10:42:51: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:42:51: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:42:51: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50 maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:43:43: Server shutting down in 3 seconds...
-20180709||10:43:43: Disconnecting 1 client(s)...
-20180709||10:43:49: Server listening on default port: 9339
-20180709||10:43:49: 32 swears loaded!
-20180709||10:43:50: 127.0.0.1 connected
-20180709||10:43:50: <policy-file-request/>
-20180709||10:43:50: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:43:50: Removing penguin...
-20180709||10:43:50: 127.0.0.1 disconnected
-20180709||10:43:50: 127.0.0.1 connected
-20180709||10:43:50: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:43:50: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:43:55: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:43:55: <msg t="sys"><body action="rndK" r="-1"><k>bbace2e7ac69efc7a53b6f5a</k></body></msg>
-20180709||10:43:55: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:43:55: Daan -| 127.0.0.1 is logging on
-20180709||10:43:55: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:43:55: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:43:55: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:44:33: Removing penguin...
-20180709||10:44:33: 127.0.0.1 disconnected
-20180709||10:44:35: Server listening on default port: 9339
-20180709||10:44:35: 32 swears loaded!
-20180709||10:44:37: 127.0.0.1 connected
-20180709||10:44:37: <policy-file-request/>
-20180709||10:44:37: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:44:37: Removing penguin...
-20180709||10:44:37: 127.0.0.1 disconnected
-20180709||10:44:37: 127.0.0.1 connected
-20180709||10:44:37: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:44:37: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:44:38: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:44:38: <msg t="sys"><body action="rndK" r="-1"><k>2b5a131d98f38331ca72d0e0</k></body></msg>
-20180709||10:44:38: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[fhhfdh]]></nick><pword><![CDATA[dhffdhdhf]]></pword></login></body></msg>
-20180709||10:44:38: <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
-20180709||10:44:45: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:44:45: <msg t="sys"><body action="rndK" r="-1"><k>f3004ddb43b6384e7a6a365d</k></body></msg>
-20180709||10:44:45: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:44:45: Daan -| 127.0.0.1 is logging on
-20180709||10:44:45: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:44:45: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:44:45: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="5" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:44:52: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:44:52: <msg t="sys"><body action="rndK" r="-1"><k>4e9b70af213db7cd26201213</k></body></msg>
-20180709||10:44:52: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[daan]]></nick><pword><![CDATA[dgsdgsgd]]></pword></login></body></msg>
-20180709||10:44:52: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password."></error></body></msg>
-20180709||10:45:51: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:45:51: <msg t="sys"><body action="rndK" r="-1"><k>799c2d9e1a5055d3dfc4922a</k></body></msg>
-20180709||10:45:51: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[dgsdgsgd]]></pword></login></body></msg>
-20180709||10:45:51: <msg t="sys"><body action="makeErr" r="0"><error message="Invalid username/password."></error></body></msg>
-20180709||10:45:54: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:45:54: <msg t="sys"><body action="rndK" r="-1"><k>e10e2c9e2140c3eb8478a77c</k></body></msg>
-20180709||10:45:54: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:45:54: Daan -| 127.0.0.1 is logging on
-20180709||10:45:54: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:45:54: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:45:54: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="5" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:46:30: Removing penguin...
-20180709||10:46:30: 127.0.0.1 disconnected
-20180709||10:46:33: Server listening on default port: 9339
-20180709||10:46:33: 32 swears loaded!
-20180709||10:46:34: 127.0.0.1 connected
-20180709||10:46:35: <policy-file-request/>
-20180709||10:46:35: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:46:35: Removing penguin...
-20180709||10:46:35: 127.0.0.1 disconnected
-20180709||10:46:35: 127.0.0.1 connected
-20180709||10:46:35: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:46:35: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:46:37: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:46:37: <msg t="sys"><body action="rndK" r="-1"><k>4dfc9d4cfcb4eb70c5c7bf25</k></body></msg>
-20180709||10:46:37: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:46:37: Daan -| 127.0.0.1 is logging in
-20180709||10:46:37: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:46:37: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:46:37: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="5" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><s><![CDATA[Antartica]]></s></rm></rmList></body></msg>
-20180709||10:47:35: Server shutting down in 3 seconds...
-20180709||10:47:35: Disconnecting 1 client(s)...
-20180709||10:47:37: Removing penguin...
-20180709||10:47:37: 127.0.0.1 disconnected
-20180709||10:47:40: Server listening on default port: 9339
-20180709||10:47:40: 32 swears loaded!
-20180709||10:47:42: 127.0.0.1 connected
-20180709||10:47:42: <policy-file-request/>
-20180709||10:47:42: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:47:42: Removing penguin...
-20180709||10:47:42: 127.0.0.1 disconnected
-20180709||10:47:42: 127.0.0.1 connected
-20180709||10:47:42: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:47:42: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:47:44: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:47:44: <msg t="sys"><body action="rndK" r="-1"><k>f2b45ba6d3b16910089e9377</k></body></msg>
-20180709||10:47:44: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:47:44: Daan -| 127.0.0.1 is logging in
-20180709||10:47:44: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:47:44: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:47:44: <msg t='sys'><body action='rmList' r='0'><rmList><rm id='2' priv='0' temp='0' game='0' ucnt='0' maxu='50' maxs='0'><n><![CDATA[The Hall]]></n></rm><rm id='3' priv='0' temp='0' game='0' ucnt='0' maxu='50' maxs='0'><n><![CDATA[The Kitchen]]></n></rm><rm id='4' priv='0' temp='0' game='0' ucnt='0' maxu='50' maxs='0'><n><![CDATA[The Garden]]></n></rm><rm id='5' priv='0' temp='0' game='0' ucnt='0' maxu='50' maxs='0'><n><![CDATA[The Bathroom]]></n></rm><rm id='6' priv='0' temp='0' game='0' ucnt='0' maxu='50' maxs='0'><n><![CDATA[The Garage]]></n></rm><rm id='7' priv='1' temp='0' game='0' ucnt='0' maxu='50' maxs='0'><n><![CDATA[The Living Room]]></n></rm></rmList></body></msg>
-20180709||10:50:0: Server shutting down in 3 seconds...
-20180709||10:50:0: Disconnecting 1 client(s)...
-20180709||10:50:0: Server shutting down in 3 seconds...
-20180709||10:50:0: Disconnecting 1 client(s)...
-20180709||10:50:2: Removing penguin...
-20180709||10:50:2: 127.0.0.1 disconnected
-20180709||10:50:6: Server listening on default port: 9339
-20180709||10:50:6: 32 swears loaded!
-20180709||10:50:7: 127.0.0.1 connected
-20180709||10:50:7: <policy-file-request/>
-20180709||10:50:7: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:50:7: Removing penguin...
-20180709||10:50:7: 127.0.0.1 disconnected
-20180709||10:50:7: 127.0.0.1 connected
-20180709||10:50:7: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:50:7: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:50:9: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:50:9: <msg t="sys"><body action="rndK" r="-1"><k>6df89c1294d4c4aa0beed495</k></body></msg>
-20180709||10:50:9: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:50:9: Daan -| 127.0.0.1 is logging in
-20180709||10:50:9: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:50:9: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:50:9: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:50:9: <msg t='sys'><body action='joinOK' r='1'><pid id='0'/><vars /><uLs r='1'><u i='1' m='0'><n><![CDATA[Daan]]></n><vars></vars></u></uLs></body></msg>
-20180709||10:52:16: Server shutting down in 3 seconds...
-20180709||10:52:16: Disconnecting 1 client(s)...
-20180709||10:52:22: Server listening on default port: 9339
-20180709||10:52:22: 32 swears loaded!
-20180709||10:52:24: 127.0.0.1 connected
-20180709||10:52:24: <policy-file-request/>
-20180709||10:52:24: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:52:24: Removing penguin...
-20180709||10:52:24: 127.0.0.1 disconnected
-20180709||10:52:24: 127.0.0.1 connected
-20180709||10:52:24: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:52:24: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:52:27: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:52:27: <msg t="sys"><body action="rndK" r="-1"><k>d011ecac94bd0d0ae2576a4a</k></body></msg>
-20180709||10:52:27: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:52:27: Daan -| 127.0.0.1 is logging in
-20180709||10:52:27: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"/></body></msg>
-20180709||10:52:27: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:52:27: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:56:16: Server shutting down in 3 seconds...
-20180709||10:56:16: Disconnecting 1 client(s)...
-20180709||10:56:16: Server shutting down in 3 seconds...
-20180709||10:56:16: Disconnecting 1 client(s)...
-20180709||10:56:21: Server listening on default port: 9339
-20180709||10:56:21: 32 swears loaded!
-20180709||10:56:23: 127.0.0.1 connected
-20180709||10:56:23: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||10:56:23: <policy-file-request/>
-20180709||10:56:23: Removing penguin...
-20180709||10:56:23: 127.0.0.1 disconnected
-20180709||10:56:23: 127.0.0.1 connected
-20180709||10:56:23: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||10:56:23: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||10:56:25: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||10:56:25: <msg t="sys"><body action="rndK" r="-1"><k>7a6510b05c2587488597ac57</k></body></msg>
-20180709||10:56:25: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||10:56:25: Daan -| 127.0.0.1 is logging in
-20180709||10:56:25: <msg t="sys"><body action="logOK" r="0"><login id="100" n="Daan" mod="1"></login></body></msg>
-20180709||10:56:25: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||10:56:25: <msg t='sys'><body action='rmList' r='-1'><rmList><rm id='1' priv='0' temp='0' game='1' ucnt='0' maxu='50' maxs='0'><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||10:56:44: Server shutting down in 3 seconds...
-20180709||10:56:44: Disconnecting 1 client(s)...
-20180709||11:9:2: Server listening on default port: 9339
-20180709||11:9:2: 32 swears loaded!
-20180709||11:9:10: 127.0.0.1 connected
-20180709||11:9:10: <policy-file-request/>
-20180709||11:9:10: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||11:9:10: Removing penguin...
-20180709||11:9:10: 127.0.0.1 disconnected
-20180709||11:9:10: 127.0.0.1 connected
-20180709||11:9:10: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||11:9:10: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||11:9:13: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||11:9:13: <msg t="sys"><body action="rndK" r="-1"><k>421bd3212677e462d83d75d5</k></body></msg>
-20180709||11:9:13: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||11:9:13: Daan -| 127.0.0.1 is logging in
-20180709||11:9:13: <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||11:9:13: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||11:9:13: <msg t='sys'><body action='rmList' r='0'><rmList></rmList></body></msg> 
-20180709||11:9:25: Removing penguin...
-20180709||11:9:25: 127.0.0.1 disconnected
-20180709||11:9:27: Server listening on default port: 9339
-20180709||11:9:27: 32 swears loaded!
-20180709||11:9:29: 127.0.0.1 connected
-20180709||11:9:29: <policy-file-request/>
-20180709||11:9:29: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||11:9:29: Removing penguin...
-20180709||11:9:29: 127.0.0.1 disconnected
-20180709||11:9:29: 127.0.0.1 connected
-20180709||11:9:29: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||11:9:29: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||11:9:31: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||11:9:31: <msg t="sys"><body action="rndK" r="-1"><k>7021ec071ed8ad644744c229</k></body></msg>
-20180709||11:9:31: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||11:9:31: Daan -| 127.0.0.1 is logging in
-20180709||11:9:31: <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||11:9:31: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||11:9:31: <msg t='sys'><body action='rmList' r='0'><rmList></rmList></body></msg>
-20180709||11:11:57: Removing penguin...
-20180709||11:11:57: 127.0.0.1 disconnected
-20180709||11:29:0: Server listening on default port: 9339
-20180709||11:29:0: 32 swears loaded!
-20180709||11:29:5: 127.0.0.1 connected
-20180709||11:29:5: <policy-file-request/>
-20180709||11:29:5: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||11:29:5: Removing penguin...
-20180709||11:29:5: 127.0.0.1 disconnected
-20180709||11:29:5: 127.0.0.1 connected
-20180709||11:29:5: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||11:29:5: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||11:29:9: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||11:29:9: <msg t="sys"><body action="rndK" r="-1"><k>ffecc8d38b3adf4ba7391f25</k></body></msg>
-20180709||11:29:9: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||11:29:9: Daan -| 127.0.0.1 is logging in
-20180709||11:29:9: <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||11:29:9: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||11:29:9: <msg t='sys'><body action='rmList' r='0'><rmList></rmList></body></msg>
-20180709||11:29:9: <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[undefined]]></name><pwd><![CDATA[undefined]]></pwd><max>undefined</max><vars></vars></room></body></msg>
-20180709||11:29:46: Removing penguin...
-20180709||11:29:46: 127.0.0.1 disconnected
-20180709||11:29:49: Server listening on default port: 9339
-20180709||11:29:49: 32 swears loaded!
-20180709||11:29:51: 127.0.0.1 connected
-20180709||11:29:51: <policy-file-request/>
-20180709||11:29:51: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||11:29:51: Removing penguin...
-20180709||11:29:51: 127.0.0.1 disconnected
-20180709||11:29:51: 127.0.0.1 connected
-20180709||11:29:51: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||11:29:51: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||11:29:53: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||11:29:53: <msg t="sys"><body action="rndK" r="-1"><k>424e44e6fd05ff21f26cac4a</k></body></msg>
-20180709||11:29:53: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||11:29:53: Daan -| 127.0.0.1 is logging in
-20180709||11:29:53: <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||11:29:53: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||11:29:53: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||11:29:53: <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[undefined]]></name><pwd><![CDATA[undefined]]></pwd><max>undefined</max><vars></vars></room></body></msg>
-20180709||11:30:41: Removing penguin...
-20180709||11:30:41: 127.0.0.1 disconnected
-20180709||11:31:14: Server listening on default port: 9339
-20180709||11:31:14: 32 swears loaded!
-20180709||11:31:20: 127.0.0.1 connected
-20180709||11:31:20: <policy-file-request/>
-20180709||11:31:20: <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||11:31:20: Removing penguin...
-20180709||11:31:20: 127.0.0.1 disconnected
-20180709||11:31:20: 127.0.0.1 connected
-20180709||11:31:20: <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||11:31:20: <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||11:31:22: <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||11:31:22: <msg t="sys"><body action="rndK" r="-1"><k>8a1c6716e5ac5c03f34aebfc</k></body></msg>
-20180709||11:31:22: <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||11:31:22: Daan -| 127.0.0.1 is logging in
-20180709||11:31:22: <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||11:31:22: <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||11:31:22: <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="1" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||11:31:22: <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[undefined]]></name><pwd><![CDATA[undefined]]></pwd><max>undefined</max><vars></vars></room></body></msg>
-20180709||11:34:48: Server shutting down in 3 seconds...
-20180709||11:34:48: Disconnecting 1 client(s)...
-20180709||11:34:48: Server shutting down in 3 seconds...
-20180709||11:34:48: Disconnecting 1 client(s)...
-20180709||11:34:48: Server shutting down in 3 seconds...
-20180709||11:34:48: Disconnecting 1 client(s)...
-20180709||11:34:48: Server shutting down in 3 seconds...
-20180709||11:34:48: Disconnecting 1 client(s)...
-20180709||11:34:49: Server shutting down in 3 seconds...
-20180709||11:34:49: Disconnecting 1 client(s)...
-20180709||11:34:49: Server shutting down in 3 seconds...
-20180709||11:34:49: Disconnecting 1 client(s)...
-20180709||11:34:49: Server shutting down in 3 seconds...
-20180709||11:34:49: Disconnecting 1 client(s)...
-20180709||11:34:49: Server shutting down in 3 seconds...
-20180709||11:34:49: Disconnecting 1 client(s)...
-20180709||11:34:51: Removing penguin...
-20180709||11:34:51: 127.0.0.1 disconnected
-20180709||12:6:17: Server listening on default port: 9339
-20180709||12:6:17: 32 swears loaded!
-20180709||12:6:25: Server listening on default port: 9339
-20180709||12:6:25: 32 swears loaded!
-20180709||12:7:29: 127.0.0.1 connected
-20180709||12:7:29: [INCOMING] - <policy-file-request/>
-20180709||12:7:29: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||12:7:29: Removing penguin...
-20180709||12:7:29: 127.0.0.1 disconnected
-20180709||12:7:29: 127.0.0.1 connected
-20180709||12:7:29: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||12:7:29: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||12:7:32: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:7:32: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>dcdf1a45a27afd2b01e2a3e8</k></body></msg>
-20180709||12:7:32: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:7:32: Daan -| 127.0.0.1 is logging in
-20180709||12:7:32: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:7:32: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:7:32: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:7:32: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:14:56: Removing penguin...
-20180709||12:14:56: 127.0.0.1 disconnected
-20180709||12:14:58: Server listening on default port: 9339
-20180709||12:14:58: 32 swears loaded!
-20180709||12:15:0: 127.0.0.1 connected
-20180709||12:15:0: [INCOMING] - <policy-file-request/>
-20180709||12:15:0: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||12:15:0: Removing penguin...
-20180709||12:15:0: 127.0.0.1 disconnected
-20180709||12:15:1: 127.0.0.1 connected
-20180709||12:15:1: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||12:15:1: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||12:15:3: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:15:3: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>89c52660fa661275ab7bab3f</k></body></msg>
-20180709||12:15:3: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:15:3: Daan -| 127.0.0.1 is logging in
-20180709||12:15:3: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:15:3: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:15:3: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:15:3: [OUTGOING] - <msg t="sys"><body action="joinOK" r="1"><pid id="1"/><vars /><uLs r="1"><u i="100" m="1" s="0" p="1"><n><![CDATA[Daan]]></n><vars></vars></u></uLs></body></msg>
-20180709||12:15:3: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:15:34: Removing penguin...
-20180709||12:15:34: 127.0.0.1 disconnected
-20180709||12:15:36: Server listening on default port: 9339
-20180709||12:15:36: 32 swears loaded!
-20180709||12:17:56: Server listening on default port: 9339
-20180709||12:17:56: 32 swears loaded!
-20180709||12:18:6: 127.0.0.1 connected
-20180709||12:18:6: [INCOMING] - <policy-file-request/>
-20180709||12:18:6: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||12:18:6: Removing penguin...
-20180709||12:18:6: 127.0.0.1 disconnected
-20180709||12:18:6: 127.0.0.1 connected
-20180709||12:18:6: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||12:18:6: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||12:18:10: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:18:10: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>e95786cba2217d9696d1a7aa</k></body></msg>
-20180709||12:18:10: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:18:10: Daan -| 127.0.0.1 is logging in
-20180709||12:18:10: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:18:10: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:18:10: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:18:10: [INCOMING] - <msg t='sys'><body action='createRoom' r='1'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:18:10: [OUTGOING] - <msg t="sys"><body action="joinOK" r="1"><pid id="1"/><vars /><uLs r="1"><u i="100" m="1" s="0" p="1"><n><![CDATA[Daan]]></n><vars></vars></u></uLs></body></msg>
-20180709||12:22:49: Removing penguin...
-20180709||12:22:49: 127.0.0.1 disconnected
-20180709||12:22:52: Server listening on default port: 9339
-20180709||12:22:52: 32 swears loaded!
-20180709||12:26:26: Server listening on default port: 9339
-20180709||12:26:26: 32 swears loaded!
-20180709||12:26:32: 127.0.0.1 connected
-20180709||12:26:32: [INCOMING] - <policy-file-request/>
-20180709||12:26:32: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||12:26:32: Removing penguin...
-20180709||12:26:32: 127.0.0.1 disconnected
-20180709||12:26:32: 127.0.0.1 connected
-20180709||12:26:32: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||12:26:32: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||12:26:33: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:26:33: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>6ee1fd33f09518dccfd53a2d</k></body></msg>
-20180709||12:26:33: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:26:33: Daan -| 127.0.0.1 is logging in
-20180709||12:26:33: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:26:33: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:26:33: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:43:32: Removing penguin...
-20180709||12:43:32: 127.0.0.1 disconnected
-20180709||12:43:35: Server listening on default port: 9339
-20180709||12:43:35: 32 swears loaded!
-20180709||12:43:38: [INCOMING] - <policy-file-request/>
-20180709||12:43:38: 127.0.0.1 connected
-20180709||12:43:38: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||12:43:38: Removing penguin...
-20180709||12:43:38: 127.0.0.1 disconnected
-20180709||12:43:38: 127.0.0.1 connected
-20180709||12:43:38: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||12:43:38: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||12:43:40: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:43:40: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>956d74eb77bc9a0070070d59</k></body></msg>
-20180709||12:43:40: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:43:40: Daan -| 127.0.0.1 is logging in
-20180709||12:43:40: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:43:40: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:43:40: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:44:11: Removing penguin...
-20180709||12:44:11: 127.0.0.1 disconnected
-20180709||12:44:39: Server listening on default port: 9339
-20180709||12:44:39: 32 swears loaded!
-20180709||12:44:46: 127.0.0.1 connected
-20180709||12:44:46: [INCOMING] - <policy-file-request/>
-20180709||12:44:46: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>
-20180709||12:44:46: Removing penguin...
-20180709||12:44:46: 127.0.0.1 disconnected
-20180709||12:44:46: 127.0.0.1 connected
-20180709||12:44:46: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
-20180709||12:44:46: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
-20180709||12:44:48: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:44:48: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>9ca2986924c3abbdf7c056b7</k></body></msg>
-20180709||12:44:48: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:44:48: Daan -| 127.0.0.1 is logging in
-20180709||12:44:48: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:44:48: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:44:48: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:44:48: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:44:48: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>ff97761d3117a8333f882a2b</k></body></msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:5: Daan -| 127.0.0.1 is logging in
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>ed502d20fc621f588bf4bbdb</k></body></msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:5: Daan -| 127.0.0.1 is logging in
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:5: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:5: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:12: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:12: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>3a45460d73e32868ff98f08d</k></body></msg>
-20180709||12:46:12: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:12: Daan -| 127.0.0.1 is logging in
-20180709||12:46:12: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:12: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:12: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:12: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:12: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>df7ce664655f8700c5ce0d47</k></body></msg>
-20180709||12:46:21: Daan -| 127.0.0.1 is logging in
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>c5b5932409cf5b48550dae15</k></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:21: Daan -| 127.0.0.1 is logging in
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>41f367819cc0ae8dfb8c911c</k></body></msg>
-20180709||12:46:21: Daan -| 127.0.0.1 is logging in
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>f3af77ebf26098b1a094b395</k></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[123123]]></pword></login></body></msg>
-20180709||12:46:21: Daan -| 127.0.0.1 is logging in
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>
-20180709||12:46:21: [INCOMING] - <msg t='sys'><body action='createRoom' r='null'><room upd='0' tmp='1' gam='0' spec='undefined' exit='1'><name><![CDATA[Antartica]]></name><pwd><![CDATA[undefined]]></pwd><max>50</max><vars></vars></room></body></msg>
-20180709||12:46:21: [OUTGOING] - <msg t="sys"><body action="roomAdd" r="0"><rm id="1" priv="0" temp="0" game="0" lmb="0" max="50" spec="0"><name><![CDATA[Antartica]]></name></rm></body</msg>
-20180709||12:46:27: Removing penguin...
-20180709||12:46:27: 127.0.0.1 disconnected
+20180709||19:13:2: Server listening on port: 9339
+20180709||19:13:2: 32 swears loaded!
+20180709||19:13:2: 2 rooms loaded!
+20180709||19:13:15: 127.0.0.1 connected
+20180709||19:13:15: Removing penguin...
+20180709||19:13:15: 127.0.0.1 disconnected
+20180709||19:13:15: 127.0.0.1 connected
+20180709||19:13:17: Daan -| 127.0.0.1 is logging in
+20180709||19:15:19: Server listening on port: 9339
+20180709||19:15:19: 2 rooms loaded!
+20180709||19:15:19: 32 swears loaded!
+20180709||19:15:25: 127.0.0.1 connected
+20180709||19:15:25: Removing penguin...
+20180709||19:15:25: 127.0.0.1 disconnected
+20180709||19:15:25: 127.0.0.1 connected
+20180709||19:15:27: Daan -| 127.0.0.1 is logging in
+20180709||19:15:47: Server listening on port: 9339
+20180709||19:15:47: 2 rooms loaded!
+20180709||19:15:47: 32 swears loaded!
+20180709||19:15:48: 127.0.0.1 connected
+20180709||19:15:50: Daan -| 127.0.0.1 is logging in
+20180709||19:18:23: Daan -| 127.0.0.1 is logging in
+20180709||19:28:33: Server shutting down in 3 seconds...
+20180709||19:28:33: Disconnecting 1 client(s)...
+20180709||19:28:35: Removing penguin...
+20180709||19:28:35: 127.0.0.1 disconnected
+20180709||19:29:57: Server listening on port: 9339
+20180709||19:29:57: 32 swears loaded!
+20180709||19:29:57: 2 rooms loaded!
+20180709||19:30:4: 127.0.0.1 connected
+20180709||19:30:4: Removing penguin...
+20180709||19:30:4: 127.0.0.1 disconnected
+20180709||19:30:4: 127.0.0.1 connected
+20180709||19:30:31: Removing penguin...
+20180709||19:30:31: 127.0.0.1 disconnected
+20180709||19:30:36: Server listening on port: 9339
+20180709||19:30:36: 32 swears loaded!
+20180709||19:30:36: 2 rooms loaded!
+20180709||19:30:38: 127.0.0.1 connected
+20180709||19:30:38: Removing penguin...
+20180709||19:30:38: 127.0.0.1 disconnected
+20180709||19:30:38: 127.0.0.1 connected
+20180709||19:30:58: Removing penguin...
+20180709||19:30:58: 127.0.0.1 disconnected
+20180709||19:31:0: Server listening on port: 9339
+20180709||19:31:0: 32 swears loaded!
+20180709||19:31:0: 2 rooms loaded!
+20180709||19:31:2: 127.0.0.1 connected
+20180709||19:31:2: Removing penguin...
+20180709||19:31:2: 127.0.0.1 disconnected
+20180709||19:31:2: 127.0.0.1 connected
+20180709||19:31:44: Server shutting down in 3 seconds...
+20180709||19:31:44: Disconnecting 1 client(s)...
+20180709||19:31:44: Server shutting down in 3 seconds...
+20180709||19:31:44: Disconnecting 1 client(s)...
+20180709||19:31:50: Server listening on port: 9339
+20180709||19:31:50: 32 swears loaded!
+20180709||19:31:50: 2 rooms loaded!
+20180709||19:31:53: 127.0.0.1 connected
+20180709||19:31:53: Removing penguin...
+20180709||19:31:53: 127.0.0.1 disconnected
+20180709||19:31:53: 127.0.0.1 connected
+20180709||19:34:11: Removing penguin...
+20180709||19:34:11: 127.0.0.1 disconnected
+20180709||19:35:3: Server listening on port: 9339
+20180709||19:35:3: 32 swears loaded!
+20180709||19:35:3: 2 rooms loaded!
+20180709||19:35:9: 127.0.0.1 connected
+20180709||19:35:9: Removing penguin...
+20180709||19:35:9: 127.0.0.1 disconnected
+20180709||19:35:9: 127.0.0.1 connected
+20180709||19:35:11: Daan -| 127.0.0.1 is logging in
+20180709||19:38:6: Server shutting down in 3 seconds...
+20180709||19:38:6: Disconnecting 1 client(s)...
+20180709||19:38:6: Server shutting down in 3 seconds...
+20180709||19:38:6: Disconnecting 1 client(s)...
+20180709||19:38:8: Removing penguin...
+20180709||19:38:8: 127.0.0.1 disconnected
+20180709||19:39:11: Server listening on port: 9339
+20180709||19:39:11: 32 swears loaded!
+20180709||19:39:11: 2 rooms loaded!
+20180709||19:39:18: 127.0.0.1 connected
+20180709||19:39:18: Removing penguin...
+20180709||19:39:18: 127.0.0.1 disconnected
+20180709||19:39:18: 127.0.0.1 connected
+20180709||19:39:43: Server shutting down in 3 seconds...
+20180709||19:39:43: Disconnecting 1 client(s)...
+20180709||19:39:45: Removing penguin...
+20180709||19:39:45: 127.0.0.1 disconnected
+20180709||19:39:48: Server listening on port: 9339
+20180709||19:39:48: 32 swears loaded!
+20180709||19:39:48: 2 rooms loaded!
+20180709||19:39:50: 127.0.0.1 connected
+20180709||19:39:50: Removing penguin...
+20180709||19:39:50: 127.0.0.1 disconnected
+20180709||19:39:50: 127.0.0.1 connected
+20180709||19:40:19: Removing penguin...
+20180709||19:40:19: 127.0.0.1 disconnected
+20180709||19:40:22: Server listening on port: 9339
+20180709||19:40:22: 32 swears loaded!
+20180709||19:40:22: 2 rooms loaded!
+20180709||19:40:24: 127.0.0.1 connected
+20180709||19:40:24: Removing penguin...
+20180709||19:40:24: 127.0.0.1 disconnected
+20180709||19:40:24: 127.0.0.1 connected
+20180709||19:40:32: Server shutting down in 3 seconds...
+20180709||19:40:32: Disconnecting 1 client(s)...
+20180709||19:40:33: Removing penguin...
+20180709||19:40:33: 127.0.0.1 disconnected
+20180709||19:40:36: Server listening on port: 9339
+20180709||19:40:36: 32 swears loaded!
+20180709||19:40:36: 2 rooms loaded!
+20180709||19:40:38: 127.0.0.1 connected
+20180709||19:40:38: Removing penguin...
+20180709||19:40:38: 127.0.0.1 disconnected
+20180709||19:40:38: 127.0.0.1 connected
+20180709||19:43:13: Removing penguin...
+20180709||19:43:13: 127.0.0.1 disconnected
+20180709||19:43:45: Server listening on port: 9339
+20180709||19:43:45: 2 rooms loaded!
+20180709||19:43:45: 32 swears loaded!
+20180709||19:43:51: 127.0.0.1 connected
+20180709||19:43:51: Removing penguin...
+20180709||19:43:51: 127.0.0.1 disconnected
+20180709||19:43:51: 127.0.0.1 connected
+20180709||19:47:40: Removing penguin...
+20180709||19:47:40: 127.0.0.1 disconnected
+20180709||19:48:9: Server listening on port: 9339
+20180709||19:48:9: 32 swears loaded!
+20180709||19:48:9: 2 rooms loaded!
+20180709||19:48:15: 127.0.0.1 connected
+20180709||19:48:15: Removing penguin...
+20180709||19:48:15: 127.0.0.1 disconnected
+20180709||19:48:15: 127.0.0.1 connected
+20180709||19:50:13: Removing penguin...
+20180709||19:50:13: 127.0.0.1 disconnected
+20180709||19:50:23: Server listening on port: 9339
+20180709||19:50:23: 32 swears loaded!
+20180709||19:50:23: 2 rooms loaded!
+20180709||19:50:31: 127.0.0.1 connected
+20180709||19:50:31: Removing penguin...
+20180709||19:50:31: 127.0.0.1 disconnected
+20180709||19:50:31: 127.0.0.1 connected
+20180709||19:51:1: Server shutting down in 3 seconds...
+20180709||19:51:1: Disconnecting 1 client(s)...
+20180709||19:51:3: Removing penguin...
+20180709||19:51:3: 127.0.0.1 disconnected
+20180709||19:51:5: Server listening on port: 9339
+20180709||19:51:5: 32 swears loaded!
+20180709||19:51:5: 2 rooms loaded!
+20180709||19:51:7: 127.0.0.1 connected
+20180709||19:51:7: Removing penguin...
+20180709||19:51:7: 127.0.0.1 disconnected
+20180709||19:51:7: 127.0.0.1 connected
+20180709||19:51:59: Removing penguin...
+20180709||19:51:59: 127.0.0.1 disconnected
+20180709||19:52:31: Server listening on port: 9339
+20180709||19:52:31: 32 swears loaded!
+20180709||19:52:31: 2 rooms loaded!
+20180709||19:52:38: 127.0.0.1 connected
+20180709||19:52:38: Removing penguin...
+20180709||19:52:38: 127.0.0.1 disconnected
+20180709||19:52:38: 127.0.0.1 connected
+20180709||19:54:28: Removing penguin...
+20180709||19:54:28: 127.0.0.1 disconnected
+20180709||19:54:57: Server listening on port: 9339
+20180709||19:54:57: 32 swears loaded!
+20180709||19:54:57: 2 rooms loaded!
+20180709||19:55:31: 127.0.0.1 connected
+20180709||19:55:31: Removing penguin...
+20180709||19:55:31: 127.0.0.1 disconnected
+20180709||19:55:31: 127.0.0.1 connected
+20180709||19:56:23: Removing penguin...
+20180709||19:56:23: 127.0.0.1 disconnected
+20180709||19:56:26: Server listening on port: 9339
+20180709||19:56:26: 32 swears loaded!
+20180709||19:56:26: 2 rooms loaded!
+20180709||19:56:28: 127.0.0.1 connected
+20180709||19:56:28: Removing penguin...
+20180709||19:56:28: 127.0.0.1 disconnected
+20180709||19:56:28: 127.0.0.1 connected
+20180709||20:0:6: Removing penguin...
+20180709||20:0:6: 127.0.0.1 disconnected
+20180709||20:0:27: Server listening on port: 9339
+20180709||20:0:27: 32 swears loaded!
+20180709||20:0:27: 2 rooms loaded!
+20180709||20:0:33: 127.0.0.1 connected
+20180709||20:0:33: Removing penguin...
+20180709||20:0:33: 127.0.0.1 disconnected
+20180709||20:0:33: 127.0.0.1 connected
+20180709||20:0:49: Removing penguin...
+20180709||20:0:49: 127.0.0.1 disconnected
+20180709||20:0:52: Server listening on port: 9339
+20180709||20:0:52: 32 swears loaded!
+20180709||20:0:52: 2 rooms loaded!
+20180709||20:0:54: 127.0.0.1 connected
+20180709||20:0:54: Removing penguin...
+20180709||20:0:54: 127.0.0.1 disconnected
+20180709||20:0:54: 127.0.0.1 connected
+20180709||20:2:17: Removing penguin...
+20180709||20:2:17: 127.0.0.1 disconnected
+20180709||20:2:45: Server listening on port: 9339
+20180709||20:2:45: 32 swears loaded!
+20180709||20:2:45: 2 rooms loaded!
+20180709||20:2:52: 127.0.0.1 connected
+20180709||20:2:52: Removing penguin...
+20180709||20:2:52: 127.0.0.1 disconnected
+20180709||20:2:52: 127.0.0.1 connected
+20180709||20:4:41: Removing penguin...
+20180709||20:4:41: 127.0.0.1 disconnected
+20180709||20:5:9: Server listening on port: 9339
+20180709||20:5:9: 32 swears loaded!
+20180709||20:5:9: 2 rooms loaded!
+20180709||20:5:21: 127.0.0.1 connected
+20180709||20:5:21: Removing penguin...
+20180709||20:5:21: 127.0.0.1 disconnected
+20180709||20:5:21: 127.0.0.1 connected
+20180709||20:6:17: Removing penguin...
+20180709||20:6:17: 127.0.0.1 disconnected
+20180709||20:6:38: Server listening on port: 9339
+20180709||20:6:38: 32 swears loaded!
+20180709||20:6:38: 2 rooms loaded!
+20180709||20:6:45: 127.0.0.1 connected
+20180709||20:6:45: Removing penguin...
+20180709||20:6:45: 127.0.0.1 disconnected
+20180709||20:6:45: 127.0.0.1 connected
+20180709||20:8:50: Removing penguin...
+20180709||20:8:50: 127.0.0.1 disconnected
+20180709||20:9:15: Server listening on port: 9339
+20180709||20:9:15: 32 swears loaded!
+20180709||20:9:15: 2 rooms loaded!
+20180709||20:9:22: 127.0.0.1 connected
+20180709||20:9:22: Removing penguin...
+20180709||20:9:22: 127.0.0.1 disconnected
+20180709||20:9:22: 127.0.0.1 connected
+20180709||20:10:18: Removing penguin...
+20180709||20:10:18: 127.0.0.1 disconnected
+20180709||20:10:53: Server listening on port: 9339
+20180709||20:10:53: 32 swears loaded!
+20180709||20:10:53: 2 rooms loaded!
+20180709||20:11:1: 127.0.0.1 connected
+20180709||20:11:1: Removing penguin...
+20180709||20:11:1: 127.0.0.1 disconnected
+20180709||20:11:1: 127.0.0.1 connected
+20180709||20:11:2: Daan -| 127.0.0.1 is logging in
+20180709||20:11:8: Daan -| 127.0.0.1 is logging in
+20180709||20:11:10: Daan -| 127.0.0.1 is logging in
+20180709||20:11:12: Removing penguin...
+20180709||20:11:12: 127.0.0.1 disconnected
+20180709||20:11:32: 127.0.0.1 connected
+20180709||20:11:32: Removing penguin...
+20180709||20:11:32: 127.0.0.1 disconnected
+20180709||20:11:32: 127.0.0.1 connected
+20180709||20:11:34: Daan -| 127.0.0.1 is logging in
+20180709||20:11:52: Daan -| 127.0.0.1 is logging in
+20180709||20:13:16: Removing penguin...
+20180709||20:13:16: 127.0.0.1 disconnected
+20180709||20:13:18: Server listening on port: 9339
+20180709||20:13:18: 32 swears loaded!
+20180709||20:13:18: 2 rooms loaded!
+20180709||20:13:22: 127.0.0.1 connected
+20180709||20:13:22: Removing penguin...
+20180709||20:13:22: 127.0.0.1 disconnected
+20180709||20:13:22: 127.0.0.1 connected
+20180709||20:13:31: Daan -| 127.0.0.1 is logging in
+20180709||20:13:43: Daan -| 127.0.0.1 is logging in
+20180709||20:13:49: Removing penguin...
+20180709||20:13:49: 127.0.0.1 disconnected
+20180709||20:17:17: Server listening on port: 9339
+20180709||20:17:17: 32 swears loaded!
+20180709||20:17:17: 2 rooms loaded!
+20180709||20:17:26: 127.0.0.1 connected
+20180709||20:17:26: Removing penguin...
+20180709||20:17:26: 127.0.0.1 disconnected
+20180709||20:17:26: 127.0.0.1 connected
+20180709||20:17:28: Daan -| 127.0.0.1 is logging in
+20180709||20:17:42: Removing penguin...
+20180709||20:17:42: 127.0.0.1 disconnected

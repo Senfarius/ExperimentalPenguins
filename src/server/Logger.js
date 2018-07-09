@@ -17,11 +17,11 @@ Logger.clear = function () {
 Logger.incoming = function (message) {
     if (message.length == 0 || message.length == 1) return
     console.log(chalk.hex("#F1E").bgWhite(`[INCOMING] - ${message}\r`))
-    fs.appendFile(`${path}info.log`, this.dateToInt() + ": [INCOMING] - " + message + "\r\n", (err) => {if (err) throw err})
+    fs.appendFile(`${path}data.log`, this.dateToInt() + ": [INCOMING] - " + message + "\r\n", (err) => {if (err) throw err})
 }
 Logger.outgoing = function (message) {
     console.log(chalk.blue.bgWhite(`[OUTGOING] - ${message}\r`))
-    fs.appendFile(`${path}info.log`, this.dateToInt() + ": [OUTGOING] - " + message + "\r\n", (err) => {if (err) throw err})
+    fs.appendFile(`${path}data.log`, this.dateToInt() + ": [OUTGOING] - " + message + "\r\n", (err) => {if (err) throw err})
 }
 Logger.error = function (message) {
     console.log(chalk.red.bgBlack.bold(`[ERROR] - ${message}\r`))

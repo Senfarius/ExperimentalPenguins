@@ -2,26 +2,26 @@
 
 const xmldoc     = require("xmldoc")
 const Logger     = require("../Logger").Logger
-const Crypto     = require("./Crypto")
-const Constants  = require("./Constants").CHECKER
-const policyFile = `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>`
+const Crypto     = require("./utils/Crypto")
+const Constants  = require("./utils/Constants").CHECKER
 
 class Core {
 	constructor (server) {
 		this.server   = server
+		this.room     = server.room
 		this.database = server.database
 	}
 
 	handleData (data, client) {
-		if (data.charAt(0) == "<" && data.charAt(data.length - 1) == ">") { // XML always starts with `<` and ends with `>`
-			Logger.incoming(data) // Logger here to save resources if packet is invalid
+		if (data.charAt(0) == "<" && data.charAt(data.length - 1) == ">") {
+			Logger.incoming(data)
 			if (data == "<policy-file-request/>") {
-				client.send(policyFile)
+				client.send(`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="${this.server.port}"/></cross-domain-policy>`)
 			} else {
 				const xmlPacket = new xmldoc.XmlDocument(data)
 				const type = xmlPacket.children[0].attr.action
 				if (type == "verChk") {
-					if (xmlPacket.children[0].firstChild.attr.v == 135) { // Hardcode check version
+					if (xmlPacket.children[0].firstChild.attr.v == 135) {
 						client.send(`<msg t="sys"><body action="apiOK" r="0"></body></msg>`)
 					} else {
 						Logger.warning(`Invalid verChk packet: ${data} -| ${client.ipAddr}`)
@@ -36,13 +36,13 @@ class Core {
 					this.database.penguinExistsByName(username).then(result => {
 						if (result.length != 1) {
 							return client.sendError("Username is invalid.")
-						} else if (username.length > 12 || password.length > 20) {
-							client.sendError("Username/password is too long.")
+						} else if (username.length <= 0 || password.length <= 0) {
+							return client.sendError("Username/password is empty.")
 						} else if (Constants.SWEARS.includes(username)) {
-							client.sendError("Username contains a swear word.")
+							return client.sendError("Username contains a swear word.")
 						} else {
 							this.database.getPenguinByName(username).then(penguin => {
-								const hash = Crypto.blake2s(password)
+								const hash = Crypto.decryptZaseth(password, client.randomKey)
 								if (hash == penguin.password) {
 									Logger.info(`${penguin.username} -| ${client.ipAddr} is logging in`)
 									client.id = penguin.id
@@ -52,13 +52,13 @@ class Core {
 									client.send(`<msg t="sys"><body action="logOK" r="0"><login n="${penguin.username}" id="${penguin.id}" mod="${penguin.moderator}"></login></body></msg>`)
 								} else {
 									Logger.warning(`Invalid login: ${penguin.username} -| ${client.ipAddr}`)
-									client.sendError("Invalid username/password.")
+									return client.sendError("Invalid username/password.")
 								}
 							})
 						}
 					})
 				} else if (type == "getRmList") {
-					client.send(`<msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="${this.server.maxPenguins}" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>`)
+					client.send(this.room.makeRoomList())
 				}
 			}
 		} else {

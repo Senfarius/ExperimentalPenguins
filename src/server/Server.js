@@ -3,17 +3,19 @@
 const Core       = require("./core/Core")
 const Database   = require("./core/Database")
 const Penguin    = require("./core/Penguin")
+const Room       = require("./core/Room")
 const Logger     = require("./Logger").Logger
-const Constants  = require("./core/Constants").CHECKER
+const Constants  = require("./core/utils/Constants").CHECKER
 
 class Server {
 	constructor (port) {
 		this.clients     = []
 		this.port        = port
-		this.maxPenguins = 50
+		this.maxPenguins = 100
 		this.database    = new Database()
+		this.room        = new Room()
 		this.core        = new Core(this)
-		this.createServer() // This at last so this.core doesn't take this with it
+		this.createServer()
 		process.on("SIGINT",  () => this.handleShutdown())
 		process.on("SIGTERM", () => this.handleShutdown())
 	}
@@ -23,7 +25,7 @@ class Server {
 			socket.setEncoding("utf8")
 			const client = new Penguin(socket, this)
 			Logger.info(`${client.ipAddr} connected`)
-			if (this.clients.length >= this.maxPenguins) client.disconnect() // Do this before adding the client, obviously
+			if (this.clients.length >= this.maxPenguins) return client.sendError("The game is full.")
 			this.clients.push(client)
 			socket.on("data", data => {
 				data = data.toString().split(`\0`)[0]
@@ -35,13 +37,13 @@ class Server {
 			})
 			socket.on("error", error => {
 				client.disconnect()
-				if (error.code == "ETIMEDOUT" || error.code == "ECONNRESET") return // Stupid errors that we don't log
+				if (error.code == "ETIMEDOUT" || error.code == "ECONNRESET") return
 				Logger.error(error)
 			})
 		}).listen(this.port, () => {
-			if (this.port != 9339) Logger.info(`Server listening on custom port: ${this.port}`)
-			else Logger.info(`Server listening on default port: ${this.port}`)
-			this.calculateConstants()
+			Logger.info(`Server listening on port: ${this.port}`)
+			Logger.info(`${Constants.SWEARS.length} swears loaded!`)
+			Logger.info(`${this.room.countRooms()} rooms loaded!`)
 		})
 	}
 
@@ -56,21 +58,20 @@ class Server {
 	}
 
 	handleShutdown () {
-		if (this.clients.length > 0) { // First check if there's even clients connected, smart move...
+		if (this.clients.length > 0) {
 			Logger.info(`Server shutting down in 3 seconds...`)
 			Logger.info(`Disconnecting ${this.clients.length} client(s)...`)
 			setTimeout(() => {
-				for (const client of this.clients) client.disconnect()
+				for (const client of this.clients) {
+					client.sendError("The game is shutting down.")
+					client.disconnect()
+				}
 				process.exit(0)
 			}, 3000)
-		} else { // Don't loop through an empty array and just exit the process immediately
+		} else {
 			Logger.info(`Server shutting down in 1 second as there were no clients detected...`)
 			process.exit(0)
 		}
-	}
-
-	calculateConstants () {
-		Logger.info(`${Constants.SWEARS.length} swears loaded!`)
 	}
 }
 

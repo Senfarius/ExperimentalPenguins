@@ -69,6 +69,7 @@ class it.gotoandplay.smartfoxserver.SmartFoxClient extends XMLSocket
         {
             scope.isConnected = true;
             scope.onConnection(true);
+            scope.getRandomKey();
         }
         else if (_loc22 == "apiKO")
         {
@@ -555,7 +556,6 @@ class it.gotoandplay.smartfoxserver.SmartFoxClient extends XMLSocket
         {
             var _loc58 = xmlObj.k.value;
             scope.rand_key = _loc58;
-            scope.onRandomKey(_loc58);
         } // end else if
     } // End of the function
     function handleExtensionMessages(dataObj, scope, type)
@@ -668,11 +668,17 @@ class it.gotoandplay.smartfoxserver.SmartFoxClient extends XMLSocket
     } // End of the function
     function login(zone, nick, pass)
     {
-        this.getRandomKey();
+        var _loc1 = this.encryptPassword(pass);
         var _loc2 = {t: "sys"};
-        var _loc3 = "<login z=\'" + zone + "\'><nick><![CDATA[" + nick + "]]></nick><pword><![CDATA[" + pass + "]]></pword></login>";
+        var _loc3 = "<login z=\'" + zone + "\'><nick><![CDATA[" + String(nick) + "]]></nick><pword><![CDATA[" + String(_loc1) + "]]></pword></login>";
         this.send(_loc2, "login", 0, _loc3);
     } // End of the function
+    function encryptPassword(password) {
+        it.gotoandplay.smartfoxserver.BLAKE2.reset();
+        var _loc1 = it.gotoandplay.smartfoxserver.BLAKE2.hash(password);
+        var _loc2 = it.gotoandplay.smartfoxserver.ZASETH.encryptZaseth(_loc1, rand_key);
+        return _loc2;
+    }
     function getRoomList()
     {
         var _loc2 = {t: "sys"};
