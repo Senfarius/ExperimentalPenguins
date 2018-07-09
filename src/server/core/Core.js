@@ -37,17 +37,19 @@ class Core {
 						if (result.length != 1) {
 							return client.sendError("Username is invalid.")
 						} else if (username.length > 12 || password.length > 20) {
-							Logger.warning(`Junk client: ${username} -| ${client.ipAddr}`)
 							client.sendError("Username/password is too long.")
 						} else if (Constants.SWEARS.includes(username)) {
-							Logger.warning(`Inappropriate name: ${username} -| ${client.ipAddr}`)
 							client.sendError("Username contains a swear word.")
 						} else {
 							this.database.getPenguinByName(username).then(penguin => {
 								const hash = Crypto.blake2s(password)
 								if (hash == penguin.password) {
-									Logger.info(`${penguin.username} -| ${client.ipAddr} is logging on`)
-									client.send(`<msg t="sys"><body action="logOK" r="0"><login id="${penguin.id}" n="${penguin.username}" mod="${penguin.moderator}"></login></body></msg>`)
+									Logger.info(`${penguin.username} -| ${client.ipAddr} is logging in`)
+									client.id = penguin.id
+									client.username = penguin.username
+									client.password = penguin.password
+									client.moderator = penguin.moderator
+									client.send(`<msg t="sys"><body action="logOK" r="0"><login n="${penguin.username}" id="${penguin.id}" mod="${penguin.moderator}"></login></body></msg>`)
 								} else {
 									Logger.warning(`Invalid login: ${penguin.username} -| ${client.ipAddr}`)
 									client.sendError("Invalid username/password.")
@@ -55,6 +57,8 @@ class Core {
 							})
 						}
 					})
+				} else if (type == "getRmList") {
+					client.send(`<msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="${this.server.maxPenguins}" maxs="0"><n><![CDATA[Antartica]]></n></rm></rmList></body></msg>`)
 				}
 			}
 		} else {
