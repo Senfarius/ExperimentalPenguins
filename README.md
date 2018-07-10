@@ -1,6 +1,10 @@
 # In-development Penguin Chat emulator written in Node.js
 
-# TODO LOGS
+<h1 align="left">Pseudo crypto code by me</h1>
+
+<p align="left"><img src="https://i.imgur.com/X5wkBx5.png"></p>
+
+# TODO
 
 * createRoom system and packets.
 
