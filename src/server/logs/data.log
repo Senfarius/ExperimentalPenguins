@@ -285,3 +285,59 @@
 20180709||20:17:28: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
 20180709||20:17:28: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
 20180709||20:17:28: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[Antarctica]]></n></rm></rmList></body></msg>rm id="2" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[NorthPole]]></n></rm></rmList></body></msg>
+20180710||10:35:18: [INCOMING] - <policy-file-request/>
+20180710||10:35:18: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="9339"/></cross-domain-policy>
+20180710||10:35:18: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180710||10:35:18: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180710||10:35:18: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180710||10:35:18: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>4e27e13b0e83</k></body></msg>
+20180710||10:35:21: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[L@GECEF@AEC@G@G@H@GEO@@EA@LEF@BEF@@@BEKEC@LEJ@@E@@A@B@FEGEDEG@GEE@DEK@B@EEEEJ@N@BEGEF@@@BEG@L@G@AE@EG@A@FEC@E@BEAEG@@@EEM@DEG@F@]]></pword></login></body></msg>
+20180710||10:35:21: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
+20180710||10:35:21: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180710||10:35:21: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[Antarctica]]></n></rm></rmList></body></msg>rm id="2" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[NorthPole]]></n></rm></rmList></body></msg>
+20180710||10:44:0: [INCOMING] - <policy-file-request/>
+20180710||10:44:0: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="9339"/></cross-domain-policy>
+20180710||10:44:0: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180710||10:44:0: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180710||10:44:0: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180710||10:44:0: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>f03ca946c203</k></body></msg>
+20180710||10:44:3: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[NEB@BEBEEEK@@@CEKE@@G@@ECEI@G@F@B@H@EEO@@EK@B@@EBEDEC@B@CELE@@C@FEC@C@B@G@@@K@JEFEOEA@DEA@@ED@G@C@E@F@EEBEK@B@F@B@@EH@EEOEA@F@BE]]></pword></login></body></msg>
+20180710||10:44:3: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
+20180710||10:44:3: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180710||10:44:3: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[Antarctica]]></n></rm></rmList></body></msg>rm id="2" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[NorthPole]]></n></rm></rmList></body></msg>
+20180710||10:44:17: [INCOMING] - <policy-file-request/>
+20180710||10:44:17: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="9339"/></cross-domain-policy>
+20180710||10:44:17: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180710||10:44:17: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180710||10:44:17: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180710||10:44:17: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>accb6a67fbed</k></body></msg>
+20180710||10:44:19: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[IEAEB@CEB@CEB@BENE@EBEG@DEJEGEG@EE@EGEN@EEKEGEG@EEG@CEC@D@D@B@B@CECEFEEE@@CEKEKEA@G@C@EED@@@AE@ED@FEFEDEE@CE@@G@G@@@MEB@HEBEFECE]]></pword></login></body></msg>
+20180710||10:44:19: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
+20180710||10:44:19: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180710||10:44:19: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[Antarctica]]></n></rm></rmList></body></msg>rm id="2" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[NorthPole]]></n></rm></rmList></body></msg>
+20180710||11:7:1: [INCOMING] - <policy-file-request/>
+20180710||11:7:1: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="9339"/></cross-domain-policy>
+20180710||11:7:2: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180710||11:7:2: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180710||11:7:2: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180710||11:7:2: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>57e0d1d88f21</k></body></msg>
+20180710||11:7:4: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[M@E@D@A@@EC@@EME@@DEE@BE@@N@AEEEG@@@E@A@K@OE@@BEA@CEEEAEFEDE@EM@M@GEA@@@DEG@MEI@CEGEAEJEJED@F@E@@EB@@EF@GEC@BEH@IED@J@GEL@F@@EA@]]></pword></login></body></msg>
+20180710||11:7:4: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
+20180710||11:7:4: [OUTGOING] - <msg t="sys"><body action="makeAlert" r="0"><alert message="Welcome back Daan"></error></body></msg>
+20180710||11:7:4: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>
+20180710||11:7:4: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[Antarctica]]></n></rm></rmList></body></msg>rm id="2" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[NorthPole]]></n></rm></rmList></body></msg>
+20180710||11:7:19: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan@]]></nick><pword><![CDATA[M@E@D@A@@EC@@EME@@DEE@BE@@N@AEEEG@@@E@A@K@OE@@BEA@CEEEAEFEDE@EM@M@GEA@@@DEG@MEI@CEGEAEJEJED@F@E@@EB@@EF@GEC@BEH@IED@J@GEL@F@@EA@]]></pword></login></body></msg>
+20180710||11:7:19: [OUTGOING] - <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180710||11:8:1: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan@]]></nick><pword><![CDATA[M@E@D@A@@EC@@EME@@DEE@BE@@N@AEEEG@@@E@A@K@OE@@BEA@CEEEAEFEDE@EM@M@GEA@@@DEG@MEI@CEGEAEJEJED@F@E@@EB@@EF@GEC@BEH@IED@J@GEL@F@@EA@]]></pword></login></body></msg>
+20180710||11:8:1: [OUTGOING] - <msg t="sys"><body action="makeErr" r="0"><error message="Username is invalid."></error></body></msg>
+20180710||11:8:35: [INCOMING] - <policy-file-request/>
+20180710||11:8:35: [OUTGOING] - <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="9339"/></cross-domain-policy>
+20180710||11:8:35: [INCOMING] - <msg t='sys'><body action='verChk' r='0'><ver v='135' /></body></msg>
+20180710||11:8:35: [OUTGOING] - <msg t="sys"><body action="apiOK" r="0"></body></msg>
+20180710||11:8:35: [INCOMING] - <msg t='sys'><body action='rndK' r='-1'></body></msg>
+20180710||11:8:35: [OUTGOING] - <msg t="sys"><body action="rndK" r="-1"><k>e5801f4a3517</k></body></msg>
+20180710||11:8:47: [INCOMING] - <msg t='sys'><body action='login' r='0'><login z='simpleChat'><nick><![CDATA[Daan]]></nick><pword><![CDATA[MEG@IEA@E@DE@@D@K@G@F@DE@EL@L@EEBEGEEEHE@@L@C@DEAEAEH@AEC@C@@@DEF@D@B@F@D@E@@@I@F@@@A@C@AEGEE@C@@@@@M@F@B@DEB@AEBEGEI@AELED@M@A@]]></pword></login></body></msg>
+20180710||11:8:47: [OUTGOING] - <msg t="sys"><body action="logOK" r="0"><login n="Daan" id="100" mod="1"></login></body></msg>
+20180710||11:8:47: [OUTGOING] - <msg t="sys"><body action="makeAlert" r="0"><alert message="Welcome back Daan"></error></body></msg>
+20180710||11:8:47: [OUTGOING] - <msg t="sys"><body action="rmList" r="0"><rmList><rm id="1" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[Antarctica]]></n></rm></rmList></body></msg>rm id="2" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="50" maxs="0"><n><![CDAT[NorthPole]]></n></rm></rmList></body></msg>
+20180710||11:8:47: [INCOMING] - <msg t='sys'><body action='getRmList' r='-1'></body></msg>

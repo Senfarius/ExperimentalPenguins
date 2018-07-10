@@ -43,6 +43,7 @@ class Server {
 		}).listen(this.port, () => {
 			Logger.info(`Server listening on port: ${this.port}`)
 			Logger.info(`${Constants.SWEARS.length} swears loaded!`)
+			Logger.info(`${Constants.SPECIAL.length} special characters loaded!`)
 			Logger.info(`${this.room.countRooms()} rooms loaded!`)
 		})
 	}
@@ -71,6 +72,40 @@ class Server {
 		} else {
 			Logger.info(`Server shutting down in 1 second as there were no clients detected...`)
 			process.exit(0)
+		}
+	}
+
+	isOnline (id) {
+		for (const client of this.clients) {
+			if (client.id == id) {
+				return true
+			}
+		}
+		return false
+	}
+
+	isModerator (id) {
+		for (const client of this.clients) {
+			if (client.moderator == 1) {
+				return true
+			}
+		}
+		return false
+	}
+
+	getClientById (id) {
+		for (const client of this.clients) {
+			if (client.id == id) {
+				return client
+			}
+		}
+	}
+
+	getClientByName (name) {
+		for (const client of this.clients) {
+			if (client.username.toLowerCase() == name.toLowerCase()) {
+				return client
+			}
 		}
 	}
 }

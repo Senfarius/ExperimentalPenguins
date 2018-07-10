@@ -7,6 +7,11 @@ class Penguin {
 		this.socket  = socket
 		this.server  = server
 		this.ipAddr  = socket.remoteAddress.split(":").pop()
+
+		this.id        = 0
+		this.username  = ""
+		this.password  = ""
+		this.moderator = 0
 	}
 
 	send (data) {
@@ -17,13 +22,28 @@ class Penguin {
 		}
 	}
 
-	sendError (message) {
+	sendError (message, disconnect) {
 		this.send(`<msg t="sys"><body action="makeErr" r="0"><error message="${message}"></error></body></msg>`)
+		if (disconnect) this.disconnect()
 	}
+
+    sendAlert (message) {
+    	this.send(`<msg t="sys"><body action="makeAlert" r="0"><alert message="${message}"></error></body></msg>`)
+    }
 
 	disconnect () {
 		this.server.removePenguin(this)
 	}
+
+	buildPlayer (penguin) {
+		this.id = penguin.id
+		this.username = penguin.username
+		this.password = penguin.password
+		this.moderator = penguin.moderator
+	}
+
+	isOnline (id) {return this.server.isOnline(id)}
+	isModerator (id) {return this.server.isModerator(id)}
 }
 
 module.exports = Penguin

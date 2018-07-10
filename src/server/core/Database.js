@@ -24,11 +24,15 @@ class Database {
 		})
 	}
 
-	getPenguinByName (username) {
+	getPlayerByName (username) {
 		return this.knex("penguins").first("*").where("username", username)
 	}
 
-	penguinExistsByName (username) {
+	getPlayerById (id) {
+		return this.knex("penguins").first("*").where("id", id)
+	}
+
+	getPlayerExistsByName (username) {
 		return this.knex("penguins").where("username", username).select("username")
 	}
 }

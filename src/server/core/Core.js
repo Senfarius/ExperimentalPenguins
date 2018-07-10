@@ -3,7 +3,6 @@
 const xmldoc     = require("xmldoc")
 const Logger     = require("../Logger").Logger
 const Crypto     = require("./utils/Crypto")
-const Constants  = require("./utils/Constants").CHECKER
 
 class Core {
 	constructor (server) {
@@ -25,7 +24,7 @@ class Core {
 						client.send(`<msg t="sys"><body action="apiOK" r="0"></body></msg>`)
 					} else {
 						Logger.warning(`Invalid verChk packet: ${data} -| ${client.ipAddr}`)
-						client.disconnect()
+						client.sendError("Stop sending junk packets", true)
 					}
 				} else if (type == "rndK") {
 					client.randomKey = Crypto.generateKey()
@@ -33,25 +32,18 @@ class Core {
 				} else if (type == "login") {
 					const username = xmlPacket.children[0].firstChild.firstChild.val
 					const password = xmlPacket.children[0].lastChild.lastChild.val
-					this.database.penguinExistsByName(username).then(result => {
+					this.database.getPlayerExistsByName(username).then(result => {
 						if (result.length != 1) {
-							return client.sendError("Username is invalid.")
-						} else if (username.length <= 0 || password.length <= 0) {
-							return client.sendError("Username/password is empty.")
-						} else if (Constants.SWEARS.includes(username)) {
-							return client.sendError("Username contains a swear word.")
+							return client.sendError("Incorrect username/password.")
 						} else {
-							this.database.getPenguinByName(username).then(penguin => {
+							this.database.getPlayerByName(username).then(penguin => {
 								const hash = Crypto.decryptZaseth(password, client.randomKey)
 								if (hash == penguin.password) {
-									Logger.info(`${penguin.username} -| ${client.ipAddr} is logging in`)
-									client.id = penguin.id
-									client.username = penguin.username
-									client.password = penguin.password
-									client.moderator = penguin.moderator
+									Logger.info(`${penguin.username} -| ${client.ipAddr} has logged in`)
+									client.buildPlayer(penguin)
 									client.send(`<msg t="sys"><body action="logOK" r="0"><login n="${penguin.username}" id="${penguin.id}" mod="${penguin.moderator}"></login></body></msg>`)
+									client.sendAlert(`Welcome back ${penguin.username}`)
 								} else {
-									Logger.warning(`Invalid login: ${penguin.username} -| ${client.ipAddr}`)
 									return client.sendError("Invalid username/password.")
 								}
 							})
@@ -63,7 +55,7 @@ class Core {
 			}
 		} else {
 			Logger.warning(`Junk packet: ${data} -| ${client.ipAddr}`)
-			client.disconnect()
+			client.sendError("Stop sending junk packets.", true)
 		}
 	}
 }

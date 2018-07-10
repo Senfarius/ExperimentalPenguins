@@ -16,9 +16,18 @@ class Room {
 	}
 
 	makeRoomList () {
+		const roomObj = { // Default room object
+			priv: 0, // Private room
+			temp: 0, // Temporary room
+			game: 0, // Game room
+			ucnt: 0, // User count
+			scnt: 0, // Spectator count
+			lmb: 0, // Limbo room
+			maxs: 0 // Max spectators
+		}
 		let packet = `<msg t="sys"><body action="rmList" r="0"><rmList><`
 		for (let room of Object.keys(Rooms)) {
-			packet += `rm id="${Rooms[room].ID}" priv="0" temp="0" game="0" ucnt="0" scnt="0" lmb="0" maxu="${Rooms[room].maxUsers}" maxs="0"><n><![CDAT[${Rooms[room].Name}]]></n></rm></rmList></body></msg>`
+			packet += `rm id="${Rooms[room].ID}" priv="${roomObj.priv}" temp="${roomObj.temp}" game="${roomObj.game}" ucnt="${roomObj.ucnt}" scnt="${roomObj.scnt}" lmb="${roomObj.lmb}" maxu="${Rooms[room].maxUsers}" maxs="${roomObj.maxs}"><n><![CDAT[${Rooms[room].Name}]]></n></rm></rmList></body></msg>`
 		}
 		return packet
 	}

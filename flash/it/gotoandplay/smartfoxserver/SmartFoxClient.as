@@ -65,6 +65,10 @@ class it.gotoandplay.smartfoxserver.SmartFoxClient extends XMLSocket
         {
             ExternalInterface.call("alertMsg", xmlObj.error.attributes.message);
         }
+        else if (_loc22 == "makeAlert")
+        {
+            ExternalInterface.call("message", xmlObj.alert.attributes.message);
+        }
         else if (_loc22 == "apiOK")
         {
             scope.isConnected = true;
