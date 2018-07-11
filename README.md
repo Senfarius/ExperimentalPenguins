@@ -15,7 +15,7 @@ Attributes to be added in the future:
 
 Below is a simple password scheme that represents the password hashing in this emulator.
 
-<p align="left"><img src="https://i.imgur.com/X5wkBx5.png"></p>
+<p align="left"><img src="https://i.imgur.com/dBE95DN.png"></p>
 
 # TODO
 
