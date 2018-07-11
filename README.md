@@ -1,6 +1,23 @@
-# In-development Penguin Chat emulator written in Node.js
+# PenguinChatJS
 
-# TODO LOGS
+PenguinChatJS is an emulator to support the <b>SmartFoxServer</b> version of Penguin Chat 3. This project is still under <b>heavy development.</b>
+
+Currently supports attributes like:
+
+* Club Penguin-like room crumb system
+* Sweetalert messages in packet form
+* A secure and functional login
+* Blake2S hashing with rndK and custom encryption & decryption
+
+Attributes to be added in the future:
+
+* An expressjs server with a register
+
+Below is a simple password scheme that represents the password hashing in this emulator.
+
+<p align="left"><img src="https://i.imgur.com/dBE95DN.png"></p>
+
+# TODO
 
 * createRoom system and packets.
 
