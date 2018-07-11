@@ -16,6 +16,14 @@ class Database {
 		})
 	}
 
+	drop (id) {
+		return this.knex("penguins").where("id", id).del()
+	}
+
+	ban (id) {
+		return this.updateColumn(id, "ban", 1)
+	}
+
 	updateColumn (id, column, value) {
 		return this.knex("penguins").update(column, value).where("id", id).then(() => {
 			Logger.info(`"${column}" updated with "${value}" by "${id}"`)

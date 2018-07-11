@@ -1,254 +1,411 @@
-﻿class it.gotoandplay.smartfoxserver.ObjectSerializer
+/**
+ * Actionscript 2.0 Object Serializer / Deserializer.
+ * Supports:
+ * primitive datatypes: null, boolean, number, string
+ * object datatypes: object, array
+ * 
+ * @version	3.1.0
+ * 
+ * @author	The gotoAndPlay() Team
+ * 			{@link http://www.smartfoxserver.com}
+ * 			{@link http://www.gotoandplay.it}
+ * 
+ * @exclude
+ */
+class it.gotoandplay.smartfoxserver.ObjectSerializer
 {
-    var tabs, xmlStr, debug, eof, ascTab, ascTabRev, hexTable;
-    static var __instance;
-    function ObjectSerializer()
-    {
-        this.init();
-    } // End of the function
-    static function getInstance()
-    {
-        if (it.gotoandplay.smartfoxserver.ObjectSerializer.__instance == null)
-        {
-            __instance = new it.gotoandplay.smartfoxserver.ObjectSerializer();
-        } // end if
-        return (it.gotoandplay.smartfoxserver.ObjectSerializer.__instance);
-    } // End of the function
-    function init()
-    {
-        tabs = "\t\t\t\t\t\t\t\t\t\t";
-        xmlStr = "";
-        debug = false;
-        eof = "";
-        ascTab = [];
-        ascTab[">"] = "&gt;";
-        ascTab["<"] = "&lt;";
-        ascTab["&"] = "&amp;";
-        ascTab["\'"] = "&apos;";
-        ascTab["\""] = "&quot;";
-        ascTabRev = [];
-        ascTabRev["&gt;"] = ">";
-        ascTabRev["&lt;"] = "<";
-        ascTabRev["&amp;"] = "&";
-        ascTabRev["&apos;"] = "\'";
-        ascTabRev["&quot;"] = "\"";
-        hexTable = new Array();
-        hexTable["0"] = 0;
-        hexTable["1"] = 1;
-        hexTable["2"] = 2;
-        hexTable["3"] = 3;
-        hexTable["4"] = 4;
-        hexTable["5"] = 5;
-        hexTable["6"] = 6;
-        hexTable["7"] = 7;
-        hexTable["8"] = 8;
-        hexTable["9"] = 9;
-        hexTable.A = 10;
-        hexTable.B = 11;
-        hexTable.C = 12;
-        hexTable.D = 13;
-        hexTable.E = 14;
-        hexTable.F = 15;
-    } // End of the function
-    function serialize(obj)
-    {
-        var _loc2 = {};
-        _loc2.xmlStr = "";
-        if (debug)
-        {
-            eof = "\n";
-        } // end if
-        this.obj2xml(_loc2, obj, 0, "");
-        return (_loc2.xmlStr);
-    } // End of the function
-    function obj2xml(envelope, obj, lev, objn)
-    {
-        if (lev == 0)
-        {
-            envelope.xmlStr = envelope.xmlStr + ("<dataObj>" + eof);
-        }
-        else
-        {
-            if (debug)
-            {
-                envelope.xmlStr = envelope.xmlStr + tabs.substr(0, lev);
-            } // end if
-            var _loc8 = obj instanceof Array ? ("a") : ("o");
-            envelope.xmlStr = envelope.xmlStr + ("<obj t=\'" + _loc8 + "\' o=\'" + objn + "\'>" + eof);
-        } // end else if
-        for (var _loc7 in obj)
-        {
-            var _loc2 = typeof(obj[_loc7]);
-            var _loc4 = obj[_loc7];
-            if (_loc2 == "boolean" || _loc2 == "number" || _loc2 == "string" || _loc2 == "null")
-            {
-                if (_loc2 == "boolean")
-                {
-                    _loc4 = Number(_loc4);
-                }
-                else if (_loc2 == "null")
-                {
-                    _loc2 = "x";
-                    _loc4 = "";
-                }
-                else if (_loc2 == "string")
-                {
-                    _loc4 = this.encodeEntities(_loc4);
-                } // end else if
-                if (debug)
-                {
-                    envelope.xmlStr = envelope.xmlStr + tabs.substr(0, lev + 1);
-                } // end if
-                envelope.xmlStr = envelope.xmlStr + ("<var n=\'" + _loc7 + "\' t=\'" + _loc2.substr(0, 1) + "\'>" + _loc4 + "</var>" + eof);
-                continue;
-            } // end if
-            if (_loc2 == "object")
-            {
-                this.obj2xml(envelope, _loc4, lev + 1, _loc7);
-                if (debug)
-                {
-                    envelope.xmlStr = envelope.xmlStr + tabs.substr(0, lev + 1);
-                } // end if
-                envelope.xmlStr = envelope.xmlStr + ("</obj>" + eof);
-            } // end if
-        } // end of for...in
-        if (lev == 0)
-        {
-            envelope.xmlStr = envelope.xmlStr + ("</dataObj>" + eof);
-        } // end if
-    } // End of the function
-    function deserialize(xmlObj)
-    {
-        var _loc2 = new XML(xmlObj);
-        _loc2.ignoreWhite = true;
-        var _loc3 = new Object();
-        this.xml2obj(_loc2, _loc3);
-        return (_loc3);
-    } // End of the function
-    function xml2obj(xmlNode, currObj)
-    {
-        var _loc2 = 0;
-        var _loc3 = xmlNode.firstChild;
-        while (_loc3.childNodes[_loc2])
-        {
-            if (_loc3.childNodes[_loc2].nodeName == "obj")
-            {
-                var _loc4 = _loc3.childNodes[_loc2].attributes.o;
-                var _loc8 = _loc3.childNodes[_loc2].attributes.t;
-                if (_loc8 == "a")
-                {
-                    currObj[_loc4] = [];
-                }
-                else if (_loc8 == "o")
-                {
-                    currObj[_loc4] = {};
-                } // end else if
-                this.xml2obj(new XML(_loc3.childNodes[_loc2]), currObj[_loc4]);
-            }
-            else
-            {
-                _loc4 = _loc3.childNodes[_loc2].attributes.n;
-                var _loc6 = _loc3.childNodes[_loc2].attributes.t;
-                var _loc9 = _loc3.childNodes[_loc2].firstChild.nodeValue;
-                var _loc5;
-                if (_loc6 == "b")
-                {
-                    _loc5 = function (b)
-                    {
-                        return (Boolean(Number(b)));
-                    };
-                }
-                else if (_loc6 == "n")
-                {
-                    _loc5 = Number;
-                }
-                else if (_loc6 == "s")
-                {
-                    _loc5 = String;
-                }
-                else if (_loc6 == "x")
-                {
-                    _loc5 = function (x)
-                    {
-                        return (null);
-                    };
-                } // end else if
-                currObj[_loc4] = _loc5(_loc9);
-            } // end else if
-            ++_loc2;
-        } // end while
-    } // End of the function
-    function encodeEntities(st)
-    {
-        var _loc2 = "";
-        for (var _loc5 = 0; _loc5 < st.length; ++_loc5)
-        {
-            var _loc3 = st.charAt(_loc5);
-            var _loc4 = st.charCodeAt(_loc5);
-            if (_loc4 == 9 || _loc4 == 10 || _loc4 == 13)
-            {
-                _loc2 = _loc2 + _loc3;
-                continue;
-            } // end if
-            if (_loc4 >= 32 && _loc4 <= 126)
-            {
-                if (ascTab[_loc3] != undefined)
-                {
-                    _loc2 = _loc2 + ascTab[_loc3];
-                }
-                else
-                {
-                    _loc2 = _loc2 + _loc3;
-                } // end else if
-                continue;
-            } // end if
-            _loc2 = _loc2 + _loc3;
-        } // end of for
-        return (_loc2);
-    } // End of the function
-    function decodeEntities(st)
-    {
-        var _loc4;
-        var _loc6;
-        var _loc3;
-        var _loc5;
-        var _loc8;
-        var _loc2 = 0;
-        _loc4 = "";
-        while (_loc2 < st.length)
-        {
-            _loc6 = st.charAt(_loc2);
-            if (_loc6 == "&")
-            {
-                _loc3 = _loc6;
-                do
-                {
-                    ++_loc2;
-                    _loc5 = st.charAt(_loc2);
-                    _loc3 = _loc3 + _loc5;
-                } while (_loc5 != ";")
-                _loc8 = ascTabRev[_loc3];
-                if (_loc8 != undefined)
-                {
-                    _loc4 = _loc4 + _loc8;
-                }
-                else
-                {
-                    _loc4 = _loc4 + String.fromCharCode(this.getCharCode(_loc3));
-                } // end else if
-            }
-            else
-            {
-                _loc4 = _loc4 + _loc6;
-            } // end else if
-            ++_loc2;
-        } // end while
-        return (_loc4);
-    } // End of the function
-    function getCharCode(ent)
-    {
-        var _loc1 = ent.substr(3, ent.length);
-        _loc1 = _loc1.substr(0, _loc1.length - 1);
-        return (Number("0x" + _loc1));
-    } // End of the function
-} // End of Class
+	private static var __instance:ObjectSerializer
+	
+	private var tabs, xmlStr, eof:String
+	public var debug:Boolean
+	
+	private var ascTab, ascTabRev:Array
+	private var xmlData:XML
+	private var resObj:Object
+	
+	private var hexTable:Array
+	
+	
+	//--------------------------------------------------------
+	// Private Constructor: not used. Singleton class
+	//--------------------------------------------------------
+	private function ObjectSerializer()
+	{
+		// No access to external instance creation
+		init()
+	}
+	
+	
+	
+	//--------------------------------------------------------
+	// Create the one and only instance of this class
+	//--------------------------------------------------------
+	public static function getInstance():ObjectSerializer
+	{
+		if (__instance == null)
+			__instance = new ObjectSerializer()
+		
+		return __instance
+	}
+	
+	
+	
+	//--------------------------------------------------------
+	// Initialize instance
+	//--------------------------------------------------------
+	private function init():Void
+	{
+		this.tabs 	= "\t\t\t\t\t\t\t\t\t\t"			// used for debug only, for xml formatting
+		this.xmlStr 	= ""						// the final XML text of the serialized obj
+		this.debug 	= false						// if true, formats XML in human readable style
+		this.eof	= ""						// end of line constant, used only for debug
+		
+		//--- XML Entities Conversion table ----------------------
+		this.ascTab			= []
+		this.ascTab[">"] 		= "&gt;"
+		this.ascTab["<"] 		= "&lt;"
+		this.ascTab["&"] 		= "&amp;"
+		this.ascTab["'"] 		= "&apos;"
+		this.ascTab["\""] 		= "&quot;"
+		
+		this.ascTabRev			= []
+		this.ascTabRev["&gt;"]		= ">"
+		this.ascTabRev["&lt;"] 		= "<"
+		this.ascTabRev["&amp;"] 	= "&"
+		this.ascTabRev["&apos;"] 	= "'"
+		this.ascTabRev["&quot;"] 	= "\""
+		
+		
+		// Char codes in the upper Ascii range
+		/*
+		for (var i:Number = 127; i <= 255; i++)
+		{
+			this.ascTab[i] = "&#x" + i.toString(16) + ";"
+			this.ascTabRev["&#x" + i.toString(16) + ";"] = String.fromCharCode(i);
+		}*/
+		
+		hexTable = new Array()
+		hexTable["0"] = 0
+		hexTable["1"] = 1
+		hexTable["2"] = 2
+		hexTable["3"] = 3
+		hexTable["4"] = 4
+		hexTable["5"] = 5
+		hexTable["6"] = 6
+		hexTable["7"] = 7
+		hexTable["8"] = 8
+		hexTable["9"] = 9
+		hexTable["A"] = 10
+		hexTable["B"] = 11
+		hexTable["C"] = 12
+		hexTable["D"] = 13
+		hexTable["E"] = 14
+		hexTable["F"] = 15
+	}
+	
+	
+	
+	//--------------------------------------------------------
+	// Given an object returns the serialized XML form
+	//--------------------------------------------------------
+	public function serialize(obj:Object)
+	{
+		var envelope:Object = {}
+		envelope.xmlStr = ""
+	
+		if (this.debug) 
+			this.eof = "\n"
+		
+		obj2xml(envelope, obj, 0, "")	// Call serializer recursive method
+		
+		return envelope.xmlStr		// returns the XML text
+	}
+	
+	
+	
+	//--------------------------------------------------------
+	// Create an XML representation of the object
+	//
+	// envelope is used to incapsulate the final result String
+	// Strings are not passed as reference...
+	//--------------------------------------------------------
+	private function obj2xml(envelope:Object, obj:Object, lev:Number, objn:String)
+	{
+
+		// Open root TAG
+		// <dataObject></dataObject>
+		if (lev == 0)
+			envelope.xmlStr += "<dataObj>" + this.eof
+		else
+		{
+			if (this.debug)
+				envelope.xmlStr += this.tabs.substr(0, lev) 
+			
+			// Object type
+			var ot:String = (obj instanceof Array) ? "a" : "o"
+	
+			envelope.xmlStr += "<obj t='" + ot + "' o='" + objn + "'>" + this.eof
+		}
+		
+		// Scan the object recursively
+		for (var i in obj)
+		{
+			var t 	= typeof obj[i]
+			var o 	= obj[i]		
+			
+			//
+			// if a primitive type is found
+			// generate an xml <var n="name" t="type">value</var> TAG
+			//
+			// n = name of var
+			//
+			// t = b: boolean
+			//     n: number
+			//     s: string
+			//     x: null
+			//
+			// v = value of var
+			//
+			if ((t == "boolean") || (t == "number") || (t == "string") || (t == "null"))
+			{	
+				if (t == "boolean")
+				{
+					o = Number(o)
+				}
+				else if (t == "null")
+				{
+					t = "x"
+					o = ""
+				}
+				else if (t == "string")
+				{
+					o = this.encodeEntities(o)
+				}
+				
+				if (this.debug)
+					envelope.xmlStr += this.tabs.substr(0, lev+1)
+				
+				envelope.xmlStr += "<var n='" + i + "' t='" + t.substr(0,1) + "'>" + o + "</var>" + this.eof
+			}
+			
+			//
+			// if an object / array is found
+			// recursively scans the new Object
+			// and create a <obj o=""></obj> TAG
+			//
+			// o = object name
+			//
+			else if (t == "object")
+			{
+				this.obj2xml(envelope, o, lev + 1, i)
+				
+				if (this.debug)
+					envelope.xmlStr += this.tabs.substr(0, lev + 1)
+	
+				envelope.xmlStr += "</obj>" + this.eof
+			}
+		}
+		
+		// Close root TAG
+		if (lev == 0)
+			envelope.xmlStr += "</dataObj>" + this.eof
+	}
+	
+	
+	
+	//--------------------------------------------------------
+	// Return an object from an xml serialized form
+	//--------------------------------------------------------
+	public function deserialize(xmlObj:String):Object
+	{
+		var xmlData:XML			= new XML(xmlObj)		// xml Object
+		xmlData.ignoreWhite 		= true				// this does not work as it is declared AFTER the XML Object is populated
+		
+		var resObj:Object		= new Object()			// holds result Object
+	
+		this.xml2obj(xmlData, resObj)					// calls recursive xml parser
+		
+		return resObj							// Delete local object
+	}
+	
+	
+	
+	//--------------------------------------------------------
+	// Take an XML object representation and re-creates
+	// the original object
+	//--------------------------------------------------------
+	private function xml2obj(xmlNode:XMLNode, currObj:Object)
+	{		
+		// counter
+		var i:Number = 0
+		
+		// take first child inside XML object
+		var node:XMLNode = xmlNode.firstChild
+		
+		// Main recursion loop
+		while(node.childNodes[i])
+		{	
+			// If an object definition is found
+			// create the new Object in the current Object and recursively scan the xml data
+			//if(node.childNodes[i].childNodes.length > 0)
+			if (node.childNodes[i].nodeName == "obj")
+			{
+				// Get Object name
+				var n:String = node.childNodes[i].attributes.o
+				
+				// Get Object type
+				var ot:String = node.childNodes[i].attributes.t
+				
+				//trace("{ found object = " + node.childNodes[i].attributes.o + "}\n")
+				//trace("nodeName: " + node.childNodes[i].nodeName)
+				
+				// Create the right type of Object
+				if (ot == "a")
+					currObj[n] = []
+				else if (ot == "o")
+					currObj[n] = {}
+					
+				//trace("node:" + node.childNodes[i])
+				// Recursion
+				this.xml2obj(new XML(node.childNodes[i]), currObj[n]);
+			} 
+			
+			// If a primitive type is found
+			// create the variable inside the current Object casting its value to the original datatype
+			else
+			{
+				// Found a variable
+				var n:String = node.childNodes[i].attributes.n
+				var t:String = node.childNodes[i].attributes.t
+				var v:String = node.childNodes[i].firstChild.nodeValue
+				
+				// Dynamically cast the variable value to its original datatype
+				var fn:Function
+				
+				if (t == "b")
+					fn = function (b) { return Boolean(Number(b)) }
+				else if (t == "n")
+					fn = Number
+				else if (t == "s")
+					fn = String
+				else if (t == "x")
+					fn = function(x) { return null; }
+	
+				currObj[n] = fn(v)
+				
+				//if (fn == String)
+					//currObj[n] = this.decodeEntities(currObj[n])
+					
+
+			}
+			
+			// next xml node
+			i++;
+		}
+		
+	}
+	
+	
+	
+	//---------------------------------------------------------
+	// Helper methods -- v 0.2
+	// 
+	// Encode/Decode xml entities
+	//---------------------------------------------------------
+	public function encodeEntities(st:String):String
+	{
+		var strbuff:String = ""
+	
+		// char codes < 32 are ignored except for tab,lf,cr
+		
+		for (var i:Number = 0; i < st.length; i++)
+		{
+			var ch:String = st.charAt(i)
+			var cod:Number = st.charCodeAt(i)
+			
+			if (cod == 9 || cod == 10 || cod == 13)
+			{
+				strbuff += ch
+			}
+			else if (cod >= 32 && cod <=126)
+			{
+				if (this.ascTab[ch] != undefined)
+				{
+					strbuff += this.ascTab[ch]
+				}
+				else
+					strbuff += ch
+			}
+			/*
+			else if (cod > 126 && cod <= 255)
+			{
+				strbuff += this.ascTab[cod]
+			}
+			else if (cod > 255)
+			{
+				strbuff += "&#x" + cod.toString(16) + ";"
+			}*/
+			else
+				strbuff += ch
+		}
+	
+		return strbuff
+	}
+	
+	
+	
+	public function decodeEntities(st:String):String
+	{
+		var strbuff, ch, ent, chi, item:String
+		var i:Number = 0
+
+		strbuff = ""
+
+		while(i < st.length)
+		{
+			ch = st.charAt(i)
+
+			if (ch == "&")
+			{
+				ent = ch
+				
+				// read the complete entity
+				do
+				{
+					i++
+					chi = st.charAt(i)
+					ent += chi
+					//trace(ent)
+				} 
+				while (chi != ";" && i < st.length)
+				
+				item = this.ascTabRev[ent]
+
+				if (item != undefined)
+					strbuff += item
+				else
+					strbuff += String.fromCharCode(getCharCode(ent))
+			}
+			else
+				strbuff += ch
+				
+			i++
+		}
+		
+		return strbuff
+	}
+	
+	
+	//-----------------------------------------------
+	// Transform xml code entity into hex code
+	// and return it as a number
+	//-----------------------------------------------
+	public function getCharCode(ent:String):Number
+	{
+		var hex:String = ent.substr(3, ent.length)	
+		hex = hex.substr(0, hex.length - 1)
+		
+		return Number("0x" + hex)
+	}
+}
+

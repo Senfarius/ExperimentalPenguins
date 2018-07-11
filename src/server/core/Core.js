@@ -1,8 +1,8 @@
 "use strict"
 
-const xmldoc     = require("xmldoc")
-const Logger     = require("../Logger").Logger
-const Crypto     = require("./utils/Crypto")
+const xmldoc = require("xmldoc")
+const Logger = require("../Logger").Logger
+const Crypto = require("./utils/Crypto")
 
 class Core {
 	constructor (server) {
@@ -37,6 +37,7 @@ class Core {
 							return client.sendError("Incorrect username/password.")
 						} else {
 							this.database.getPlayerByName(username).then(penguin => {
+								if (penguin.ban == 1) return client.sendError("You are banned.")
 								const hash = Crypto.decryptZaseth(password, client.randomKey)
 								if (hash == penguin.password) {
 									Logger.info(`${penguin.username} -| ${client.ipAddr} has logged in`)

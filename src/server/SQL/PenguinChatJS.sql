@@ -12,12 +12,13 @@ CREATE TABLE `penguins` (
 	`username` varchar(12) NOT NULL COMMENT 'Penguin username',
 	`password` char(255) NOT NULL COMMENT 'Penguin password in blake2s',
 	`moderator` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin moderator',
+	`ban` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin banned',
 	PRIMARY KEY (`id`),
 	UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1 COMMENT='Penguins';
 
 LOCK TABLE `penguins` WRITE;
-INSERT INTO `penguins` VALUES (100, 'Daan', '82a1424e827c594ec1a9392c4d0a2e455131a0897f5bbb44e5563260ab8f9151', 1);
+INSERT INTO `penguins` VALUES (100, 'Daan', '82a1424e827c594ec1a9392c4d0a2e455131a0897f5bbb44e5563260ab8f9151', 1, 0);
 UNLOCK TABLES;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
