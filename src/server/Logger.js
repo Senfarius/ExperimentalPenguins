@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* My custom logger.
+*/
 const fs     = require("fs")
 const chalk  = require("chalk")
 const path   = __dirname + "\\logs\\"
@@ -23,6 +25,11 @@ Logger.outgoing = function (message) {
     console.log(chalk.blue.bgWhite(`[OUTGOING] - ${message}\r`))
     fs.appendFile(`${path}data.log`, this.dateToInt() + ": [OUTGOING] - " + message + "\r\n", (err) => {if (err) throw err})
 }
+
+Logger.validation = function (message) {
+    fs.appendFile(`${path}validation.log`, this.dateToInt() + ": " + message + "\r\n", (err) => {if (err) throw err})
+}
+
 Logger.error = function (message) {
     console.log(chalk.red.bgBlack.bold(`[ERROR] - ${message}\r`))
     fs.appendFile(`${path}error.log`, this.dateToInt() + ": " + message + "\r\n", (err) => {if (err) throw err})

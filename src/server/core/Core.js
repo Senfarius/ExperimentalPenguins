@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* Used to handle incoming packets.
+*/
 const xmldoc = require("xmldoc")
 const Logger = require("../Logger").Logger
 const Crypto = require("./utils/Crypto")

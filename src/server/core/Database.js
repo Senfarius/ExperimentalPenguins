@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* Used to handle the database.
+*/
 const Logger = require("../Logger").Logger
 const Config = require("../Config").Database
 

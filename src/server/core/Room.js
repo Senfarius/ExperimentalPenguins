@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* Used to create rooms to send to SmartFoxServer.
+*/
 const Logger = require("../Logger").Logger
 const Rooms  = require("./data/Rooms")
 

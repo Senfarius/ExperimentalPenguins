@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* The player class.
+*/
 const Logger = require("../Logger").Logger
 
 class Penguin {

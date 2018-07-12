@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* Used to hash and compare passwords.
+*/
 const crypto = require("crypto")
 const blake2 = require("blake2")
 

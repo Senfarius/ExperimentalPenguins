@@ -1,5 +1,7 @@
 "use strict"
-
+/*
+* Server core.
+*/
 const Core       = require("./core/Core")
 const Database   = require("./core/Database")
 const Penguin    = require("./core/Penguin")
