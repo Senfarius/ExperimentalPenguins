@@ -2,8 +2,9 @@
 /*
 * Used to handle the database.
 */
-const Logger = require("../Logger").Logger
-const Config = require("../Config").Database
+const Logger     = require("../Logger").Logger
+const Config     = require("../Config").Database
+const Validation = require("./utils/Validation")
 
 class Database {
 	constructor () {
@@ -24,6 +25,12 @@ class Database {
 
 	ban (id) {
 		return this.updateColumn(id, "ban", 1)
+	}
+
+	addValidation (client) {
+		let Mm = Validation.MmValidate()
+		client.validation = Mm
+		return this.updateColumn(client.id, "validation", Mm)
 	}
 
 	updateColumn (id, column, value) {

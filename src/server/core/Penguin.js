@@ -10,10 +10,11 @@ class Penguin {
 		this.server  = server
 		this.ipAddr  = socket.remoteAddress.split(":").pop()
 
-		this.id        = 0
-		this.username  = ""
-		this.password  = ""
-		this.moderator = 0
+		this.id         = 0
+		this.username   = ""
+		this.password   = ""
+		this.moderator  = 0
+		this.validation = ""
 	}
 
 	send (data) {
@@ -42,6 +43,7 @@ class Penguin {
 		this.username = penguin.username
 		this.password = penguin.password
 		this.moderator = penguin.moderator
+		this.server.database.addValidation(this)
 	}
 
 	isOnline (id) {return this.server.isOnline(id)}

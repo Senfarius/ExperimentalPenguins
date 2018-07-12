@@ -14,7 +14,7 @@ class Core {
 	}
 
 	handleData (data, client) {
-		if (data.charAt(0) == "<" && data.charAt(data.length - 1) == ">") {
+		if (data.charAt(0) == "<" && data.charAt(data.length - 1) == ">") { // Simple XML packet check
 			Logger.incoming(data)
 			if (data == "<policy-file-request/>") {
 				client.send(`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><site-control permitted-cross-domain-policies="master-only"/><allow-access-from domain="*" to-ports="${this.server.port}"/></cross-domain-policy>`)
@@ -34,20 +34,24 @@ class Core {
 				} else if (type == "login") {
 					const username = xmlPacket.children[0].firstChild.firstChild.val
 					const password = xmlPacket.children[0].lastChild.lastChild.val
+					if (password.length != 128) return client.sendError("Incorrect username/password.")
 					this.database.getPlayerExistsByName(username).then(result => {
-						if (result.length != 1) {
+						if (result.length != 1) { // Player does not exist
 							return client.sendError("Incorrect username/password.")
 						} else {
 							this.database.getPlayerByName(username).then(penguin => {
-								if (penguin.ban == 1) return client.sendError("You are banned.")
+								if (penguin.ban == 1) { // Player is banned
+									Logger.warning(`${penguin.username} -| ${client.ipAddr} is banned and tried to login`)
+									return client.sendError("You are banned.", true)
+								}
 								const hash = Crypto.decryptZaseth(password, client.randomKey)
-								if (hash == penguin.password) {
+								if (hash == penguin.password) { // Player logged in
 									Logger.info(`${penguin.username} -| ${client.ipAddr} has logged in`)
 									client.buildPlayer(penguin)
 									client.send(`<msg t="sys"><body action="logOK" r="0"><login n="${penguin.username}" id="${penguin.id}" mod="${penguin.moderator}"></login></body></msg>`)
-									client.sendAlert(`Welcome back ${penguin.username}`)
-								} else {
-									return client.sendError("Invalid username/password.")
+									client.sendAlert(`Welcome back ${penguin.username}.`)
+								} else { // Incorrect username/password
+									return client.sendError("Incorrect username/password.")
 								}
 							})
 						}

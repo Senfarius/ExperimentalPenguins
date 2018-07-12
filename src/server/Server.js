@@ -27,7 +27,7 @@ class Server {
 			socket.setEncoding("utf8")
 			const client = new Penguin(socket, this)
 			Logger.info(`${client.ipAddr} connected`)
-			if (this.clients.length >= this.maxPenguins) return client.sendError("The game is full.")
+			if (this.clients.length >= this.maxPenguins) return client.sendError("The server is full.")
 			this.clients.push(client)
 			socket.on("data", data => {
 				data = data.toString().split(`\0`)[0]
@@ -66,7 +66,7 @@ class Server {
 			Logger.info(`Disconnecting ${this.clients.length} client(s)...`)
 			setTimeout(() => {
 				for (const client of this.clients) {
-					client.sendError("The game is shutting down.")
+					client.sendError("The server is shutting down.")
 					client.disconnect()
 				}
 				process.exit(0)

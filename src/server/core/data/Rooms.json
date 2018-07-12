@@ -1,12 +1,7 @@
 {
 	"1": {
-		"ID": 1,
-		"Name": "Antarctica",
+		"ID": 100,
+		"Name": "town",
 		"maxUsers": 50
-    },
-    "2": {
-    	"ID": 2,
-    	"Name": "NorthPole",
-    	"maxUsers": 50
     }
 }

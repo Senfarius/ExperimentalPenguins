@@ -1305,6 +1305,7 @@ class it.gotoandplay.smartfoxserver.SmartFoxClient extends XMLSocket
     static var PROTOCOL_XML = "xml";
     static var PROTOCOL_STR = "str";
     static var PROTOCOL_JSON = "json";
+    public var onJoinRoom;
     var httpPort = 8080;
     var majVersion = 1;
     var minVersion = 3;
