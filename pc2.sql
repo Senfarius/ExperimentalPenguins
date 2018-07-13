@@ -8,12 +8,12 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `penguins`;
 CREATE TABLE `penguins` (
-	`id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Penguin ID',
-	`username` varchar(12) NOT NULL COMMENT 'Penguin username',
-	`mod` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin moderator',
-	`ban` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin banned',
-	PRIMARY KEY (`id`),
-	UNIQUE KEY `username` (`username`)
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Penguin ID',
+    `username` varchar(12) NOT NULL COMMENT 'Penguin username',
+    `mod` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin moderator',
+    `ban` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin banned',
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1 COMMENT='Penguins';
 
 LOCK TABLE `penguins` WRITE;
