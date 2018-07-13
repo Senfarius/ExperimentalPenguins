@@ -1,6 +1,6 @@
 {
     "name": "PenguinChat2",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An avatar chat with penguins, Penguin Chat 2!",
     "main": "src/Run.js",
     "keywords": ["Penguin chat", "PC3", "PC2", "PC1", "Club Penguin", "Private Server", "Penguin Chat Private Server"],

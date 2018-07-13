@@ -16,13 +16,21 @@ class Database {
 		})
 	}
 
-	drop (id) { return this.knex("penguins").where("id", id).del() }
-	promote (id) { return this.updateColumn(id, "mod", 1) }
+	testConnection () {
+		this.knex.raw("SELECT 1 + 1 AS RESULT").catch(err => {
+			Logger.error(err)
+			process.exit(1)
+		})
+	}
+	
+	drop (username) { return this.knex("penguins").where("username", username).del() }
+	ban (username) { return this.updateColumn(username, "ban", 1) }
+	unban (username) { return this.updateColumn(username, "ban", 0) }
+	promote (username) { return this.updateColumn(username, "mod", 1) }
+	demote (username) { return this.updateColumn(username, "mod", 0) }
 
 	getPlayerByName (username) { return this.knex("penguins").first("*").where("username", username) }
-	getPlayerById (id) { return this.knex("penguins").first("*").where("id", id) }
 	getPlayerExistsByName (username) { return this.knex("penguins").where("username", username).select("username") }
-	getPlayerExistsById (id) { return this.knex("penguins").where("id", id).select("id") }
 
 	updateColumn (id, column, value) {
 		return this.knex("penguins").update(column, value).where("id", id).then(() => {
