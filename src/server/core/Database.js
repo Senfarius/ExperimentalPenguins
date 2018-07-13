@@ -35,7 +35,6 @@ class Database {
 
 	updateColumn (id, column, value) {
 		return this.knex("penguins").update(column, value).where("id", id).then(() => {
-			Logger.info(`"${column}" updated with "${value}" by "${id}"`)
 		}).catch((error) => {
 			Logger.error(error)
 		})

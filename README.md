@@ -9,17 +9,12 @@ Currently supports attributes like:
 * A secure and functional login
 * Blake2S hashing with rndK and custom encryption & decryption
 
-Attributes to be added in the future:
+# TODO & PROGRESS
 
-* An expressjs server with a register
+<b>Currently, I am looking for a valid copy of Penguin Chat 3. The current copy that I used was corrupt. The server that I've written is fully correct. All I basically need now is a working copy of Penguin Chat 3, and I'm busy with that. The flash folder now contains only the modifications I made so that it'd be compatible with the server. I am also getting Penguin Chat resources from an old friend and he might help me with this project.</b>
 
-Below is a simple password scheme that represents the password hashing in this emulator.
 
-<p align="left"><img src="https://i.imgur.com/dBE95DN.png"></p>
-
-# TODO
-
-* createRoom system and packets.
+# Dev-logs
 
 ```
 [Sending]: <msg t='sys'><body action='verChk' r='0'><ver v='158' /></body></msg>
