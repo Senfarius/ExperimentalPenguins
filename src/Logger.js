@@ -16,20 +16,6 @@ Logger.clear = function () {
     fs.truncate(`${path}debug.log`, 0, (err) => {if (err) throw err})
 }
 
-Logger.incoming = function (message) {
-    if (message.length == 0 || message.length == 1) return
-    console.log(chalk.hex("#F1E").bgWhite(`[INCOMING] - ${message}\r`))
-    fs.appendFile(`${path}data.log`, this.dateToInt() + ": [INCOMING] - " + message + "\r\n", (err) => {if (err) throw err})
-}
-Logger.outgoing = function (message) {
-    console.log(chalk.blue.bgWhite(`[OUTGOING] - ${message}\r`))
-    fs.appendFile(`${path}data.log`, this.dateToInt() + ": [OUTGOING] - " + message + "\r\n", (err) => {if (err) throw err})
-}
-
-Logger.validation = function (message) {
-    fs.appendFile(`${path}validation.log`, this.dateToInt() + ": " + message + "\r\n", (err) => {if (err) throw err})
-}
-
 Logger.error = function (message) {
     console.log(chalk.red.bgBlack.bold(`[ERROR] - ${message}\r`))
     fs.appendFile(`${path}error.log`, this.dateToInt() + ": " + message + "\r\n", (err) => {if (err) throw err})

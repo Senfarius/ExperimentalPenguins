@@ -1,17 +1,14 @@
 {
-    "name": "PenguinChatJS",
-    "version": "1.0.7",
-    "description": "Penguin Chat emulator written in Node.js",
+    "name": "PenguinChat2",
+    "version": "1.0.0",
+    "description": "An avatar chat with penguins, Penguin Chat 2!",
     "main": "src/Run.js",
     "keywords": ["Penguin chat", "PC3", "PC2", "PC1", "Club Penguin", "Private Server", "Penguin Chat Private Server"],
     "engines": {"node": "10.6.0"},
     "author": "Zaseth",
     "license": "MIT",
     "dependencies": {
-    	"chalk": "^2.4.1",
-    	"xmldoc": "^1.1.0",
-    	"knex": "^0.15.0",
-        "blake2": "^2.0.1",
-        "moment": "^2.22.2"
+        "express": "^4.16.3",
+    	"knex": "^0.15.0"
     }
 }
