@@ -5,7 +5,6 @@ const bodyParser = require("body-parser")
 const database   = new (require("./Database"))
 const express    = require("express")
 const Logger     = require("./Logger").Logger
-const morgan     = require("morgan")
 const Utils      = require("./Utils")
 
 // Middleware
@@ -13,7 +12,6 @@ const app = express()
 app.use(express.static(__dirname + "/public/"))
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
-app.use(morgan("common"))
 
 // GET routes
 app.get("/", (req, res) => { res.sendFile(__dirname  + "/public/index.html") })
@@ -29,14 +27,18 @@ app.get("*", (req, res) => { res.status(404).send("<h1>404 - NOT FOUND</h1>") })
 // Listens the server on port 80
 app.listen(80, () => {
 	Logger.info("Server listening on address http://localhost:80/")
-	Logger.info(`${Constants.SWEARS.length} swears loaded!`)
 })
+
+function write (data, res) {
+	Logger.info(`[POLLING] - ${data}`)
+	return res.status(200).send(data)
+}
 
 // Handlers for the POST routes
 function newPlayer (username, res) {
 	if (Utils.verifyName(username)) {
 		Logger.info(`${username} is invalid and has been blocked`)
-		return res.status(200).send(`${error(2)}`)
+		return write(`${error(2)}`, res)
 	}
 	database.getPlayerExistsByName(username).then(result => {
 		if (result.length != 1) {
@@ -44,12 +46,12 @@ function newPlayer (username, res) {
 			database.getPlayerByName(username).then(penguin => {
 				if (penguin.ban == 1) {
 					Logger.info(`${username} tried to login but he is banned`)
-					return res.status(200).send(error(4)) // The player is banned
+					return write(error(4), res) // The player is banned
 				}
-				return res.status(200).send(`${error(0)}&id=${penguin.id}`)
+				return write(`${error(0)}&id=${penguin.id}&m=${penguin.mod}`, res)
 			})
 		} else {
-			return res.status(200).send(error(2)) // The player is in use
+			return write(error(2), res) // The player is already used
 		}
 	})
 }
