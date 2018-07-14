@@ -30,7 +30,7 @@ DROP TABLE IF EXISTS `penguins`;
 CREATE TABLE `penguins` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Penguin ID',
     `username` varchar(12) NOT NULL COMMENT 'Penguin username',
-    `created` datetime NOT NULL DEFAULT current_timestamp(),
+    `created` datetime NOT NULL DEFAULT current_timestamp() COMMENT 'Penguin creation date',
     `room` varchar(11) NOT NULL DEFAULT 1 COMMENT 'Penguin room',
     `data` text NOT NULL COMMENT 'Chat String',
     `mod` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin moderator',

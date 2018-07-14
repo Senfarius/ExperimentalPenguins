@@ -5,7 +5,7 @@ const Logger    = require("./Logger").Logger
 
 class Utils {
 	static validateString(str) {
-		if (Constants.SWEARS.includes(str) || Constants.SPECIAL.includes(str) || str == null || str == "" || str.length < 1 || str.length > 20) {
+		if (Constants.SWEARS.includes(str) || Constants.SPECIAL.includes(str) || str == null || str == "" || str.length < 1 || str.length > 12) {
 			return true
 		}
 		return false

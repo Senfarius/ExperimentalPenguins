@@ -2,7 +2,7 @@
 <p align="center">A Penguin Chat 2 emulator, written in Node.js with the use of Express to imitate PHP's long polling technique. Penguin Chat 2 originally used long polling, but we can use this in Node.js as well!</p>
 <p align="center"><img src="https://i.imgur.com/sfH04Fn.png"></p>
 
-## NOTE - THE FLASH FILES ARE TEST FILES. THEY'RE BUGGY, BUT WORK. FIND YOUR OWN.
+## NOTE - FIGURING OUT THE SWF ISSUES, STAY TUNED.
 
 # Installation
 
