@@ -8,7 +8,7 @@
 
 1. Download this repository
 2. Download & install [Node.js](https://nodejs.org/en/)
-3. Run the following command in CMD: <b>npm i express knex</b>
+3. Run the following command in CMD: <b>npm install express knex mariasql</b>
 4. Download & install MySQL for your OS (Windows, Linux etc)
 5. Download & install [MySQL Workbench](https://www.mysql.com/products/workbench/) to <b>import</b>, browse and edit the database
 
