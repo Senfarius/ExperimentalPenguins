@@ -4,7 +4,7 @@ const Constants = require("./Constants").CHECKS
 const Logger    = require("./Logger").Logger
 
 class Utils {
-	static validateString (str) {
+	static validateString(str) {
 		if (Constants.SWEARS.includes(str) || Constants.SPECIAL.includes(str) || str == null || str == "" || str.length < 1 || str.length > 20) {
 			return true
 		}

@@ -16,7 +16,7 @@
 
 0. Make sure you did everything in <b>Installation</b> and <b>have MySQL running</b>
 1. Open CMD
-2. Use the [CD](https://ss64.com/nt/cd.html) command to CD to the folder: <b>/src/</b>
+2. Use the [CD](https://ss64.com/nt/cd.html) command to CD to the folder where <b>Run.js</b> is located
 3. Enter the command: <b>node Run.js</b>
 4. Open a new webpage and browse to: <b>http://localhost/</b>
 
