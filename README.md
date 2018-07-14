@@ -1,7 +1,25 @@
-# Penguin Chat JS (in development)
+<h1 align="center">Penguin Chat JS</h1>
+<p align="center">A Penguin Chat 2 emulator, written in Node.js with the use of Express to imitate PHP's long polling technique. Penguin Chat 2 originally used long polling, but we can use this in Node.js as well!</p>
+<p align="center"><img src="https://i.imgur.com/sfH04Fn.png"></p>
 
-A Penguin Chat 2 emulator, written in Node.js with the use of Express to imitate PHP's long polling technique. Penguin Chat 2 originally used long polling, but we can use this in Node.js as well!
+## NOTE - THE FLASH FILES ARE TEST FILES. THEY'RE BUGGY, BUT WORK. FIND YOUR OWN.
 
-# History
+# Installation
 
-Penguin Chat 2 was used to test Club Penguin. This simple avatar chat is truly a piece of nostalgia and internet 'gaming' history.
+1. Download this repository
+2. Download & install [Node.js](https://nodejs.org/en/)
+3. Run the following command in CMD: <b>npm i express knex</b>
+4. Download & install MySQL for your OS (Windows, Linux etc)
+5. Download & install [MySQL Workbench](https://www.mysql.com/products/workbench/) to <b>import</b>, browse and edit the database
+
+# Run server
+
+0. Make sure you did everything in <b>Installation</b> and <b>have MySQL running</b>
+1. Open CMD
+2. Use the [CD](https://ss64.com/nt/cd.html) command to CD to the folder: <b>/src/</b>
+3. Enter the command: <b>node Run.js</b>
+4. Open a new webpage and browse to: <b>http://localhost/</b>
+
+# TODO
+
+Make the database class async and await?

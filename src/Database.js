@@ -15,7 +15,17 @@ class Database {
 			}
 		})
 	}
-	
+
+	ban (id) { return this.updateColumn(id, "ban", 1) }
+	unban (id) { return this.updateColumn(id, "ban", 0) }
+	promote (id) { return this.updateColumn(id, "mod", 1) }
+	demote (id) { return this.updateColumn(id, "mod", 0) }
+	getPlayerByName (username) { return this.knex("penguins").first("*").where("username", username) }
+	getPlayerById (id) { return this.knex("penguins").first("*").where("id", id) }
+	getPlayerExistsByName (username) { return this.knex("penguins").where("username", username).select("username") }
+	getIdByName (username) { return this.knex("penguins").where("username", username).select("id") }
+	insertPlayer (username) { return this.knex("penguins").insert({username: username}) }
+
 	drop (id) {
 		return this.knex("penguins").where("id", id).del().then(() => {
 			Logger.info(`Dropped ${id}`)
@@ -23,41 +33,16 @@ class Database {
 			Logger.error(err)
 		})
 	}
-
-	promote (id) {
-		return this.updateColumn(id, "mod", 1)
-	}
-
-	demote (id) {
-		return this.updateColumn(id, "mod", 0)
-	}
-
-	getPlayerByName (username) {
-		return this.knex("penguins").first("*").where("username", username)
-	}
-
-	getPlayerById (id) {
-		return this.knex("penguins").first("*").where("id", id)
-	}
-
-	getPlayerExistsByName (username) {
-		return this.knex("penguins").where("username", username).select("username")
-	}
-
-	getIdByName (username) {
-		return this.knex("penguins").where("username", username).select("id")
-	}
-
-	updateColumn (id, column, value) {
-		return this.knex("penguins").update(column, value).where("id", id).then(() => {
-			Logger.info(`Updated ${column} with ${value} by ${id}`)
+	dropAll () {
+		return this.knex.raw("DELETE FROM `penguins` WHERE `id` > 100").then(() => {
+			Logger.info("Cleaned the database")
 		}).catch((err) => {
 			Logger.error(err)
 		})
 	}
-	insertPlayer (username) {
-		return this.knex("penguins").insert({username: username}).then(() => {
-			Logger.info(`Inserted ${username}`)
+	updateColumn (id, column, value) {
+		return this.knex("penguins").update(column, value).where("id", id).then(() => {
+			Logger.info(`Updated ${column} with ${value} by ${id}`)
 		}).catch((err) => {
 			Logger.error(err)
 		})
