@@ -1,16 +1,16 @@
 "use strict"
 
-const Config = require("../Config")
+const Config  = require("../Config")
 const Logger = require("./Logger").Logger
 
 class Database {
 	constructor() {
 		this.knex = require("knex")({
-			client: "mariadb",
+			client: "mysql2",
 			connection: {
-				"host"    : Config.host,
-				"db"      : Config.database,
-				"user"    : Config.username,
+				"host"          : Config.host,
+				"database" : Config.database,
+				"user"          : Config.username,
 				"password": Config.password
 			}
 		})
