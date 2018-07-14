@@ -15,22 +15,38 @@ class Database {
 			}
 		})
 	}
-
-	testConnection () {
-		this.knex.raw("SELECT 1 + 1 AS RESULT").catch(err => {
+	
+	drop (id) {
+		return this.knex("penguins").where("id", id).del().then(() => {
+			Logger.info(`Dropped ${id}`)
+		}).catch((err) => {
 			Logger.error(err)
-			process.exit(1)
 		})
 	}
-	
-	drop (username) { return this.knex("penguins").where("username", username).del() }
-	ban (username) { return this.updateColumn(username, "ban", 1) }
-	unban (username) { return this.updateColumn(username, "ban", 0) }
-	promote (username) { return this.updateColumn(username, "mod", 1) }
-	demote (username) { return this.updateColumn(username, "mod", 0) }
 
-	getPlayerByName (username) { return this.knex("penguins").first("*").where("username", username) }
-	getPlayerExistsByName (username) { return this.knex("penguins").where("username", username).select("username") }
+	promote (id) {
+		return this.updateColumn(id, "mod", 1)
+	}
+
+	demote (id) {
+		return this.updateColumn(id, "mod", 0)
+	}
+
+	getPlayerByName (username) {
+		return this.knex("penguins").first("*").where("username", username)
+	}
+
+	getPlayerById (id) {
+		return this.knex("penguins").first("*").where("id", id)
+	}
+
+	getPlayerExistsByName (username) {
+		return this.knex("penguins").where("username", username).select("username")
+	}
+
+	getIdByName (username) {
+		return this.knex("penguins").where("username", username).select("id")
+	}
 
 	updateColumn (id, column, value) {
 		return this.knex("penguins").update(column, value).where("id", id).then(() => {
