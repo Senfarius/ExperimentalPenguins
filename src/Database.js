@@ -1,6 +1,6 @@
 "use strict"
 
-const Config  = require("../Config")
+const Config = require("../Config")
 const Logger = require("./Logger").Logger
 
 class Database {
@@ -8,22 +8,23 @@ class Database {
 		this.knex = require("knex")({
 			client: "mysql2",
 			connection: {
-				"host"          : Config.host,
-				"database" : Config.database,
-				"user"          : Config.username,
+				"host"    : Config.host,
+				"database": Config.database,
+				"user"    : Config.username,
 				"password": Config.password
 			}
 		})
 	}
 
-	ban(id) { return this.updateColumn(id, "ban", 1) }
-	unban(id) { return this.updateColumn(id, "ban", 0) }
 	promote(id) { return this.updateColumn(id, "mod", 1) }
 	demote(id) { return this.updateColumn(id, "mod", 0) }
+
+	updateRoom(id, room) { return this.updateColumn(id, "room", room) }
+	updateIp(id, ip) { return this.updateColumn(id, "IP", ip)}
+
 	getPlayerByName(username) { return this.knex("penguins").first("*").where("username", username) }
-	getPlayerById(id) { return this.knex("penguins").first("*").where("id", id) }
 	getPlayerExistsByName(username) { return this.knex("penguins").where("username", username).select("username") }
-	getIdByName(username) { return this.knex("penguins").where("username", username).select("id") }
+
 	insertPlayer(username) { return this.knex("penguins").insert({ username: username }) }
 
 	drop(id) {
@@ -34,8 +35,8 @@ class Database {
 		})
 	}
 	dropAll() {
-		return this.knex.raw("DELETE FROM `penguins` WHERE `id` > 100").then(() => {
-			Logger.info("Cleaned the database")
+		return this.knex("penguins").where("id", ">", 100).del().then(() => {
+			Logger.info(`Cleaned the database`)
 		}).catch((err) => {
 			Logger.error(err)
 		})
