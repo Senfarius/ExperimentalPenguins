@@ -31,7 +31,6 @@ CREATE TABLE `penguins` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Penguin ID',
     `username` varchar(12) NOT NULL COMMENT 'Penguin username',
     `created` datetime NOT NULL DEFAULT current_timestamp() COMMENT 'Penguin creation date',
-    `ip` char(255) NOT NULL DEFAULT '' COMMENT 'Penguin IP',
     `room` int(11) NOT NULL DEFAULT 1 COMMENT 'Penguin room',
     `mod` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin moderator',
     PRIMARY KEY (`id`),
@@ -43,7 +42,7 @@ CREATE TABLE `penguins` (
 --
 
 LOCK TABLE `penguins` WRITE;
-INSERT INTO `penguins` VALUES (100, 'Daan', '2018-07-14 13:24:31', '127.0.0.1', 1, 1);
+INSERT INTO `penguins` VALUES (100, 'Daan', '2018-07-14 13:24:31', 1, 1);
 UNLOCK TABLES;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

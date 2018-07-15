@@ -6,20 +6,20 @@
 
 # Installation
 
-0. If you're running this on a VPS, install [NGINX](https://www.nginx.com/) and set this in the config of NGINX: <b>proxy_set_header X-Forwarded-For $remote_addr;</b>
-1. Download this repository
-2. Download & install [Node.js](https://nodejs.org/en/)
-3. Run the following command in CMD: <b>npm install express knex mysql2</b>
-4. Download & install MySQL for your OS (Windows, Linux etc)
-5. Download & install [MySQL Workbench](https://www.mysql.com/products/workbench/) to <b>import</b>, browse and edit the database
+1. (IF VPS) - In chat.swf, change <b>localhost</b> to your VPS IP/domain
+2. Download this repository
+3. Download & install [Node.js](https://nodejs.org/en/)
+4. Run the following command in CMD: <b>npm install fastify fastify-static fastify-formbody fastify-helmet knex mysql2</b>
+5. Download & install MySQL for your OS (Windows, Linux etc)
+6. Download & install [MySQL Workbench](https://www.mysql.com/products/workbench/) to <b>import</b>, browse and edit the database
 
 # Run server
 
-0. Make sure you did everything in <b>Installation</b> and <b>have MySQL running</b>
-1. Open CMD
-2. Use the [CD](https://ss64.com/nt/cd.html) command to CD to the folder where <b>Run.js</b> is located
-3. Enter the command: <b>node Run.js</b>
-4. Open a new webpage and browse to: <b>http://localhost/</b>
+1. Make sure you did everything in <b>Installation</b> and <b>have MySQL running</b>
+2. Open CMD
+3. Use the [CD](https://ss64.com/nt/cd.html) command to CD to the folder where <b>Run.js</b> is located
+4. Enter the command: <b>node Run.js</b>
+5. Open a new webpage and browse to: <b>http://localhost/ (or your VPS IP/domain)</b>
 
 # TODO
 
