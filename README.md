@@ -6,6 +6,7 @@
 
 # Installation
 
+0. If you're running this on a VPS, install [NGINX](https://www.nginx.com/) and set this in the config of NGINX: <b>proxy_set_header X-Forwarded-For $remote_addr;</b>
 1. Download this repository
 2. Download & install [Node.js](https://nodejs.org/en/)
 3. Run the following command in CMD: <b>npm install express knex mysql2</b>

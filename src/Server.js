@@ -80,15 +80,18 @@ function handleNew(username, req, res) {
 		Logger.warning(`${username} is blocked`)
 		return handleWrite(Errors.NAME_UNAVAILABLE, res)
 	}
-	if (Utils.validateIP(req.ip)) { // Extensive IP check => subnets & masks
-		Logger.warning(`${username} -| ${req.ip} is IP banned`)
+	let ip = req.ip
+	if (ip.substr(0, 7) == "::ffff:") ip = ip.substr(7) // Catch ipv4 and ipv6 ips
+	if (Utils.validateIP(ip)) { // Extensive IP check => subnets & masks
+		Logger.warning(`${username} -| ${ip} is IP banned`)
 		return handleWrite(Errors.CONNECTION_PROBLEM, res)
 	}
 	database.getPlayerExistsByName(username).then(penguin => {
 		if (penguin.length != 1) { // The username does not exist
+			Logger.info(`${username} -| ${ip} is joining`)
 			database.insertPlayer(username).then(penguin => { // This is here because the insert is slower than getPlayerByName
 				const id = penguin[0]
-				database.updateIp(id, req.ip)
+				database.updateIp(id, ip)
 				database.getPlayerByName(username).then(penguin => { return handleWrite(`&id=${id}&m=${penguin.mod}${Errors.OK}`, res) })
 			})
 		} else {
