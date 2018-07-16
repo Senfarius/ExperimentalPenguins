@@ -1,15 +1,21 @@
 <h1 align="center">Penguin Chat JS</h1>
-<p align="center">A Penguin Chat 2 emulator, written in Node.js with the use of an extremely fast HTTP server called Fastify to imitate PHP's long polling technique.</p>
+<p align="center">A blazing fast Penguin Chat 2 emulator written in Node.js .</p>
 <p align="center"><img src="https://i.imgur.com/sfH04Fn.png"></p>
+
+# Known issues
+
+handleChat breaks a small part of the game, but I'm working on it.
 
 # Features
 
 * Async and await server
-* Great performance
+* Great performance thanks to Fastify
 * Comes with all the game files
 * Type checking on every used POST object
 * Security headers to maintain security
 * Every response has status codes to maintain stability
+* Custom logger that pretty prints and saves logs
+* Uses Knex to have a clean database class (also uses promises)
 * Easy to understand, install and to modify
 
 # Installation
