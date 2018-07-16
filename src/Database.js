@@ -16,11 +16,7 @@ class Database {
 		})
 	}
 
-	promote(id) { return this.updateColumn(id, "mod", 1) }
-	demote(id) { return this.updateColumn(id, "mod", 0) }
-
 	updateRoom(id, room) { return this.updateColumn(id, "room", room) }
-	updateIp(id, ip) { return this.updateColumn(id, "IP", ip)}
 
 	getPlayerByName(username) { return this.knex("penguins").first("*").where("username", username) }
 	getPlayerExistsByName(username) { return this.knex("penguins").where("username", username).select("username") }
