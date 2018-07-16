@@ -55,3 +55,6 @@ typings/
 
 # vscode env
 .vscode/
+
+# logging
+src/logs
