@@ -7,6 +7,9 @@
 * Async and await server
 * Great performance
 * Comes with all the game files
+* Type checking on every used POST object
+* Security headers to maintain security
+* Every response has status codes to maintain stability
 * Easy to understand, install and to modify
 
 # Installation
