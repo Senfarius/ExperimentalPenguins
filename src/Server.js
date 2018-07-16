@@ -1,16 +1,14 @@
 "use strict"
 
 const database = new (require("./Database"))
-const fastify = require("fastify")({})
+const fastify = require("fastify")()
 const Logger = require("./Logger").Logger
-const Utils = require("./Utils")
 const path = require("path")
 
-const shutDown = () => {
-	Logger.info(`Server shutting down in 3 seconds...`)
-	database.dropAll()
-	setTimeout(() => { process.exit(0) }, 3000)
-}
+const newOpts  = { schema: { body: { type: "object", properties: { n : { type: "string" }}}}}
+const joinOpts = { schema: { body: { type: "object", properties: { n : { type: "string" }, id: { type: "number" }, d: { type: "string" }}}}}
+const chatOpts = { schema: { body: { type: "object", properties: { id : { type: "number" }, d: { type: "string" }}}}}
+const dropOpts = { schema: { body: { type: "object", properties: { id : { type: "number" }}}}}
 
 fastify.register(require("fastify-static"), {
 	root: path.join(__dirname, "public"),
@@ -19,18 +17,15 @@ fastify.register(require("fastify-static"), {
 fastify.register(require("fastify-formbody"))
 fastify.register(require("fastify-helmet"))
 
-fastify.get("/", (req, res) => {
+fastify.get("/", async (req, res) => {
 	res.type("text/html").code(200)
-	res.sendFile("index.html")
+	return res.sendFile("index.html")
 })
-fastify.post("/new.php", (req, res) => {
+
+fastify.post("/new.php", newOpts, async (req, res) => {
 	const username = req.body.n
-	if (Utils.validateString(username)) {
-		Logger.warning(`${username} is blocked`)
-		return res.code(200).type("text/html").send(`&e=2`)
-	}
 	database.getPlayerExistsByName(username).then(penguin => {
-		if (penguin.length != 1) {
+		if (penguin.length != 1 && username.length <= 12) {
 			database.insertPlayer(username).then(penguin => {
 				const id = penguin[0]
 				database.getPlayerByName(username).then(penguin => {
@@ -44,7 +39,8 @@ fastify.post("/new.php", (req, res) => {
 		}
 	})
 })
-fastify.post("/join.php", (req, res) => {
+
+fastify.post("/join.php", joinOpts, async (req, res) => {
 	const id = req.body.id
 	const username = req.body.n
 	const data = req.body.d
@@ -56,7 +52,8 @@ fastify.post("/join.php", (req, res) => {
 	Logger.polling(poll)
 	return res.code(200).type("text/html").send(poll)
 })
-fastify.post("/chat.php", (req, res) => {
+
+fastify.post("/chat.php", chatOpts, async (req, res) => {
 	const id = req.body.id
 	const data = req.body.d
 	const room = data.substr(0, 1)
@@ -66,16 +63,28 @@ fastify.post("/chat.php", (req, res) => {
 	Logger.polling(poll)
 	return res.code(200).type("text/html").send(poll)
 })
-fastify.post("/drop.php", (req, res) => {
+
+fastify.post("/drop.php", dropOpts, async (req, res) => {
 	const id = req.body.id
 	return database.drop(id)
 })
 
-fastify.listen(80).then(() => {
-	Logger.info(`Server listening on http://localhost:80/`)
-	process.on("SIGINT", () => shutDown())
-	process.on("SIGTERM", () => shutDown())
-}).catch((err) => {
-	Logger.error(err)
-	process.exit(1)
-})
+const shutDown = () => {
+	Logger.info(`Server shutting down in 3 seconds...`)
+	database.dropAll()
+	setTimeout(() => { process.exit(0) }, 3000)
+}
+
+const start = async () => {
+	try {
+		await fastify.listen(80)
+		Logger.info(`Server listening on http://localhost:80/`)
+		process.on("SIGINT",  () => shutDown())
+		process.on("SIGTERM", () => shutDown())
+	} catch (err) {
+		Logger.error(err)
+		process.exit(1)
+	}
+}
+
+start()
