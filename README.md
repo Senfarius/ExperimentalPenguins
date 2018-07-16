@@ -1,8 +1,13 @@
 <h1 align="center">Penguin Chat JS</h1>
-<p align="center">A Penguin Chat 2 emulator, written in Node.js with the use of Fastify to imitate PHP's long polling technique. Penguin Chat 2 originally used long polling, but we can use this in Node.js as well!</p>
+<p align="center">A Penguin Chat 2 emulator, written in Node.js with the use of an extremely fast HTTP server called Fastify to imitate PHP's long polling technique.</p>
 <p align="center"><img src="https://i.imgur.com/sfH04Fn.png"></p>
 
-## NOTE - FIGURING OUT THE SWF ISSUES, STAY TUNED.
+# Features
+
+* Async and await server
+* Great performance
+* Comes with all the game files
+* Easy to understand, install and to modify
 
 # Installation
 
@@ -20,7 +25,3 @@
 3. Use the [CD](https://ss64.com/nt/cd.html) command to CD to the folder where <b>Run.js</b> is located
 4. Enter the command: <b>node Run.js</b>
 5. Open a new webpage and browse to: <b>http://localhost/ (or your VPS IP/domain)</b>
-
-# TODO
-
-Make the database class async and await?
