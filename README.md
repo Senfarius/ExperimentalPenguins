@@ -14,7 +14,7 @@ Issue with the weird things in-game has been identified and is being patched.
 * Type checking on every used POST object
 * Security headers to maintain security
 * Every response has status codes to maintain stability
-* Simple but fast logger
+* Simple but fast logger using JSON
 * Uses Knex to have a clean database class (also uses promises)
 * Easy to understand, install and to modify
 
