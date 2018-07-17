@@ -20,7 +20,7 @@ handleChat breaks a small part of the game, but I'm working on it.
 
 # Installation
 
-1. (IF VPS) - In chat.swf, change <b>localhost</b> to your VPS IP/domain
+1. (IF VPS) - In chat.swf & Config.json, change <b>localhost</b> to your VPS IP/domain
 2. Download this repository
 3. Download & install [Node.js](https://nodejs.org/en/)
 4. Run the following command in CMD: <b>npm install fastify fastify-static fastify-formbody fastify-helmet knex mysql2</b>
