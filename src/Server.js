@@ -9,10 +9,7 @@ const joinOpts = { schema: { body: { type: "object", properties: { n : { type: "
 const chatOpts = { schema: { body: { type: "object", properties: { id : { type: "number" }, d: { type: "string" }}}}}
 const dropOpts = { schema: { body: { type: "object", properties: { id : { type: "number" }}}}}
 
-fastify.register(require("fastify-static"), {
-	root: path.join(__dirname, "public"),
-	prefix: "/"
-})
+fastify.register(require("fastify-static"), {root: path.join(__dirname, "public"),prefix: "/"})
 fastify.register(require("fastify-formbody"))
 fastify.register(require("fastify-helmet"))
 
@@ -40,27 +37,39 @@ fastify.post("/new.php", newOpts, async (req, res) => {
 })
 
 fastify.post("/join.php", joinOpts, async (req, res) => {
-	const id = req.body.id
-	const username = req.body.n
 	const data = req.body.d
-	Logger({level: "incoming", msg: "Incoming data", extra: {data: `${id}${username}${data}`, url: "/join.php"}})
 	const room = data.substr(0, 1)
-	const join = data.substr(1, 99)
-	const poll = `&p=${room}${join.substr(1, 4)}${username}&e=0`
-	Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/join.php"}})
+	const chat = data.substr(1, 99)
+	const id = req.body.id
+	Logger({level: "incoming", msg: "Incoming data", extra: {data: `${id}${data}`, url: "/join.php"}})
+	database.updateData(id, chat)
 	database.updateRoom(id, room)
-	return res.code(200).type("text/html").send(poll)
+	database.getData().then(penguin => {
+		const poll = `&p=${penguin.room}${penguin.data.substr(1, 4)}${penguin.username}`
+		Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/join.php"}})
+		return res.code(200).type("text/html").send(poll + "\r\n")
+	})
 })
 
 fastify.post("/chat.php", chatOpts, async (req, res) => {
-	const id = req.body.id
 	const data = req.body.d
+	const chat = data.substr(0, 99)
+	const id = req.body.id
 	Logger({level: "incoming", msg: "Incoming data", extra: {data: `${id}${data}`, url: "/chat.php"}})
-	const room = data.substr(0, 1)
-	const poll = `&c=${room}${data}`
-	Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/chat.php"}})
-	database.updateRoom(id, room)
-	return res.code(200).type("text/html").send(poll)
+    if (data.length > 2) {
+    	database.updateData(id, data)
+    	database.getData().then(penguin => {
+    		const poll = `&c=${penguin.room}${penguin.data}`
+    		Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/chat.php"}})
+    		return res.code(200).type("text/html").send(poll + "\r\n")
+    	})
+    } else {
+    	database.getData().then(penguin => {
+    		const poll = `&c=${penguin.room}${penguin.data}`
+    		Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/chat.php"}})
+    		return res.code(200).type("text/html").send(poll + "\r\n")
+    	})
+    }
 })
 
 fastify.post("/drop.php", dropOpts, async (req, res) => {

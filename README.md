@@ -4,7 +4,7 @@
 
 # Known issues
 
-handleChat breaks a small part of the game, but I'm working on it.
+Issue with the weird things in-game has been identified and is being patched.
 
 # Features
 
