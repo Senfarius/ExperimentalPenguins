@@ -33,6 +33,7 @@ CREATE TABLE `penguins` (
     `created` datetime NOT NULL DEFAULT current_timestamp() COMMENT 'Penguin creation date',
     `room` int(11) NOT NULL DEFAULT 1 COMMENT 'Penguin room',
     `mod` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Penguin moderator',
+    `data` text NOT NULL COMMENT 'Chat String',
     PRIMARY KEY (`id`),
     UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1 COMMENT='Penguins';
@@ -42,7 +43,7 @@ CREATE TABLE `penguins` (
 --
 
 LOCK TABLE `penguins` WRITE;
-INSERT INTO `penguins` VALUES (100, 'Daan', '2018-07-14 13:24:31', 1, 1);
+INSERT INTO `penguins` VALUES (100, 'Daan', '2018-07-14 13:24:31', 1, 1, '3105HK');
 UNLOCK TABLES;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

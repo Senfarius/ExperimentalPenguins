@@ -1,6 +1,6 @@
 {
     "name": "PenguinChat2",
-    "version": "1.0.8",
+    "version": "1.1.0",
     "description": "An avatar chat with penguins, Penguin Chat 2!",
     "main": "src/Run.js",
     "keywords": [

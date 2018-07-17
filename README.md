@@ -4,7 +4,7 @@
 
 # Known issues
 
-handleChat breaks a small part of the game, but I'm working on it.
+Issue with the weird things in-game has been identified and is being patched.
 
 # Features
 
@@ -14,7 +14,7 @@ handleChat breaks a small part of the game, but I'm working on it.
 * Type checking on every used POST object
 * Security headers to maintain security
 * Every response has status codes to maintain stability
-* Custom logger that pretty prints and saves logs
+* Simple but fast logger
 * Uses Knex to have a clean database class (also uses promises)
 * Easy to understand, install and to modify
 
