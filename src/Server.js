@@ -1,9 +1,8 @@
 "use strict"
 
 const database = new (require("./Database"))
-const fastify = require("fastify")()
-const Logger = require("./Logger").Logger
-const path = require("path")
+const fastify  = require("fastify")()
+const path     = require("path")
 
 const newOpts  = { schema: { body: { type: "object", properties: { n : { type: "string" }}}}}
 const joinOpts = { schema: { body: { type: "object", properties: { n : { type: "string" }, id: { type: "number" }, d: { type: "string" }}}}}
@@ -30,12 +29,12 @@ fastify.post("/new.php", newOpts, async (req, res) => {
 				const id = penguin[0]
 				database.getPlayerByName(username).then(penguin => {
 					const poll = `&id=${id}&m=${penguin.mod}&e=0`
-					Logger.polling(poll)
+					Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/new.php"}})
 					return res.code(200).type("text/html").send(poll)
 				})
 			})
 		} else {
-			return res.code(200).type("text/html").send(`&e=2`)
+            return res.code(200).type("text/html").send(`&e=2`)
 		}
 	})
 })
@@ -44,46 +43,61 @@ fastify.post("/join.php", joinOpts, async (req, res) => {
 	const id = req.body.id
 	const username = req.body.n
 	const data = req.body.d
+	Logger({level: "incoming", msg: "Incoming data", extra: {data: `${id}${username}${data}`, url: "/join.php"}})
 	const room = data.substr(0, 1)
 	const join = data.substr(1, 99)
 	const poll = `&p=${room}${join.substr(1, 4)}${username}&e=0`
-
+	Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/join.php"}})
 	database.updateRoom(id, room)
-	Logger.polling(poll)
 	return res.code(200).type("text/html").send(poll)
 })
 
 fastify.post("/chat.php", chatOpts, async (req, res) => {
 	const id = req.body.id
 	const data = req.body.d
+	Logger({level: "incoming", msg: "Incoming data", extra: {data: `${id}${data}`, url: "/chat.php"}})
 	const room = data.substr(0, 1)
 	const poll = `&c=${room}${data}`
-
+	Logger({level: "outgoing", msg: "Outgoing data", extra: {data: poll, url: "/chat.php"}})
 	database.updateRoom(id, room)
-	Logger.polling(poll)
 	return res.code(200).type("text/html").send(poll)
 })
 
 fastify.post("/drop.php", dropOpts, async (req, res) => {
 	const id = req.body.id
-	return database.drop(id)
+	database.drop(id).then(() => {
+		Logger({level: "info", msg: `Dropped ${id}`})
+	}).catch((err) => {
+		Logger({level: "error", msg: err})
+	})
 })
 
+const Logger = (obj) => {
+	const toLog = JSON.stringify({level: obj.level, time: Date.now(), msg: obj.msg, extra: obj.extra || {}})
+	const stream = require("fs").createWriteStream(`${__dirname}\\logs\\${obj.level}.log`, {flags: "a"})
+	stream.write(`${toLog}\r\n`)
+	return console.log(toLog)
+}
+
 const shutDown = () => {
-	Logger.info(`Server shutting down in 3 seconds...`)
-	database.dropAll()
+	Logger({level: "info", msg: "Server shutting down in 3 seconds..."})
+	database.dropAll().then(() => {
+		Logger({level: "info", msg: `Cleaned the database`})
+	}).catch((err) => {
+		Logger({level: "error", msg: err})
+	})
 	setTimeout(() => { process.exit(0) }, 3000)
 }
 
 const start = async () => {
 	try {
-		await fastify.listen(80)
-		Logger.info(`Server listening on http://localhost:80/`)
-		process.on("SIGINT",  () => shutDown())
-		process.on("SIGTERM", () => shutDown())
+        await fastify.listen(80)
+        Logger({level: "info", msg: "Server listening on http://localhost:80/"})
+        process.on("SIGINT",  () => shutDown())
+        process.on("SIGTERM", () => shutDown())
 	} catch (err) {
-		Logger.error(err)
-		process.exit(1)
+        Logger({level: "error", msg: err})
+        process.exit(1)
 	}
 }
 
