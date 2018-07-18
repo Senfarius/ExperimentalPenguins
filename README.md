@@ -1,5 +1,5 @@
 <h1 align="center">Penguin Chat JS</h1>
-<p align="center">A blazing fast Penguin Chat 3 emulator written in Node.js .</p>
+<p align="center"><b>A blazing fast Penguin Chat 3 emulator, written in Node.js.</b></p>
 <p align="center"><img src="https://vignette.wikia.nocookie.net/clubpenguin/images/b/bc/Penguin_Chat_Logo.png/revision/latest?cb=20130114043324"></p>
 
 # Features
