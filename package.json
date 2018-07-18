@@ -1,28 +1,20 @@
 {
-    "name": "PenguinChat2",
-    "version": "1.1.0",
-    "description": "An avatar chat with penguins, Penguin Chat 2!",
-    "main": "src/Run.js",
-    "keywords": [
-        "Penguin chat",
-        "PC3",
-        "PC2",
-        "PC1",
-        "Club Penguin",
-        "Private Server",
-        "Penguin Chat Private Server"
-    ],
-    "engines": {
-        "node": "10.6.0"
-    },
-    "author": "Zaseth",
-    "license": "MIT",
-    "dependencies": {
-        "fastify": "^1.8.0",
-        "fastify-formbody": "^2.0.0",
-        "fastify-helmet": "^1.0.3",
-        "fastify-static": "^0.12.0",
-        "knex": "^0.15.1",
-        "mysql2": "^1.5.3"
-    }
+	"name": "PenguinChatJS",
+	"version": "1.0.0",
+	"description": "An avatar chat with penguins, Penguin Chat 3!",
+	"main": "Run.js",
+	"keywords": ["Penguin chat","PC3","PC2","PC1","Club Penguin","Private Server","Penguin Chat Private Server"],
+	"engines": {"node": "^10.6.0"},
+	"author": "Zaseth",
+	"license": "MIT",
+	"dependencies": {
+		"fastify": "^1.8.0",
+		"fastify-static": "^0.12.0",
+		"fastify-formbody": "^2.0.0",
+		"fastify-helmet": "^1.0.3",
+		"fastify-no-cache": "^0.2.1",
+		"lodash": "^4.17.10",
+		"knex": "^0.15.1",
+		"mysql2": "^1.5.3"
+	}
 }

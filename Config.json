@@ -1,6 +1,6 @@
 {
-	"host": "localhost",
-	"database": "pc2",
+	"hostname": "localhost",
+	"database": "pc3",
 	"username": "root",
 	"password": ""
 }
