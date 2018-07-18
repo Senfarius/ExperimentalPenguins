@@ -8,15 +8,17 @@
 * Simple to setup
 * Well written and clean
 * Comes with all of the files
+* Uses no-cache to avoid SWFS getting cached
+* Extensive response validating
 * Uses security headers to maintain stability and security
-* Uses [Blake2s](https://blake2.net/) for hashing passwords
+* Uses [Blake2b-512](https://blake2.net/) for hashing passwords
 
 # Installation
 
 1. Download this repository
 2. (IF VPS) - In chat.swf, change <b>127.0.0.1</b> to your VPS IP/domain
 3. Download & install [Node.js](https://nodejs.org/en/)
-4. Run the following command in CMD: <b>npm install fastify fastify-static fastify-formbody fastify-helmet knex mysql2</b>
+4. Run the following command in CMD: <b>npm install fastify fastify-static fastify-formbody fastify-helmet fastify-no-cache validator knex mysql2</b>
 5. Download & install MySQL for your OS (Windows, Linux etc)
 6. Change the details in Config.json
 7. Download & install [MySQL Workbench](https://www.mysql.com/products/workbench/) to <b>import</b>, browse and edit the database

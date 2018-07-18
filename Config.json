@@ -2,5 +2,6 @@
 	"hostname": "localhost",
 	"database": "pc3",
 	"username": "root",
-	"password": ""
+	"password": "",
+	"maxPenguins": 50
 }
