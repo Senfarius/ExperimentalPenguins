@@ -15,7 +15,7 @@ module.exports = function (fastify, opts, next) {
 
 		if (_.isEmpty(username) || username.length > 12 || _.isIn(username, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=2&em=Username is invalid`)
 		if (_.isEmpty(password) || password.length > 12 || _.isIn(password, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=26&em=Password is invalid`)
-		if (_.isEmpty(email) || !_.isEmail(email) || email.length > 50 || _.isIn(email, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=27&em=Email is invalid`)
+		if (_.isEmpty(email) || !_.isIn(email, ["@"]) || email.length > 50 || _.isIn(email, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=27&em=Email is invalid`)
 
 		opts.database.usernameExists(username).then((count) => {
 			if (count["count(*)"] == 0) {
@@ -76,6 +76,18 @@ module.exports = function (fastify, opts, next) {
 	})
 	fastify.post("/join.php", schema.JOIN_SCHEMA, (req, res) => {
 		const [id, attributes, room, key] = [req.body.id, req.body.s, req.body.r, req.body.k]
+		let data = ""
+		opts.database.updateAttributesById(id, attributes).then((penguin) => {
+			if (penguin == 1) {
+				opts.database.updateRoomById(id, room).then((penguin) => {
+					if (penguin == 1) {
+						opts.database.getPlayersInRoom(room).then((penguin) => {
+
+						})
+					}
+				})
+			}
+		})
 	})
 	next()
 }

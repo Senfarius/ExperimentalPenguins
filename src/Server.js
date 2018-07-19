@@ -7,6 +7,7 @@ const Logger = require("./Logger").Logger
 const shutDown = () => {
 	Logger.log({ level: "info", msg: "Server shutting down in 3 seconds..." })
 	database.resetPlayersOnline()
+	database.resetRooms()
 	setTimeout(() => { process.exit(0) }, 3000)
 }
 

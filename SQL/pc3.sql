@@ -9,6 +9,8 @@ CREATE TABLE `penguins` (
     `password` char(255) NOT NULL COMMENT 'Penguin password',
     `email` char(255) NOT NULL COMMENT 'Penguin email',
     `created` datetime NOT NULL DEFAULT current_timestamp() COMMENT 'Penguin creation date',
+    `room` int(10) NOT NULL DEFAULT 0 COMMENT 'Penguin room',
+    `attributes` char(255) NOT NULL COMMENT 'Penguin attributes',
     `moderator` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Is penguin moderator',
     `banned` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Is penguin banned',
     PRIMARY KEY (`id`),
@@ -16,7 +18,7 @@ CREATE TABLE `penguins` (
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1 COMMENT='Penguins';
 
 LOCK TABLE `penguins` WRITE;
-INSERT INTO `penguins` VALUES (100, 'Daan', 'c91a3d3c2f7a413f804580d331ac9a5ae79a302070755ab478f4036bf9e1b8212faccd640de9e497908d9d33f57c68180a878a4db736d885912bb2df4c0cf490', 'YourMom@xd.com', '2018-07-14 13:24:31', 1, 0);
+INSERT INTO `penguins` VALUES (100, 'Daan', 'c91a3d3c2f7a413f804580d331ac9a5ae79a302070755ab478f4036bf9e1b8212faccd640de9e497908d9d33f57c68180a878a4db736d885912bb2df4c0cf490', 'YourMom@xd.com', '2018-07-14 13:24:31', 0, '1|1|K|L', 1, 0);
 UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `stats`;
