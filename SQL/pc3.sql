@@ -4,15 +4,15 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `penguins`;
 CREATE TABLE `penguins` (
-	`id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Penguin ID',
-	`username` varchar(12) NOT NULL COMMENT 'Penguin username',
-	`password` char(255) NOT NULL COMMENT 'Penguin password',
-	`email` char(255) NOT NULL COMMENT 'Penguin email',
-	`created` datetime NOT NULL DEFAULT current_timestamp() COMMENT 'Penguin creation date',
-	`moderator` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Is penguin moderator',
-	`banned` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Is penguin banned',
-	PRIMARY KEY (`id`),
-	UNIQUE KEY `username` (`username`)
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Penguin ID',
+    `username` varchar(12) NOT NULL COMMENT 'Penguin username',
+    `password` char(255) NOT NULL COMMENT 'Penguin password',
+    `email` char(255) NOT NULL COMMENT 'Penguin email',
+    `created` datetime NOT NULL DEFAULT current_timestamp() COMMENT 'Penguin creation date',
+    `moderator` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Is penguin moderator',
+    `banned` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'Is penguin banned',
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1 COMMENT='Penguins';
 
 LOCK TABLE `penguins` WRITE;
@@ -21,7 +21,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `stats`;
 CREATE TABLE `stats` (
-	`online` int(10) unsigned NOT NULL DEFAULT 0 COMMENT 'Penguins online'
+    `online` int(10) unsigned NOT NULL DEFAULT 0 COMMENT 'Penguins online'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Stats';
 
 LOCK TABLE `stats` WRITE;

@@ -1,7 +1,7 @@
 "use strict"
 
 class Crypto {
-	static generateRandomKey () {
+	static generateRandomKey() {
 		return (require("crypto").randomBytes(2).toString("hex"))
 	}
 	static hashPassword(pass) {
@@ -9,7 +9,7 @@ class Crypto {
 		hash.update(Buffer.from(pass))
 		return hash.digest("hex")
 	}
-	static encryptZaseth (param1, param2) {
+	static encryptZaseth(param1, param2) {
 		let keyIndex = 0x00, res = ""
 		for (let i = 0x00; i < param1.length; i++) {
 			let charCode = param1.charCodeAt(i)
