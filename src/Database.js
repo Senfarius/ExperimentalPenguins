@@ -22,16 +22,9 @@ class Database {
 
 	usernameExists(username) { return this.knex("penguins").where({ username }).count().first() }
 	emailExists(email) { return this.knex("penguins").where({ email }).count().first() }
-	isPlayerBanned(username) { return this.knex("penguins").select("banned").where({ username }) }
 
-	registerPlayer(username, password, email) { return this.knex("penguins").insert({ username: username, password: this.hashPassword(password), email: email }) }
+	registerPlayer(username, password, email) { return this.knex("penguins").insert({ username: username, password: password, email: email }) }
 	getPlayerByName(username) { return this.knex("penguins").first("*").where("username", username) }
-
-	hashPassword(pass) {
-		const hash = require("blake2").createHash("blake2b", { digestLength: 64 })
-		hash.update(Buffer.from(pass))
-		return hash.digest("hex")
-	}
 }
 
 module.exports = Database
