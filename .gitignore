@@ -55,9 +55,3 @@ typings/
 
 # vscode env
 .vscode/
-
-# logging
-src/logs
-
-# rooms
-src/data

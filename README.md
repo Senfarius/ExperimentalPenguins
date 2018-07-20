@@ -13,7 +13,7 @@
 * Uses no-cache to avoid SWFS getting cached
 * Extensive response validating
 * Uses security headers to maintain stability and security
-* Uses [Blake2b-512](https://blake2.net/) for hashing passwords and my custom algorithm for comparing hashes with a random key
+* Uses [Blake2b-512](https://blake2.net/) for hashing passwords and my custom algorithm with random seeds for comparing hashes with a random key
 
 # Installation
 
