@@ -58,3 +58,6 @@ typings/
 
 # logging
 src/logs
+
+# rooms
+src/data
