@@ -1,23 +1,9 @@
-{"level":"info","time":1532096538517,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
-{"level":"info","time":1532096551058,"msg":"A new player has logged in","extra":{}}
-{"level":"info","time":1532096562786,"msg":"A new player has logged in","extra":{}}
-{"level":"info","time":1532096571428,"msg":"Daan failed to login","extra":{}}
-{"level":"info","time":1532096573828,"msg":"A new player has logged in","extra":{}}
-{"level":"info","time":1532096579636,"msg":"Server shutting down in 3 seconds...","extra":{}}
-{"level":"info","time":1532096579666,"msg":"Players online count have been reset","extra":{}}
-{"level":"info","time":1532096579675,"msg":"Rooms have been reset","extra":{}}
-{"level":"info","time":1532097821994,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
-{"level":"info","time":1532097831121,"msg":"A new player has logged in","extra":{}}
-{"level":"info","time":1532097928723,"msg":"Server shutting down in 3 seconds...","extra":{}}
-{"level":"info","time":1532097928736,"msg":"Players online count have been reset","extra":{}}
-{"level":"info","time":1532097928743,"msg":"Rooms have been reset","extra":{}}
-{"level":"info","time":1532097935089,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
-{"level":"info","time":1532097941935,"msg":"A new player has logged in","extra":{}}
-{"level":"info","time":1532098060582,"msg":"Server shutting down in 3 seconds...","extra":{}}
-{"level":"info","time":1532098060617,"msg":"Players online count have been reset","extra":{}}
-{"level":"info","time":1532098060625,"msg":"Rooms have been reset","extra":{}}
-{"level":"info","time":1532098988180,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
-{"level":"info","time":1532098993734,"msg":"A new player has logged in","extra":{}}
-{"level":"info","time":1532099056145,"msg":"Server shutting down in 3 seconds...","extra":{}}
-{"level":"info","time":1532099056168,"msg":"Players online count have been reset","extra":{}}
-{"level":"info","time":1532099056177,"msg":"Rooms have been reset","extra":{}}
+{"level":"info","time":1532113871578,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532113892730,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114025701,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114033570,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114142133,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114183761,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114198591,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114285980,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
+{"level":"info","time":1532114378672,"msg":"Server listening on http://127.0.0.1:80","extra":{}}
