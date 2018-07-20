@@ -1,0 +1,9 @@
+105|1|1|K|L|Zaseth
+105|1|1|K|L|Zaseth
+100|1|1|K|L|Daan
+100|1|4|9|H|Daan
+100|1|3|M|D|Daan
+100|1|1|K|L|Daan
+100|1|1|K|L|Daan
+100|1|5|9|H|Daan
+100|1|4|M|D|Daan

@@ -29,8 +29,10 @@ class Database {
 	emailExists(email) { return this.knex("penguins").where({ email }).count().first() }
 
 	registerPlayer(username, password, email) { return this.knex("penguins").insert({ username: username, password: password, email: email }) }
+
 	getPlayerByName(username) { return this.knex("penguins").first("*").where("username", username) }
-	getPlayersInRoom(room) { return this.knex("penguins").select("*").where({ "room": room }) }
+	getPlayerById(id) { return this.knex("penguins").first("*").where("id", id) }
+	getPlayersInRoom(username, room) { return this.knex("penguins").select("*").where({ "room": room }).whereNot("username", username) }
 }
 
 module.exports = Database

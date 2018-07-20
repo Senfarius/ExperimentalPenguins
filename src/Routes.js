@@ -1,9 +1,8 @@
 "use strict"
 
 const Crypto = require("./Crypto")
+const FileHandler = require("./FileHandler")
 const schema = require("./Schemas")
-const _ = require("validator")
-const charList = ["<", ">", ";", "'", `"`, "(", ")"]
 
 module.exports = function (fastify, opts, next) {
 	fastify.get("/", (req, res) => {
@@ -13,9 +12,9 @@ module.exports = function (fastify, opts, next) {
 	fastify.post("/register.php", schema.REGISTER_SCHEMA, (req, res) => {
 		const [username, password, email] = [req.body.n, req.body.p, req.body.email]
 
-		if (_.isEmpty(username) || username.length > 12 || _.isIn(username, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=2&em=Username is invalid`)
-		if (_.isEmpty(password) || password.length > 12 || _.isIn(password, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=26&em=Password is invalid`)
-		if (_.isEmpty(email) || !_.isIn(email, ["@"]) || email.length > 50 || _.isIn(email, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=27&em=Email is invalid`)
+		if (username.length == 0 || username.length > 12) return res.status(200).header("Content-Type", "text/plain").send(`&e=2&em=Username is invalid`)
+		if (password.length == 0 || password.length > 12) return res.status(200).header("Content-Type", "text/plain").send(`&e=26&em=Password is invalid`)
+		if (email.length == 0 || email.length > 50) return res.status(200).header("Content-Type", "text/plain").send(`&e=27&em=Email is invalid`)
 
 		opts.database.usernameExists(username).then((count) => {
 			if (count["count(*)"] == 0) {
@@ -41,8 +40,8 @@ module.exports = function (fastify, opts, next) {
 	fastify.post("/login.php", schema.LOGIN_SCHEMA, (req, res) => {
 		const [username, password] = [req.body.n, req.body.p]
 
-		if (_.isEmpty(username) || username.length > 12 || _.isIn(username, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=2&em=Username is invalid`)
-		if (_.isEmpty(password) || password.length > 12 || _.isIn(password, charList)) return res.status(200).header("Content-Type", "text/plain").send(`&e=26&em=Password is invalid`)
+		if (username.length == 0 || username.length > 12) return res.status(200).header("Content-Type", "text/plain").send(`&e=2&em=Username is invalid`)
+		if (password.length == 0 || password.length > 12) return res.status(200).header("Content-Type", "text/plain").send(`&e=26&em=Password is invalid`)
 
 		opts.database.getPlayersOnline().then((count) => {
 			if (count[0].online < opts.database.maxPenguins) {
@@ -76,17 +75,26 @@ module.exports = function (fastify, opts, next) {
 	})
 	fastify.post("/join.php", schema.JOIN_SCHEMA, (req, res) => {
 		const [id, attributes, room, key] = [req.body.id, req.body.s, req.body.r, req.body.k]
-		let data = ""
-		opts.database.updateAttributesById(id, attributes).then((penguin) => {
-			if (penguin == 1) {
-				opts.database.updateRoomById(id, room).then((penguin) => {
-					if (penguin == 1) {
-						opts.database.getPlayersInRoom(room).then((penguin) => {
-
-						})
-					}
-				})
-			}
+		let [line, count, data, username] = [0, 1, "", ""]
+		opts.database.getPlayerById(id).then((penguin) => {
+			username = penguin.username
+			FileHandler.writeLine(`${id}|${attributes}|${username}\r\n`)
+			opts.database.updateRoomById(id, room).then((penguin) => {
+				if (penguin == 1) {
+					opts.database.updateAttributesById(id, attributes).then((penguin) => {
+						if (penguin == 1) {
+							opts.database.getPlayersInRoom(username, room).then((penguin) => {
+								line = FileHandler.getLine()
+								data += `&e=0&l=${line}&p=0|1|1|J|K|Zippy\n`
+								for (const id of Object.keys(penguin)) {
+									data += `${count++}|${penguin[id].attributes}|${penguin[id].username}\n`
+								}
+								return res.status(200).header("Content-Type", "text/plain").send(data)
+							})
+						}
+					})
+				}
+			})
 		})
 	})
 	next()
