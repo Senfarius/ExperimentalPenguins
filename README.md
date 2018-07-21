@@ -1,21 +1,22 @@
 <h1 align="center">Experimental Penguins</h1>
 <p align="center"><b>A blazing fast Experimental Penguins emulator, written in Node.js.</b></p>
-<p align="center"><img src="https://vignette.wikia.nocookie.net/clubpenguin/images/0/00/Experimental_Penguins.png/revision/latest?cb=20160206070548"></p>
-<p align="center"><img src="https://i.imgur.com/sDc8wdJ.png"></p> 
+<p align="center"><img src="https://i.imgur.com/ueNeQVr.png"></p>
+<p align="center"><img src="https://i.imgur.com/oNzitwz.png"></p>
+<p align="center"><img src="https://i.imgur.com/sNZ7N1t.png"></p> 
 
-# Bugs
+# Missing files
 
-* Can't redirect POST request for Contact Music version => [Issue](https://github.com/fastify/fastify/issues/1049)
-* Misses 1 file called foreground11.swf
+* Foreground11.swf (not that useful)
 * Misses 1 Experimental Penguins version called tv-112k.swf (PlayUK)
 
 # Features
 
-* Written to be simple, secure and fast.
-* Extensive response validation using JSON.
-* Uses no-cache to avoid SWFS getting cached.
-* Supports <b>Experimental Penguins, Football Club Penguin Chat and Contact Music Penguin Chat.</b>
-* So easy to setup that it feels instant.
+* Contains most of the files and comes with a simple HTML design
+* Written to be simple, secure and fast
+* Extensive response validation using JSON
+* Uses no-cache to avoid SWFS getting cached
+* Supports <b>Experimental Penguins, Football Club Penguin Chat and Contact Music Penguin Chat</b>
+* So easy to setup that it feels instant
 
 # Installation - Windows
 

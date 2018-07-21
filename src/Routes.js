@@ -47,11 +47,11 @@ const handlePlayerData = (database, room, res) => {
 		database.getAttributesInRoom(room).then(result => {
 			for (const i in Object.keys(result)) toPoll += `${result[i].username}=${result[i].attributes}&`
 			toPoll += `key=&room=${room}`
-		    FileHandler.appendFileAsync(toPoll).then(() => {
-		    	// Data is stored
-		    }).catch((err) => {
-		    	console.error(err)
-		    })
+			FileHandler.appendFileAsync(toPoll).then(() => {
+				// Data is stored
+			}).catch((err) => {
+				console.error(err)
+			})
 			return res.code(200).header("Content-Type", "text/plain").send(toPoll)
 		}).catch((err) => {
 			console.error(err)
@@ -78,9 +78,6 @@ module.exports = function (fastify, opts, next) {
 		} else {
 			opts.Logger.log({ level: "error", msg: `Unknown action: ${action}` })
 		}
-	})
-	fastify.post("/PChat.ASP", async (req, res) => {
-		opts.Logger.log({ level: "warning", msg: "This game isn't supported yet until Fastify will respond to my issue. I'm busy solving this." })
 	})
 	next()
 }
