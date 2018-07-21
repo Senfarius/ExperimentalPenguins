@@ -5,8 +5,9 @@
 
 # Bugs
 
-* Can't redirect POST request => [Issue](https://github.com/fastify/fastify/issues/1049)
+* Can't redirect POST request for Contact Music version => [Issue](https://github.com/fastify/fastify/issues/1049)
 * Misses 1 file called foreground11.swf
+* Misses 1 Experimental Penguins version called tv-112k.swf (PlayUK)
 
 # Features
 

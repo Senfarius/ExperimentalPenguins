@@ -8,7 +8,6 @@ CREATE TABLE `penguins` (
     `username` varchar(14) NOT NULL,
     `created` char(255) NOT NULL,
     `room` int(10) NOT NULL,
-    `key` char(255) NOT NULL,
     `attributes` char(255) NOT NULL,
     PRIMARY KEY (`id`),
     UNIQUE KEY `username` (`username`)

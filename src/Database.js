@@ -21,15 +21,13 @@ class Database {
 			"username": obj.username,
 			"created": date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate(),
 			"room": obj.room,
-			"key": obj.key,
 			"attributes": obj.data
 		})
 	}
 	handleUpdatePlayer(obj) {
 		return this.knex("penguins").where("username", obj.username).update({
 			"room": obj.room,
-			"attributes": obj.data,
-			"key": obj.key
+			"attributes": obj.data
 		})
 	}
 	handleDropPlayer(username) { return this.knex("penguins").where("username", username).del() }
