@@ -5,7 +5,7 @@
 
 # Bugs
 
-* Can't redirect POST request => (Issue)[https://github.com/fastify/fastify/issues/1049]
+* Can't redirect POST request => [Issue](https://github.com/fastify/fastify/issues/1049)
 * Missing 2 swfs for Experimental Penguins.
 
 # Features
@@ -21,9 +21,9 @@
 1. Download this repository.
 2. Download & install the latest version of [Node.js](https://nodejs.org/en/)
 3. Open CMD and enter this command: <b>npm i fastify fastify-static fastify-formbody fastify-helmet fastify-no-cache underscore knex mysql2</b>
-4. Download & install (XAMPP)[https://www.apachefriends.org/index.html]
+4. Download & install [XAMPP](https://www.apachefriends.org/index.html)
 5. Open XAMPP and run MySQL
-6. Import the database that you can find in <b>/setup/experimental.sql</b> by using a tool like (MySQL Workbench)[https://dev.mysql.com/downloads/workbench/?utm_source=tuicool]
+6. Import the database that you can find in <b>/setup/experimental.sql</b> by using a tool like [MySQL Workbench](https://dev.mysql.com/downloads/workbench/?utm_source=tuicool)
 7. Change the options in <b>/setup/Config.json</b> to comfort your MySQL settings
 8. Open CMD and CD to the folder where <b>Run.js</b> is located
 9. Enter the following command to start the server: <b>node Run.js</b>
@@ -34,7 +34,7 @@
 1. Download this repository.
 2. Download & install the latest version of [Node.js](https://nodejs.org/en/)
 3. Open CMD and enter this command: <b>npm i fastify fastify-static fastify-formbody fastify-helmet fastify-no-cache underscore knex mysql2</b>
-4. Download & install (MySQL)[https://www.mysql.com/]
+4. Download & install [MySQL](https://www.mysql.com/)
 5. Run MySQL and execute the command: <b>mysql -u username -p database_name < experimental.sql</b>
 6. Change the options in <b>/setup/Config.json</b> to comfort your MySQL settings
 7. CD to the folder where <b>Run.js</b> is located
