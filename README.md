@@ -33,7 +33,7 @@
 
 1. Download this repository.
 2. Download & install the latest version of [Node.js](https://nodejs.org/en/)
-3. Open CMD and enter this command: <b>npm i fastify fastify-static fastify-formbody fastify-helmet fastify-no-cache underscore knex mysql2</b>
+3. Execute the following command: <b>npm i fastify fastify-static fastify-formbody fastify-helmet fastify-no-cache underscore knex mysql2</b>
 4. Download & install [MySQL](https://www.mysql.com/)
 5. Run MySQL and execute the command: <b>mysql -u username -p database_name < experimental.sql</b>
 6. Change the options in <b>/setup/Config.json</b> to comfort your MySQL settings
