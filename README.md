@@ -6,7 +6,7 @@
 # Bugs
 
 * Can't redirect POST request => [Issue](https://github.com/fastify/fastify/issues/1049)
-* Missing 2 swfs for Experimental Penguins.
+* Misses 1 file called foreground11.swf
 
 # Features
 
